@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="raM_UDT_ICT_Opr_Motion_CAM" Family="NoFamily" Class="User">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_iTRAKBase" LGuid="9D24ABEB-41E6-4150-B6B1-5D01B578B527" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Members>
+    <Member Name="Cam0" DataType="CAM_PROFILE_EXTENDED" Dimension="10" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="Cam1" DataType="CAM_PROFILE_EXTENDED" Dimension="10" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="Cam2" DataType="CAM_PROFILE_EXTENDED" Dimension="10" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+  </Members>
+</DataType>

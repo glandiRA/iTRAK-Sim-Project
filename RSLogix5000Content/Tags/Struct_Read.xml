@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="Struct_Read" Class="Standard" TagType="Base" DataType="PaC_Struct" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <Data Format="L5K"><![CDATA[[[0],[0,0,0,0,0,0,0,0,0,0]]]]></Data>
+  <Data Format="Decorated">
+    <Structure DataType="PaC_Struct">
+      <StructureMember Name="PaC_Status" DataType="CONNECTION_STATUS">
+        <DataValueMember Name="RunMode" DataType="BOOL" Value="0" />
+        <DataValueMember Name="ConnectionFaulted" DataType="BOOL" Value="0" />
+      </StructureMember>
+      <ArrayMember Name="Tag_01" DataType="DINT" Dimensions="10" Radix="Decimal">
+        <Element Index="[0]" Value="0" />
+        <Element Index="[1]" Value="0" />
+        <Element Index="[2]" Value="0" />
+        <Element Index="[3]" Value="0" />
+        <Element Index="[4]" Value="0" />
+        <Element Index="[5]" Value="0" />
+        <Element Index="[6]" Value="0" />
+        <Element Index="[7]" Value="0" />
+        <Element Index="[8]" Value="0" />
+        <Element Index="[9]" Value="0" />
+      </ArrayMember>
+    </Structure>
+  </Data>
+</Tag>

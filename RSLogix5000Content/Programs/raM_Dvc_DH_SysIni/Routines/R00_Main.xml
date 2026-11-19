@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="R00_Main" Type="RLL">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_Dvc_DH_SysIni" LGuid="2F85DAE4-B1F7-4497-BA3F-D068CA767DA2" />
+    <OwnedBy InstName="raM_LD_DH_SysIni" LGuid="21F1CDD5-7289-43C2-BA93-73C7D5CA4E77" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <RLLContent>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_LD_DH_SysIni" LGuid="21F1CDD5-7289-43C2-BA93-73C7D5CA4E77" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[NOP();]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_LD_DH_SysIni" LGuid="21F1CDD5-7289-43C2-BA93-73C7D5CA4E77" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[GSV(Program,THIS,MAJORFAULTRECORD,Wrk_MajorFaultRecord.TimeLow);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_LD_DH_SysIni" LGuid="21F1CDD5-7289-43C2-BA93-73C7D5CA4E77" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[[NE(Wrk_MajorFaultRecord.Type,0) ,NE(Wrk_MajorFaultRecord.Code,0) ]COP(Wrk_MajorFaultRecord,Inf_MajorFaultRecord,1);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_LD_DH_SysIni" LGuid="21F1CDD5-7289-43C2-BA93-73C7D5CA4E77" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[CLR(Wrk_MajorFaultRecord.Type)CLR(Wrk_MajorFaultRecord.Code)SSV(Program,THIS,MAJORFAULTRECORD,Wrk_MajorFaultRecord.TimeLow);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_LD_DH_SysIni" LGuid="21F1CDD5-7289-43C2-BA93-73C7D5CA4E77" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[JSR(raM_Dvc_DH_AxInit,0);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_LD_DH_SysIni" LGuid="21F1CDD5-7289-43C2-BA93-73C7D5CA4E77" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[JSR(raM_Dvc_DH_SysIni,0);]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="HMI_evtList_All" TagType="Base" DataType="raM_Opr_EventListSqntl" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_DH_Slave" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[359,0,0,-1,[22,'raM_Opr_EventListSqntlic_ST$00$00$00$00$00'],0,0,3,0,6,8,8,8,5,5,1,6,-1,1,-1,7,[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],0,[0,0,0,0,0,0,0],0]]]]></Data>
+  <Data Format="Decorated">
+    <Structure DataType="raM_Opr_EventListSqntl">
+      <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+      <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_EO" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_EN" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_ER" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_ERR" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Sts_EXERR" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="raM_Opr_EventListSqntl" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Cfg_Type" DataType="DINT" Radix="Decimal" Value="-1" />
+      <DataValueMember Name="Cmd_Clear" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_IP" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_PC" DataType="BOOL" Value="1" />
+    </Structure>
+  </Data>
+</Tag>

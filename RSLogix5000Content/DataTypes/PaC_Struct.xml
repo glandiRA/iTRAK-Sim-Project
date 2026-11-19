@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="PaC_Struct" Family="NoFamily" Class="User">
+  <Members>
+    <Member Name="PaC_Status" DataType="CONNECTION_STATUS" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="Tag_01" DataType="DINT" Dimension="10" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write" />
+  </Members>
+</DataType>

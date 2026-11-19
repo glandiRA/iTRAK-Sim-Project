@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="raM_UDT_Opr_ObjectRegister_Members" Family="NoFamily" Class="User">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_Opr_ObjectRegister" LGuid="D7FD54F8-C349-4166-8433-1BE6117934FC" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Members>
+    <Member Name="Name" DataType="STR0024" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Object Name]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="PAC" DataType="STR0024" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Location - Controller Name]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="PRG" DataType="STR0024" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Location - Program Name]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="RTN" DataType="STR0024" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Location - Routine Name]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ID" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Object Identification Number]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="DataType" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="None" />
+    <Member Name="Lock" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="true" Target="DataType" BitNumber="0" ExternalAccess="None" />
+  </Members>
+  <Dependencies>
+    <Dependency Type="DataType" Name="STR0024" />
+    <Dependency Type="DataType" Name="STR0024" />
+    <Dependency Type="DataType" Name="STR0024" />
+    <Dependency Type="DataType" Name="STR0024" />
+  </Dependencies>
+</DataType>

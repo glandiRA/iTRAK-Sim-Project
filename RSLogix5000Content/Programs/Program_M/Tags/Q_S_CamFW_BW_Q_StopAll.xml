@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="Q_S_CamFW_BW_Q_StopAll" TagType="Base" DataType="raM_iTRAK_Opr_StopAll" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <Data Format="L5K"><![CDATA[[1024,0,1.00000000e+003,1.00000000e+003,1012,0,[0,0,1,1012,8,0,0,0,0,[19,'raM_Opr_EventCreateneric_ST$00$00$00$00$00'
+		],0,0,0,0,40,8,82,21],[95,21,1,0,0,1012,[22,'raM_Opr_ObjectRegisteric_ST$00$00$00$00$00'],0,0,3,0,24,40,50,12,21
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],8,21,0,[21,'raM_iTRAK_Opr_StopAll$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		]]]]></Data>
+  <Data Format="Decorated">
+    <Structure DataType="raM_iTRAK_Opr_StopAll">
+      <DataValueMember Name="EnableIn" DataType="BOOL" Value="0" />
+      <DataValueMember Name="EnableOut" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Cfg_StopType" DataType="SINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Cfg_ChangeDecel" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Cfg_ChangeDecelJerk" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Set_DecelRate" DataType="REAL" Radix="Float" Value="1000.0" />
+      <DataValueMember Name="Set_DecelJerk" DataType="REAL" Radix="Float" Value="1000.0" />
+      <DataValueMember Name="Sts_MtdID" DataType="DINT" Radix="Decimal" Value="1012" />
+      <DataValueMember Name="Sts_EO" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_EN" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_ER" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_ERR" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Sts_IP" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_PC" DataType="BOOL" Value="0" />
+    </Structure>
+  </Data>
+</Tag>

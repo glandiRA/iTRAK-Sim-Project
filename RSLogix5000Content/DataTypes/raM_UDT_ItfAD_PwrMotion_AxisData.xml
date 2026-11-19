@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="raM_UDT_ItfAD_PwrMotion_AxisData" Family="NoFamily" Class="User">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_Dvc_CIPAxis" LGuid="E7B354AE-DB40-4E33-804E-D8EB6669BD77" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[CIP Axis Strobe Interface]]></LocalizedDescription>
+  </Description>
+  <Members>
+    <Member Name="Unwind" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis unwind value]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="CommandPosition" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis command position in user units]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="CommandVelocity" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis command velocity in units/s]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="CommandAcceleration" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis command acceleration units/s^2]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ActualPosition" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis actual position in user units]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ActualVelocity" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis actual velocity in units/s]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ActualAcceleration" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Motion actual acceleration in units/s^2]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="AverageVelocity" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis average velocity in units/s]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="RecoveryPosition" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Recovery position position - Writen by user application or device handler]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="PositionError" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Motion position error]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="PositionFeedback1" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Actual position of the axis based on feedback1 (counts)]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="CurrentCommand" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Instantaneous value of commanded torque producing current signal]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="CurrentFeedback" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Actual torque current applies to the axis based on current sensor feedback]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="DCBusVoltage" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[DC Bus Voltage]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="InverterCapacity" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Inverter Capacity]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="MotorCapacity" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Motor Capacity]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="CIPAxisState" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Current state of CIP Axis 
+   
+0:  Initializing,    
+1: Pre-Charge,  
+2: Stopped,
+3: Starting,
+4: Running, 
+5: Testing,
+6: Stopping,
+7: Aborting, 
+8: Faulted, 
+9: Start Inhibited, 
+10: Shutdown, 
+11: Axis Inhibited, 
+12: Not Grouped,
+13: No Module, 
+14…255: Reserved]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="AxisFault" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Bitmap of basic fault types associated with the axis and device]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="PhysicalFault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="AxisFault" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[One or more fault conditions have been reported by the physical axis]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ModuleFault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="AxisFault" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[One or more faults have occurred related to the motion module associated with the axis]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ConfigFault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="AxisFault" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Update operation targeting an axis configuration attribute of the associated motion module has failed]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="GroupFault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="AxisFault" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[One or more faults have occured to the Motion Group]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="MotionFault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="AxisFault" BitNumber="4" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[One or more fault conditions have occurred related to the Motion Planner]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="GuardFault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="AxisFault" BitNumber="5" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[One or more fault conditions have occurred related to the embedded Guard Motion Safety function]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="InitializationFault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="AxisFault" BitNumber="6" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[CIP Motion device initialization failed]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="APRFault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="AxisFault" BitNumber="7" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Unable to recover the absolute position during axis configuration]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="SafetyFault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="AxisFault" BitNumber="8" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[One ore more fault conditions have occurred related to the axis safety function]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="MotionStatus" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Bitmapped collection of status conditions associated with the motion planner function. See motion axis structure for help.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="AccelStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis is accelerating]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="DecelStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis is decelerating]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="MoveStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[A Move motion profile is currently in progress]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="JogStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[A Jog motion profile is currently in progress]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="GearingStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="4" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis is currently gearing to another axis]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="HomingStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="5" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[A Home motion profile is currently in progress]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="StoppingStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="6" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[A stopping process is currently in progress]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="AxisHomedStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="7" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[The configured homing sequence on the axis is successful.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="PositionCamStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="8" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[A Position Cam motion profile is currently in progress]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="TimeCamStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="9" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[A Time Cam motion profile is currently in progress]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="PositionCamPendingStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="10" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[A Position Cam motion profile is currently pending the completion ofa currently executing cam profile]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="TimeCamPendingStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="11" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[A Time Cam motion profile is currently pending the completion ofa currently executing cam profile]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="GearingLockStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="12" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis is locked to another axis in a gearing relationship]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="PositionCamLockStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="13" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis satisfies the starting condition of a currently active Position Cam Profile]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="TimeCamLockStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="14" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Master axis starts driving the Slave axis according to the cam profile. Valid only in Master Driven mode]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="MasterOffsetMoveStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="15" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[A Master Offset Move motion profile is currently in progress]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="CoordinatedMotionStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="16" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[A Coordinated Motion Profile is currently in progress]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="TransformStateStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="17" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis is involved in a transform]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ControlledByTransformStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="18" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis is under transform control]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="DirectVelocityControlStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="19" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis speed is directly controlled by Direct Command Velocity value]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="DirectTorqueControlStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="20" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis torque is directly controlled by the Command Torque value]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="MoveLockStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="22" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis satisfies the Lock Direction request of a Motion Axis Move (MAM)]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="JogLockStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="24" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis satisfies the Lock Direction request of a Motion Axis Jog (MAJ)]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="MasterOffsetMoveLockStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="26" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[The Master offset Move locks to master in the MDSC mode.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="MaximumSpeedExceeded" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="MotionStatus" BitNumber="27" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis command velocity exceeds the maximum speed configured for an axis]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="CIPStartInhibits" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[A bit map that specifies the current state of all standard conditions that inhibits starting of the axis.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="CIPStartInhibitsRA" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[A bit map that specifies the current state of all Rockwell Automation specfic conditions that inhibits starting of the axis.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ZZZZZZZZZZraM_UDT_It15" DataType="INT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="ConfigUpdateInProcess" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It15" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[One or more specific module configuration attribute updates initiated]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="DCBusUpStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It15" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[DC Bus has charged up to an operational voltage level]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="PowerStructureEnabledStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It15" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis power structure is energized and capable of generating motor flux and torque for a drive axis, or regenerating power to the AC line for a Converter axis]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ShutdownStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It15" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis is in the Shutdown state or in the faulted state but would transition to the shutdown state if the faults were cleared]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="SafeTorqueOffActiveStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It15" BitNumber="4" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[The Safe Torque Off safety function is active]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="TrackingCommandStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It15" BitNumber="5" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis control structure is actively tracking the command reference from the motion planner associated with a drive axis, or the bus voltage setpoint of a converter axis,
+or the current references of a track section axis applying force to resident movers]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="TorqueLimitStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It15" BitNumber="6" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Filtered Torque Reference is limited by the Torque Limiter.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="VelocityStandstillStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It15" BitNumber="7" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Velocity feedback signal is within the Velocity Standstill Window of 0. For a Frequency Control drive, this bit is set if the
+velocity reference signal is within the Velocity Standstill Window of 0]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="RegEvent1ArmedStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It15" BitNumber="8" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Registration checking has been armed for Registration input 1 through execution of the MAR (Motion Arm Registration) instruction]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="RegEvent2ArmedStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It15" BitNumber="9" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Registration checking has been armed for Registration input 2 through execution of the MAR (Motion Arm Registration) instruction]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Registration1InputStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It15" BitNumber="10" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Registration event has occurred on registration input 1]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Registration2InputStatus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It15" BitNumber="11" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Registration event has occurred on registration input 2]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Alarm" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It15" BitNumber="12" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[An alarm is active on the device]]></LocalizedDescription>
+      </Description>
+    </Member>
+  </Members>
+</DataType>

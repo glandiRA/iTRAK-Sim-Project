@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="iTRAK_OpMMShutdown" Type="RLL">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpM" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[iTRAK_BasicOperations Version: 5.0 ]]></LocalizedDescription>
+  </Description>
+  <RLLContent>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpM" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[XIC(Cmd_iTRAK_OpMMShutdown)[XIC(\iTRAK_DH_Master.Sts.Available) MOVE(0,_iTRAK_OpMMStartupSeq) ,XIC(\iTRAK_DH_Master.Sts.Available) MOVE(1,_iTRAK_OpMMShutdownSeq) ,OTU(Cmd_iTRAK_OpMMStartup) OTU(Cmd_iTRAK_OpMMShutdown) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpM" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[EQ(_iTRAK_OpMMShutdownSeq,1)[XIC(\iTRAK_DH_Master.Sts.Energized) MOVE(10,_iTRAK_OpMMShutdownSeq) ,XIO(\iTRAK_DH_Master.Sts.Energized) MOVE(30,_iTRAK_OpMMShutdownSeq) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpM" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[EQ(_iTRAK_OpMMShutdownSeq,10)[raM_iTRAK_Opr_StopAll(_iTRAK_OpMMStopAll,\iTRAK_DH_Master.Hndl,\iTRAK_DH_Master.Mover) ,XIC(_iTRAK_OpMMStopAll.Sts_PC) MOVE(20,_iTRAK_OpMMShutdownSeq) ,XIC(_iTRAK_OpMMStopAll.Sts_ER) NEG(_iTRAK_OpMMShutdownSeq,_iTRAK_OpMMShutdownSeq) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpM" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[EQ(_iTRAK_OpMMShutdownSeq,20)[raM_iTRAK_Opr_DeEnergize(_iTRAK_OpMMDeEnergize,\iTRAK_DH_Master.Hndl) ,XIC(_iTRAK_OpMMDeEnergize.Sts_PC) MOVE(30,_iTRAK_OpMMShutdownSeq) ,XIC(_iTRAK_OpMMDeEnergize.Sts_ER) NEG(_iTRAK_OpMMShutdownSeq,_iTRAK_OpMMShutdownSeq) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpM" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[EQ(_iTRAK_OpMMShutdownSeq,30)MOVE(999,_iTRAK_OpMMShutdownSeq);]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

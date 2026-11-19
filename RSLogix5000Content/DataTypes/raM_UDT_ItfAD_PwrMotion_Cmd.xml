@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="raM_UDT_ItfAD_PwrMotion_Cmd" Family="NoFamily" Class="User">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_Dvc_CIPAxis" LGuid="E7B354AE-DB40-4E33-804E-D8EB6669BD77" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[Interface for Commands]]></LocalizedDescription>
+  </Description>
+  <Members>
+    <Member Name="ZZZZZZZZZZraM_UDT_It0" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="Physical" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It0" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Operate as Physical Device]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Virtual" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It0" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Operate as Virtual Device]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ClearFaults" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It0" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Reset device fault]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Activate" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It0" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Activate Output Power Structure]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Deactivate" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It0" BitNumber="4" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Deactivate Output Power Structure]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Reinitialize" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_It0" BitNumber="5" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Perform a complete reset of Device Object]]></LocalizedDescription>
+      </Description>
+    </Member>
+  </Members>
+</DataType>

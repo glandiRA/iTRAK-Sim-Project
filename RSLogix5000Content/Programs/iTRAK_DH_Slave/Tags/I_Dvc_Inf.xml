@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="I_Dvc_Inf" TagType="Base" DataType="raM_UDT_ItfAD_PwrMotion_Inf" Dimensions="1" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_DH_Slave" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[[[14,'$12$p192.168.1.55$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],39,16#00b1_0027
+		,0]]]]></Data>
+  <Data Format="Decorated">
+    <Array DataType="raM_UDT_ItfAD_PwrMotion_Inf" Dimensions="1">
+      <Element Index="[0]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA['$12$p192.168.1.55']]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="39" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0027" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+    </Array>
+  </Data>
+</Tag>

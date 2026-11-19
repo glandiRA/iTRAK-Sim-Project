@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="CAMP_FW" TagType="Base" DataType="CAM_PROFILE_EXTENDED" Dimensions="10" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <Data Format="L5K"><![CDATA[[[2,1,0.0000000000000000e+000,0.0000000000000000e+000,0.0000000000000000e+000,0.0000000000000000e+000
+		,1.4979338842975205e-003,-5.6522525530789990e-007],[2,0,1.3200000000000000e+003,1.3100000000000000e+003
+		,0.0000000000000000e+000,1.0000000000000000e+000,0.0000000000000000e+000,0.0000000000000000e+000
+		],[2,0,2.0200000000000000e+003,2.0100000000000000e+003,0.0000000000000000e+000,1.0000000000000000e+000
+		,0.0000000000000000e+000,0.0000000000000000e+000],[0,0,2.0200000000000000e+003,2.0100000000000000e+003
+		,0.0000000000000000e+000,0.0000000000000000e+000,0.0000000000000000e+000,0.0000000000000000e+000
+		],[0,0,2.0200000000000000e+003,2.0100000000000000e+003,0.0000000000000000e+000,0.0000000000000000e+000
+		,0.0000000000000000e+000,0.0000000000000000e+000],[0,0,2.0200000000000000e+003,2.0100000000000000e+003
+		,0.0000000000000000e+000,0.0000000000000000e+000,0.0000000000000000e+000,0.0000000000000000e+000
+		],[0,0,2.0200000000000000e+003,2.0100000000000000e+003,0.0000000000000000e+000,0.0000000000000000e+000
+		,0.0000000000000000e+000,0.0000000000000000e+000],[0,0,2.0200000000000000e+003,2.0100000000000000e+003
+		,0.0000000000000000e+000,0.0000000000000000e+000,0.0000000000000000e+000,0.0000000000000000e+000
+		],[0,0,2.0200000000000000e+003,2.0100000000000000e+003,0.0000000000000000e+000,0.0000000000000000e+000
+		,0.0000000000000000e+000,0.0000000000000000e+000],[0,0,2.0200000000000000e+003,2.0100000000000000e+003
+		,0.0000000000000000e+000,0.0000000000000000e+000,0.0000000000000000e+000,0.0000000000000000e+000
+		]]]]></Data>
+  <Data Format="Decorated">
+    <Array DataType="CAM_PROFILE_EXTENDED" Dimensions="10">
+      <Element Index="[0]">
+        <Structure DataType="CAM_PROFILE_EXTENDED">
+          <DataValueMember Name="Status" DataType="DINT" Radix="Decimal" Value="2" />
+          <DataValueMember Name="SegmentType" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Master" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Slave" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C0" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C1" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C2" DataType="LREAL" Radix="Float" Value="1.4979338842975205e-003" />
+          <DataValueMember Name="C3" DataType="LREAL" Radix="Float" Value="-5.6522525530789990e-007" />
+        </Structure>
+      </Element>
+      <Element Index="[1]">
+        <Structure DataType="CAM_PROFILE_EXTENDED">
+          <DataValueMember Name="Status" DataType="DINT" Radix="Decimal" Value="2" />
+          <DataValueMember Name="SegmentType" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Master" DataType="LREAL" Radix="Float" Value="1320.0" />
+          <DataValueMember Name="Slave" DataType="LREAL" Radix="Float" Value="1310.0" />
+          <DataValueMember Name="C0" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C1" DataType="LREAL" Radix="Float" Value="1.0" />
+          <DataValueMember Name="C2" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C3" DataType="LREAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[2]">
+        <Structure DataType="CAM_PROFILE_EXTENDED">
+          <DataValueMember Name="Status" DataType="DINT" Radix="Decimal" Value="2" />
+          <DataValueMember Name="SegmentType" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Master" DataType="LREAL" Radix="Float" Value="2020.0" />
+          <DataValueMember Name="Slave" DataType="LREAL" Radix="Float" Value="2010.0" />
+          <DataValueMember Name="C0" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C1" DataType="LREAL" Radix="Float" Value="1.0" />
+          <DataValueMember Name="C2" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C3" DataType="LREAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[3]">
+        <Structure DataType="CAM_PROFILE_EXTENDED">
+          <DataValueMember Name="Status" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="SegmentType" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Master" DataType="LREAL" Radix="Float" Value="2020.0" />
+          <DataValueMember Name="Slave" DataType="LREAL" Radix="Float" Value="2010.0" />
+          <DataValueMember Name="C0" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C1" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C2" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C3" DataType="LREAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[4]">
+        <Structure DataType="CAM_PROFILE_EXTENDED">
+          <DataValueMember Name="Status" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="SegmentType" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Master" DataType="LREAL" Radix="Float" Value="2020.0" />
+          <DataValueMember Name="Slave" DataType="LREAL" Radix="Float" Value="2010.0" />
+          <DataValueMember Name="C0" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C1" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C2" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C3" DataType="LREAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[5]">
+        <Structure DataType="CAM_PROFILE_EXTENDED">
+          <DataValueMember Name="Status" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="SegmentType" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Master" DataType="LREAL" Radix="Float" Value="2020.0" />
+          <DataValueMember Name="Slave" DataType="LREAL" Radix="Float" Value="2010.0" />
+          <DataValueMember Name="C0" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C1" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C2" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C3" DataType="LREAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[6]">
+        <Structure DataType="CAM_PROFILE_EXTENDED">
+          <DataValueMember Name="Status" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="SegmentType" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Master" DataType="LREAL" Radix="Float" Value="2020.0" />
+          <DataValueMember Name="Slave" DataType="LREAL" Radix="Float" Value="2010.0" />
+          <DataValueMember Name="C0" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C1" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C2" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C3" DataType="LREAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[7]">
+        <Structure DataType="CAM_PROFILE_EXTENDED">
+          <DataValueMember Name="Status" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="SegmentType" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Master" DataType="LREAL" Radix="Float" Value="2020.0" />
+          <DataValueMember Name="Slave" DataType="LREAL" Radix="Float" Value="2010.0" />
+          <DataValueMember Name="C0" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C1" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C2" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C3" DataType="LREAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[8]">
+        <Structure DataType="CAM_PROFILE_EXTENDED">
+          <DataValueMember Name="Status" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="SegmentType" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Master" DataType="LREAL" Radix="Float" Value="2020.0" />
+          <DataValueMember Name="Slave" DataType="LREAL" Radix="Float" Value="2010.0" />
+          <DataValueMember Name="C0" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C1" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C2" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C3" DataType="LREAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[9]">
+        <Structure DataType="CAM_PROFILE_EXTENDED">
+          <DataValueMember Name="Status" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="SegmentType" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Master" DataType="LREAL" Radix="Float" Value="2020.0" />
+          <DataValueMember Name="Slave" DataType="LREAL" Radix="Float" Value="2010.0" />
+          <DataValueMember Name="C0" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C1" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C2" DataType="LREAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="C3" DataType="LREAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+    </Array>
+  </Data>
+</Tag>

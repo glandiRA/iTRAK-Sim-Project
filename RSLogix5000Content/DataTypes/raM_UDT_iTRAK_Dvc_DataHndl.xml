@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="raM_UDT_iTRAK_Dvc_DataHndl" Family="NoFamily" Class="User">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_iTRAKBase" LGuid="9D24ABEB-41E6-4150-B6B1-5D01B578B527" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[Internal Device Handler connection]]></LocalizedDescription>
+  </Description>
+  <Members>
+    <Member Name="stStateMachine" DataType="raM_UDT_Dvc_xADH_StateMachine" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler State Machine]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="infHandler" DataType="raM_UDT_Dvc_xxDH_InfHandlerv3" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Handler Information]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="MethodRegistry" DataType="raM_UDT_Dvc_xxDH_MethodRegistry" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler Method Registry]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ctrlEvtQ" DataType="raM_UDT_Dvc_xxDH_EventQueue" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler Event Queue Control]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Recovery" DataType="raM_UDT_iTRAK_Opr_AxisRecovery" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler Recovery status bits]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ZZZZZZZZZZraM_UDT_iT5" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="bMotionPolarity" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT5" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[FALSE= Counter clockwise
+TRUE = Clockwise]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bReverseMoverNumbering" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT5" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Mover renumber status]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bConfigurationRequest" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT5" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Configuration request]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bConfigurationRequestReceived" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT5" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Configuration request received]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bTestMode" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT5" BitNumber="4" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis Test Mode status]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bFaultReset" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT5" BitNumber="5" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Fault reset]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bConverterFault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT5" BitNumber="6" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[K5700 Power Supply fault]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="biPSFault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT5" BitNumber="7" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[iTRAK Power Supply (iPS) fault]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ZZZZZZZZZZraM_UDT_iT14" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="bSectionFault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT14" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Section fault]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bMoverFault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT14" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Mover fault]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bFaulted" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT14" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler is faulted]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bConverterAlarm" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT14" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[K5700 Power Supply alarm]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="biPSAlarm" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT14" BitNumber="4" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[iTRAK Power Supply (iPS) alarm]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bSectionAlarm" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT14" BitNumber="5" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Section alarm]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bMoverAlarm" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT14" BitNumber="6" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Mover alarm]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bAlarm" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT14" BitNumber="7" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Hardware Alarm or Method Error (when Cfg_MethodError = 0)]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ZZZZZZZZZZraM_UDT_iT23" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="bEnergize" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT23" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Energize command]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bDeEnergize" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT23" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Deenergize command]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bEnergized" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT23" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Energize status - At least one axis is energized]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bAllSectionsEnergized" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT23" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[All Sections Energized]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bAllMoversEnergized" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT23" BitNumber="4" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[All Movers Energized]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bAllSectionsDeEnergized" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT23" BitNumber="5" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[All Sections De-energized]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bAllMoversDeEnergized" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT23" BitNumber="6" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[All Movers De-energized]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bAllSectionsConnected" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT23" BitNumber="7" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[All Sections Connected]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ZZZZZZZZZZraM_UDT_iT32" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="bAllMoversConnected" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT32" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[All Movers Connected]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bAllPowerSupplyConnected" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT32" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[All iTRAK Power Supplies (iPS) Connected]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bAllConvertersConnected" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT32" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[All K5700 Power Supplies Connected]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bAllSectionsAvailable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT32" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[All Sections Available]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bAllMoversAvailable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT32" BitNumber="4" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[All Movers Available]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bAllPowerSupplyAvailable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT32" BitNumber="5" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[All iTRAK Power Supplies (iPS) Available]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bAllConvertersAvailable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT32" BitNumber="6" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[All K5700 Power Supplies Available]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bPowerSupplyReady" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT32" BitNumber="7" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Power Supply Ready]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ZZZZZZZZZZraM_UDT_iT41" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="bLinearTrack" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT41" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[0: Track is a linear configuration, 1: Track is a loop configuration]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bTestModeFault" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT41" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Test Mode fault]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bDeviceObjectsConfigured" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT41" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Mover Device Objects Configured]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="bHardwareAvailable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT41" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Hardware Available]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="nTargetType" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[0: All,
+1: Section,
+2: Mover]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="nTargetIndex" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[-1: All axes for nTargetType = 1 or 2,
+<> -1: ID of axis for nTargetType 1 or 2]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="nMaxNumberOfMovers" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Maximum number of movers DH is scaled for]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="nActiveMovers" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Number of active movers]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="nMaxNumberOfConverter" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Maximum number of DFE DH is scaled for]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="nMaxNumberOfiPS" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Maximum number of iPS DH is scaled for]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="nMaxNumberOfSections" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Number of section DH is scaled for]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ctrlIO" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Method IO - used internally]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="nCoarseUpdatePeriod" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Coarse update rate of motion group in milliseconds]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="nSectionLength" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Length of one section in um]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="nTrackLength" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Total length of the track in um]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="nPositionOffset" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Track offset in um]]></LocalizedDescription>
+      </Description>
+    </Member>
+  </Members>
+  <Dependencies>
+    <Dependency Type="DataType" Name="raM_UDT_Dvc_xADH_StateMachine" />
+    <Dependency Type="DataType" Name="raM_UDT_Dvc_xxDH_InfHandlerv3" />
+    <Dependency Type="DataType" Name="raM_UDT_Dvc_xxDH_MethodRegistry" />
+    <Dependency Type="DataType" Name="raM_UDT_Dvc_xxDH_EventQueue" />
+    <Dependency Type="DataType" Name="raM_UDT_iTRAK_Opr_AxisRecovery" />
+  </Dependencies>
+</DataType>

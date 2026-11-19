@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="M_Dvc_Inf" TagType="Base" DataType="raM_UDT_ItfAD_PwrMotion_Inf" Dimensions="21" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_DH_Master" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],4,16#00b1_0004,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],5,16#00b1_0005,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],6,16#00b1_0006,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],7,16#00b1_0007,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],8,16#00b1_0008,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],9,16#00b1_0009,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],10,16#00b1_000a,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],11,16#00b1_000b,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],12,16#00b1_000c,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],13,16#00b1_000d,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],14,16#00b1_000e,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],15,16#00b1_000f,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],16,16#00b1_0010,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],17,16#00b1_0011,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],18,16#00b1_0012,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],19,16#00b1_0013,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],20,16#00b1_0014,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],21,16#00b1_0015,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],22,16#00b1_0016,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],23,16#00b1_0017,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],24,16#00b1_0018,0]]]]></Data>
+  <Data Format="Decorated">
+    <Array DataType="raM_UDT_ItfAD_PwrMotion_Inf" Dimensions="21">
+      <Element Index="[0]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="4" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0004" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[1]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="5" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0005" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[2]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="6" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0006" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[3]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="7" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0007" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[4]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="8" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0008" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[5]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="9" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0009" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[6]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="10" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_000a" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[7]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="11" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_000b" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[8]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="12" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_000c" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[9]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="13" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_000d" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[10]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="14" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_000e" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[11]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="15" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_000f" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[12]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="16" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0010" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[13]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="17" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0011" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[14]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="18" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0012" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[15]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="19" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0013" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[16]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="20" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0014" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[17]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="21" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0015" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[18]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="22" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0016" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[19]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="23" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0017" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[20]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Inf">
+          <StructureMember Name="ModulePath" DataType="STR0032">
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA[]]></DataValueMember>
+          </StructureMember>
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="24" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0018" />
+          <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+    </Array>
+  </Data>
+</Tag>

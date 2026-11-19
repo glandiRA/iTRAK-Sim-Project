@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="FI_PLC" Family="NoFamily" Class="User">
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[Rev: 0.0
+PLC Status, Major & Minor Fault, System Date & Time]]></LocalizedDescription>
+  </Description>
+  <Members>
+    <Member Name="Status" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Controller Status]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="MajorFault" DataType="FI_PLC_MajorFault" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Major Fault]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="MinorFault" DataType="FI_PLC_MinorFault" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Minor Fault]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="DateAndTime" DataType="DINT" Dimension="7" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[System Date & Time]]></LocalizedDescription>
+      </Description>
+    </Member>
+  </Members>
+  <Dependencies>
+    <Dependency Type="DataType" Name="FI_PLC_MajorFault" />
+    <Dependency Type="DataType" Name="FI_PLC_MinorFault" />
+  </Dependencies>
+</DataType>

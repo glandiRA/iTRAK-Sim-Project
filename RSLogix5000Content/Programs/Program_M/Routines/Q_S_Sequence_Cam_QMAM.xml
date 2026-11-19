@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="Q_S_Sequence_Cam_QMAM" Type="RLL">
+  <RLLContent>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*******************
+Calcolo Camma di aggangio e copio sulle varie strutture dei mover
+*******************]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[[XIC(s:fs) OTL(FS_Delayed) ,XIC(Calc) OTU(Calc) ]MCCP(MCCP_FWProf,CAM_FW,3,0,0,CAMP_FW)DIV(MasterSlotWidth,2,MasterSlotWidthH)[MOVE(2,QS_Cam_Seq) ,OTU(Start_QS_Cam) ,OTU(Stop_QS_Cam) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(FS_Delayed)XIC(\iTRAK_DH_Master.Sts.Available)OTU(FS_Delayed)EQ(QS_Cam_Seq,2)[DIV(\iTRAK_DH_Master.Hndl.nTrackLength,1000,Track_Unwind) SUB(\iTRAK_DH_Master.Hndl.nActiveMovers,1,IndexMax) ,EXPT(2,\iTRAK_DH_Master.Hndl.nActiveMovers,MovDINT) SUB(MovDINT,1,MovDINT) ,MOVE(10,Serv_Step) MOVE(PosInit,Pos) FOR(Service,SIndex,0,20,1) ,MOVE(30,Serv_Step) FOR(Service,SIndex,0,20,1) ]MOVE(3,QS_Cam_Seq);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[EQ(QS_Cam_Seq,3)[,ONS(MRPOns) CLR(MRPExec) ]MOVE(20,Serv_Step)FOR(Service,SIndex,0,20,1)EQ(MRPExec,MovDINT)MOVE(999,QS_Cam_Seq);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[JSR(_Service_00_Status,0);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[********************
+Unlatch QMAM al fs e sull'arresto ciclo
+********************]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[[XIC(Start_QS_Cam) ,XIC(Stop_QS_Cam) ,EQ(QS_Cam_Seq,999) ]ONS(QMAM_ONS)[OTU(QMam_Cmd[0]) OTU(QMam_Cmd[1]) OTU(QMam_Cmd[2]) OTU(QMam_Cmd[3]) OTU(QMam_Cmd[4]) OTU(QMam_Cmd[5]) OTU(QMam_Cmd[6]) ,OTU(QMam_Cmd[7]) OTU(QMam_Cmd[8]) OTU(QMam_Cmd[9]) OTU(QMam_Cmd[10]) OTU(QMam_Cmd[11]) OTU(QMam_Cmd[12]) OTU(QMam_Cmd[13]) ,OTU(QMam_Cmd[14]) OTU(QMam_Cmd[15]) OTU(QMam_Cmd[16]) OTU(QMam_Cmd[17]) OTU(QMam_Cmd[18]) OTU(QMam_Cmd[19]) OTU(QMam_Cmd[20]) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*******************
+Lascio per simulazione
+*******************]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[[XIC(Start_QS_Cam) ,XIC(StartM) ]MAJ(AxisMasterM,MasterDxJog,0,SpeedMaster,Units per sec,1000,Units per sec2,1000,Units per sec2,Trapezoidal,100,100,Units per sec3,Disabled,0,0,0);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(Restore_Cmd)[,ONS(ONSRestore) OTU(Stop) MOVE(10,Step_Restore) ][FOR(_Service_Restore,SIndex,0,IndexMax,1) ,EQ(Step_Restore,20) OTU(Restore_Cmd) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[********************
+Inizializzo variabili di ciclo e mi metto in wait
+********************]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIC(Start_QS_Cam)[OTL(Stop) OTU(Start_QS_Cam) ,CLR(mIndexC) MOVE(1000,Slot_AvailableLast) ]XIC(\iTRAK_DH_Master.Sts.Energized)CLR(QS_Cam_Seq);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*******************
+Stop All command
+*******************]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIC(Stop_QS_Cam)OTU(Start_QS_Cam)MOVE(5,QS_Cam_Seq)[raM_iTRAK_Opr_StopAll(Q_S_CamFW_BW_Q_StopAll,\iTRAK_DH_Master.Hndl,\iTRAK_DH_Master.Mover) ,XIC(Q_S_CamFW_BW_Q_StopAll.Sts_PC) OTU(Stop_QS_Cam) MOVE(5,QS_Cam_Seq) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[EQ(QS_Cam_Seq,0)MOVE(10,QS_Cam_Seq);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*******************
+Lancio accodamento alla Start Position
+*******************]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[EQ(QS_Cam_Seq,10)MOVE(100,QPos)FOR(TargetPosition,TargetPosIndex,0,IndexMax,1)MOVE(20,QS_Cam_Seq);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*******************
+Individuo il il primo (ed il secondo) Mover in coda
+copio le camme FW e BW sulle relative strutture dei mover
+*******************]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[EQ(QS_Cam_Seq,20)[XIO(QMam_Cmd[MRIdx]) XIC(QMam_MAM[MRIdx].PC) MOVE(22,QS_Cam_Seq) ,XIC(QMam_Cmd[MRIdx]) ADD(MRIdx,1,MRIdx) MOD(MRIdx,\iTRAK_DH_Master.Hndl.nActiveMovers,MRIdx) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[EQ(QS_Cam_Seq,22)MOVE(25,QS_Cam_Seq);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*******************
+Simulo arrivo prodotto e calcolo MasterLockPosition
+*******************]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[EQ(QS_Cam_Seq,25)XIC(Stop)MOD(AxisMasterM.ActualPosition,MasterSlotWidth,MasterPos_Modulo)LIMIT(LowLimitTrg,MasterPos_Modulo,HighLimitTrg)[DIV(AxisMasterM.ActualPosition,MasterSlotWidth,Slot_AvailableD) GT(MasterPos_Modulo,MasterSlotWidthH) ADD(Slot_AvailableD,1,Slot_AvailableD) ,MUL(Slot_AvailableD,MasterSlotWidth,Temp1) ADD(Temp1,MLP_Distance,MLP_Forw) MOD(MLP_Forw,Master_Unwind,MLP_Forw) ,NE(Slot_AvailableD,Slot_AvailableLast) MOVE(Slot_AvailableD,Slot_AvailableLast) MOVE(30,QS_Cam_Seq) ,COP(CAMP_FW[0],\iTRAK_DH_Master.Mover[MRIdx].CAM.Cam0[0],10) ,XIC(Stop) XIC(OneProd) OTU(Stop) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*******************
+Lancio Camme sui 2 Mover in attesa
+*******************]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[EQ(QS_Cam_Seq,30)[MOVE(1,\iTRAK_DH_Master.Mover[MRIdx].MAPC.SlaveScaling) ,MOVE(1,\iTRAK_DH_Master.Mover[MRIdx].MAPC.MasterScaling) ,MOVE(2,\iTRAK_DH_Master.Mover[MRIdx].MAPC.ExecutionSchedule) ,MOVE(MLP_Forw,\iTRAK_DH_Master.Mover[MRIdx].MAPC.MasterLockPosition) ,OTL(\iTRAK_DH_Master.Mover[MRIdx].MAPC.Execute) OTU(\iTRAK_DH_Master.Mover[MRIdx].MAPC.Executed) XIC(TestUlatch) OTU(QMam_Cmd[MRIdx]) ]MOVE(40,QS_Cam_Seq);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[EQ(QS_Cam_Seq,40)XIC(\iTRAK_DH_Master.Mover[MRIdx].MAPC.Executed)[OTU(\iTRAK_DH_Master.Mover[MRIdx].MAPC.Execute) ,ADD(MRIdx,1,MRIdx) MOD(MRIdx,\iTRAK_DH_Master.Hndl.nActiveMovers,MRIdx) ]MOVE(25,QS_Cam_Seq);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*******************
+Sgancio le camme in esecuzione alla posizione di sgancio lanciando la QMAM
+*******************]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[CLR(mIndexC);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[LBL(CheckMover)XIC(\iTRAK_DH_Master.Mover[mIndexC].Sts.Data.PositionCamLockStatus)GT(\iTRAK_DH_Master.Mover[mIndexC].Sts.Data.CommandPosition,CamDisengagePos)LT(\iTRAK_DH_Master.Mover[mIndexC].Sts.Data.CommandPosition,CamDisengageLim)OTL(QMam_Cmd[mIndexC]);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[ADD(mIndexC,1,mIndexC)LT(mIndexC,\iTRAK_DH_Master.Hndl.nActiveMovers)JMP(CheckMover);]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

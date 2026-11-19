@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="raM_UDT_iTRAK_Dvc_Configuration" Family="NoFamily" Class="User">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_DH_Master" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+    <OwnedBy InstName="iTRAK_DH_Slave" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[iTRAK Handler - Configuration]]></LocalizedDescription>
+  </Description>
+  <Members>
+    <Member Name="MethodError" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Method Error Interpretation - Enumerated
+0=Warning Event, 
+1=Fault Event]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="DisconnectTimerPreset" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Timer preset for Disconnect]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="RecoveryPositionTolerance" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Minimum distance (in mm) between recovery position and actual position of mover which will set Recovery Required bit]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ZZZZZZZZZZraM_UDT_iT3" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="LogHandlerState" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT3" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[1=Enable logging of handler state events into the queue]]></LocalizedDescription>
+      </Description>
+    </Member>
+  </Members>
+</DataType>

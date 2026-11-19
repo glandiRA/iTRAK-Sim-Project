@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="FI_PLC_MinorFault" Family="NoFamily" Class="User">
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[Rev: 0.0
+Check PLC Minor Fault]]></LocalizedDescription>
+  </Description>
+  <Members>
+    <Member Name="TMR" DataType="TIMER" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Clock]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Bit" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write" />
+  </Members>
+</DataType>

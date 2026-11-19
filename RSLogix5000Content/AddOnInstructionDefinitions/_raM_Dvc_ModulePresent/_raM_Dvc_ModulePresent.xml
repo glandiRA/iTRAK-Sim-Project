@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EncodedData EncodedType="AddOnInstructionDefinition" Name="_raM_Dvc_ModulePresent" Class="Standard" Revision="1.0" Vendor="Rockwell Automation" EditedDate="2025-02-25T10:17:33.677Z" SoftwareRevision="v36.00" EncryptionConfig="9">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_Dvc_CIPAxis" LGuid="E7B354AE-DB40-4E33-804E-D8EB6669BD77" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Parameters>
+    <Parameter Name="EnableIn" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Enable Input - System Defined Parameter]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="EnableOut" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Enable Output - System Defined Parameter]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="Ref_Module" TagType="Base" DataType="MODULE" Usage="InOut" Required="true" Visible="true" />
+    <Parameter Name="ModulePresent" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Module present (0=> No Module, 1=> Module)]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+  </Parameters>
+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</EncodedData>

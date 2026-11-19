@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="OneShot" Class="Standard" TagType="Base" DataType="DINT" Dimensions="10" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[One Shot Bit]]></LocalizedDescription>
+  </Description>
+  <Comments>
+    <Comment Operand="[0].0">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].1">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].2">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].3">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].5">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].6">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].7">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].11">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].12">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].13">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].15">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].19">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].21">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].22">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].23">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].24">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[0].25">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[1].0">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[1].1">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[1].2">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[1].3">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[2].1">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[2].2">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[3].0">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[3].1">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[3].10">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[3].11">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[3].12">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[3].13">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[3].14">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[4].0">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[4].1">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[4].2">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[4].3">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[4].4">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[4].5">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[4].6">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[4].7">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[4].31">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].0">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].1">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].2">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].3">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].4">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].5">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].6">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].10">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].11">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].12">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].13">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].14">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].15">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].16">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].17">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].18">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].20">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[5].21">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[6].1">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[6].2">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[6].3">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[6].4">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[6].5">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[6].6">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[6].7">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[6].8">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[6].9">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+    <Comment Operand="[6].10">
+      <LocalizedComment Lang="en-US"><![CDATA[One Shot]]></LocalizedComment>
+    </Comment>
+  </Comments>
+  <Data Format="L5K"><![CDATA[[892363719,3072,0,1024,153391689,38010884,0,8388608,0,0]]]></Data>
+  <Data Format="Decorated">
+    <Array DataType="DINT" Dimensions="10" Radix="Decimal">
+      <Element Index="[0]" Value="892363719" />
+      <Element Index="[1]" Value="3072" />
+      <Element Index="[2]" Value="0" />
+      <Element Index="[3]" Value="1024" />
+      <Element Index="[4]" Value="153391689" />
+      <Element Index="[5]" Value="38010884" />
+      <Element Index="[6]" Value="0" />
+      <Element Index="[7]" Value="8388608" />
+      <Element Index="[8]" Value="0" />
+      <Element Index="[9]" Value="0" />
+    </Array>
+  </Data>
+</Tag>

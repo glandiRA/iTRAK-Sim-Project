@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="iTRAK_OpMMStartup" Type="RLL">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpM" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[iTRAK_BasicOperations Version: 5.0]]></LocalizedDescription>
+  </Description>
+  <RLLContent>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpM" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[XIC(Cmd_iTRAK_OpMMStartup)[XIC(\iTRAK_DH_Master.Sts.Connected) MOVE(0,_iTRAK_OpMMShutdownSeq) ,XIC(\iTRAK_DH_Master.Sts.Connected) MOVE(1,_iTRAK_OpMMStartupSeq) ,OTU(Cmd_iTRAK_OpMMStartup) OTU(Cmd_iTRAK_OpMMShutdown) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpM" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[EQ(_iTRAK_OpMMStartupSeq,1)[XIO(\iTRAK_DH_Master.Sts.Faulted) XIC(\iTRAK_DH_Master.Sts.Idle) MOVE(10,_iTRAK_OpMMStartupSeq) ,XIO(\iTRAK_DH_Master.Sts.Faulted) XIC(\iTRAK_DH_Master.Sts.Available) MOVE(20,_iTRAK_OpMMStartupSeq) ,XIC(\iTRAK_DH_Master.Sts.Faulted) NEG(_iTRAK_OpMMStartupSeq,_iTRAK_OpMMStartupSeq) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpM" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[EQ(_iTRAK_OpMMStartupSeq,10)[raM_iTRAK_Opr_Configure(_iTRAK_OpMMConfigure,\iTRAK_DH_Master.Hndl) ,XIC(\iTRAK_DH_Master.Sts.Available) MOVE(20,_iTRAK_OpMMStartupSeq) ,[XIC(_iTRAK_OpMMConfigure.Sts_ER) ,XIC(\iTRAK_DH_Master.Sts.Faulted) ] NEG(_iTRAK_OpMMStartupSeq,_iTRAK_OpMMStartupSeq) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpM" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[EQ(_iTRAK_OpMMStartupSeq,20)[raM_iTRAK_Opr_EnableRecovery(_iTRAK_OpMMEnableRecovery,\iTRAK_DH_Master.Hndl) ,XIC(_iTRAK_OpMMEnableRecovery.Sts_DN) MOVE(30,_iTRAK_OpMMStartupSeq) ,XIC(_iTRAK_OpMMEnableRecovery.Sts_ER) NEG(_iTRAK_OpMMStartupSeq,_iTRAK_OpMMStartupSeq) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpM" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[EQ(_iTRAK_OpMMStartupSeq,30)[raM_iTRAK_Opr_Energize(_iTRAK_OpMMEnergize,\iTRAK_DH_Master.Hndl) ,XIC(_iTRAK_OpMMEnergize.Sts_PC) MOVE(40,_iTRAK_OpMMStartupSeq) ,XIC(_iTRAK_OpMMEnergize.Sts_ER) NEG(_iTRAK_OpMMStartupSeq,_iTRAK_OpMMStartupSeq) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpM" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[EQ(40,_iTRAK_OpMMStartupSeq)[raM_iTRAK_Opr_RecoverZone(_iTRAK_OpMMStartupRecovery,\iTRAK_DH_Master.Hndl,\iTRAK_DH_Master.Mover) ,XIC(_iTRAK_OpMMStartupRecovery.Sts_PC) MOVE(50,_iTRAK_OpMMStartupSeq) ,XIC(_iTRAK_OpMMStartupRecovery.Sts_ER) NEG(_iTRAK_OpMMStartupSeq,_iTRAK_OpMMStartupSeq) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <CustomProperties>
+        <Provider ID="ACM" Ext="Origin_0">
+          <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+        </Provider>
+        <Provider ID="ACM" Ext="Origin_1">
+          <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+            <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpM" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+          </Data>
+        </Provider>
+      </CustomProperties>
+      <Text><![CDATA[EQ(_iTRAK_OpMMStartupSeq,50)[XIO(\iTRAK_DH_Master.Sts.RecoveryModeEnabled) ,XIC(\iTRAK_DH_Master.Sts.RecoveryModeEnabled) XIC(\iTRAK_DH_Master.Sts.RecoveryComplete) ]MOVE(999,_iTRAK_OpMMStartupSeq);]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

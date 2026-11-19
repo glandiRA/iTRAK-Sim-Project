@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="Logic" Type="RLL">
+  <RLLContent>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[Use CST Time
+to Read Current Axis Position]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[GSV(CST,,CurrentValue,Current_CST_Time[0])ADD(Current_CST_Time[0],TimeOffset,Current_CST_Time[0])SSV(Axis,Axis,InterpolationTime,Current_CST_Time[0])[MOVE(Axis.InterpolatedActualPosition,InterpolatedActualPosition) ,MOVE(Axis.InterpolatedCommandPosition,InterpolatedCommandPosition) ];]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

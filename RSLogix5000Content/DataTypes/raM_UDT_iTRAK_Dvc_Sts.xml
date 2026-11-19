@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="raM_UDT_iTRAK_Dvc_Sts" Family="NoFamily" Class="User">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_iTRAKBase" LGuid="9D24ABEB-41E6-4150-B6B1-5D01B578B527" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Members>
+    <Member Name="ZZZZZZZZZZraM_UDT_iT0" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="Physical" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT0" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Operation - Physical]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Virtual" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT0" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Operation - Virtual]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="TestMode" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT0" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Operation - Test Mode]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Initializing" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT0" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler in state Initializing]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Disconnected" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT0" BitNumber="4" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler in state Disconnected]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Disconnecting" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT0" BitNumber="5" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler in state Disconnecting]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Connecting" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT0" BitNumber="6" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler in state Connecting]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Connected" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT0" BitNumber="7" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Handler to Device Connection Made]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ZZZZZZZZZZraM_UDT_iT9" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="Idle" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT9" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler in state Idle]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Configuring" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT9" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler in state Configuring]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Available" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT9" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler in state Available]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="DCBus" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT9" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[DC Bus of at least one iPS is enabled]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Energized" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT9" BitNumber="4" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Drive Power Structure Closing Loops on Sections]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Faulted" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT9" BitNumber="5" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device is in a Faulted State]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Warning" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT9" BitNumber="6" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Indicates a hardware module has an alarm triggered or a method error (when Cfg_MethodError = 0).]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="HardwareAvailable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT9" BitNumber="7" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Indicates that all hardware is available]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ZZZZZZZZZZraM_UDT_iT18" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="AllMoversAvailable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT18" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Indicates that one or more hardware is in an incorrect state or the Motion Group is not synchronized.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="AllSectionsAvailable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT18" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Indicates that one or more hardware is in an incorrect state or the Motion Group is not synchronized.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="AllPowerSuppliesAvailable" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT18" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Indicates that one or more hardware is in an incorrect state or the Motion Group is not synchronized.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="AllSectionsEnergized" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT18" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Indicates that all the section modules are energized.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="AllMoversEnergized" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT18" BitNumber="4" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Indicates that all the movers are energized.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="AllSectionsDeEnergized" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT18" BitNumber="5" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Indicates that all the section modules are energized.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="AllMoversDeEnergized" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT18" BitNumber="6" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Indicates that all the movers are energized.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="RecoveryModeEnabled" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT18" BitNumber="7" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Recovery of Movers on Energize Enabled]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ZZZZZZZZZZraM_UDT_iT27" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="RecoveryRequired" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT27" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[The position of one or more movers is outside the allowable tolerance from the last known position.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="RecoveryInProgress" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT27" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Movers are returning to their last known positions]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="RecoveryComplete" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT27" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Recovery is complete]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="MtdRegistryFull" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_iT27" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Status of method registry array]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ERR" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Error Code]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="EXERR" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Section/Mover/iPS/DFE/AFE axis number faulted.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="FaultMessage" DataType="STRING" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Fault string]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="FirstFault" DataType="raM_UDT_Opr_EventCreate_Members" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler First-Out Fault]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="FirstAlarm" DataType="raM_UDT_Opr_EventCreate_Members" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler First-Out Alarm]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="EventLog" DataType="raM_UDT_Opr_EventList_Members" Dimension="8" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler Event Log]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="FaultLog" DataType="raM_UDT_Opr_EventList_Members" Dimension="8" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Device Handler Fault Log]]></LocalizedDescription>
+      </Description>
+    </Member>
+  </Members>
+  <Dependencies>
+    <Dependency Type="DataType" Name="raM_UDT_Opr_EventCreate_Members" />
+    <Dependency Type="DataType" Name="raM_UDT_Opr_EventCreate_Members" />
+    <Dependency Type="DataType" Name="raM_UDT_Opr_EventList_Members" />
+    <Dependency Type="DataType" Name="raM_UDT_Opr_EventList_Members" />
+  </Dependencies>
+</DataType>

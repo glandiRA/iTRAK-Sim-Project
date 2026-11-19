@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="MainRoutine" Type="RLL">
+  <RLLContent>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(S:FS)[OTL(SectionM_00:SO.STOOutput) OTL(SectionM_01:SO.STOOutput) OTL(SectionM_02:SO.STOOutput) OTL(SectionM_03A:SO.STOOutput) OTL(SectionM_04B:SO.STOOutput) OTL(SectionM_05C:SO.STOOutput) OTL(SectionM_06:SO.STOOutput) OTL(SectionM_07:SO.STOOutput) OTL(SectionM_08:SO.STOOutput) OTL(SectionM_09A:SO.STOOutput) OTL(SectionM_10B:SO.STOOutput) OTL(SectionM_11C:SO.STOOutput) ,OTL(SectionS_00:SO.STOOutput) OTL(SectionS_01:SO.STOOutput) OTL(SectionS_02:SO.STOOutput) OTL(SectionS_03A:SO.STOOutput) OTL(SectionS_04B:SO.STOOutput) OTL(SectionS_05C:SO.STOOutput) OTL(SectionS_06:SO.STOOutput) OTL(SectionS_07:SO.STOOutput) OTL(SectionS_08:SO.STOOutput) OTL(SectionS_09A:SO.STOOutput) OTL(SectionS_10B:SO.STOOutput) OTL(SectionS_11C:SO.STOOutput) ];]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

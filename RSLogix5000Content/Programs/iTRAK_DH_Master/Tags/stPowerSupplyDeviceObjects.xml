@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="stPowerSupplyDeviceObjects" TagType="Base" DataType="raM_Dvc_CIPAxis" Dimensions="1" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_DH_Master" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[[58865751,0,0,0,[3,11,256,256,0,4,15620907,5632,998445679,0,256,11],0,7,0,0,0,0,16384,[0,0,0,0,0,0,0,0,0],[-1610612736,0
+		,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],128,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],1,0,[3,[1,0,0,0,0,0,0,0,0,[27,'raX_Yyy_FrameworkGeneric_ST$00$00$00$00$00'],0,0,0,0,0,0,0,0],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		]],[7,0,-128,1],[14,0,18,11,49,57,50,46,49,54,56,46,49,46,53,0,0,0,0,0,0,0,0,0],[7],0,0.00000000e+000,0,0,[0,0,0,0,0,0,0,0,0],0]]]]></Data>
+  <Data Format="Decorated">
+    <Array DataType="raM_Dvc_CIPAxis" Dimensions="1">
+      <Element Index="[0]">
+        <Structure DataType="raM_Dvc_CIPAxis">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Sts_Physical" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Sts_Virtual" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Sts_Testmode" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Sts_Connecting" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Sts_Connected" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Sts_Disconnecting" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Sts_Disconnected" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Sts_Idle" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Sts_Configuring" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Sts_Available" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Sts_Ready" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Sts_DCBus" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Sts_Activated" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Sts_Faulted" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Sts_Alarm" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Sts_ModulePresent" DataType="BOOL" Value="1" />
+          <DataValueMember Name="FaultID" DataType="INT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="AlarmID" DataType="INT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="EXERR" DataType="DINT" Radix="Decimal" Value="0" />
+        </Structure>
+      </Element>
+    </Array>
+  </Data>
+</Tag>

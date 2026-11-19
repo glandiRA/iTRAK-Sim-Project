@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="BackTag" TagType="Base" DataType="raM_ICT_Opr_Motion" Dimensions="21" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_DH_Slave" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0
+		,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0
+		,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0
+		,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0],[11,[0,0,0,0,0,0,0,0,0],0,0]]]]></Data>
+  <Data Format="Decorated">
+    <Array DataType="raM_ICT_Opr_Motion" Dimensions="21">
+      <Element Index="[0]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[1]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[2]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[3]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[4]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[5]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[6]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[7]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[8]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[9]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[10]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[11]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[12]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[13]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[14]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[15]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[16]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[17]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[18]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[19]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+      <Element Index="[20]">
+        <Structure DataType="raM_ICT_Opr_Motion">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+          <DataValueMember Name="StopAll" DataType="BOOL" Value="0" />
+        </Structure>
+      </Element>
+    </Array>
+  </Data>
+</Tag>

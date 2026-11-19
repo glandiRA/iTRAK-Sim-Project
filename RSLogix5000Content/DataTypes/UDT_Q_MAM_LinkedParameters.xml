@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="UDT_Q_MAM_LinkedParameters" Family="NoFamily" Class="User">
+  <Members>
+    <Member Name="ZZZZZZZZZZUDT_Q_MAM_0" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="PPI_State" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZUDT_Q_MAM_0" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Tells to the following Mover wheter this mover is a follower or a Leader]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="PPI_Value" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Propagated Positon Increment Value]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ZZZZZZZZZZUDT_Q_MAM_3" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="Out_MoveCommand" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZUDT_Q_MAM_3" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Preceding Axis Move Cmd]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Out_CmdIncrement" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Preceding Mover Command Increment. Comes with Move Command]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Out_AxisDynamics" DataType="Q_MAM_Data" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Preceding Mover Dynamics]]></LocalizedDescription>
+      </Description>
+    </Member>
+  </Members>
+  <Dependencies>
+    <Dependency Type="DataType" Name="Q_MAM_Data" />
+  </Dependencies>
+</DataType>

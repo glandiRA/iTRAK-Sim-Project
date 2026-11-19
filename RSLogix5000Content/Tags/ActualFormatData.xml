@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="ActualFormatData" Class="Standard" TagType="Base" DataType="UDT_Format" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="0">
+      <Header xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Maj="1" Min="0" OExt="-1" UExt="1">
+        <Libs>
+          <LibHdr CatalogNumber="Q_MAM_P" Guid="21EB654C-AF8D-4339-A4B9-5C5957855F98" />
+        </Libs>
+      </Header>
+    </Provider>
+    <Provider ID="ACM" Ext="1">
+      <Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<DecoratedData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorRev="1" MinorRev="0" CRC="ToDo">
+  <Private xsi:type="TagPrivateData" Guid="21EB654C-AF8D-4339-A4B9-5C5957855F98" ContentType="Routine">
+    <Attrib>
+      <RPerIns>true</RPerIns>
+    </Attrib>
+    <Subs />
+    <OPCExps />
+  </Private>
+</DecoratedData>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[[16,5.40000000e+003,1.20000000e+002,6.00000000e+001,2.00000000e+000,5.00000000e+000],[1.00000000e+003
+		,3.75000000e+003,3.00000000e+001,1.27000000e+002,7.50000000e+002,1.30000000e+003,9.00000000e+002
+		,9.00000000e+002,1.00000000e+003,1.00000000e+000,9.20000000e+002,0.00000000e+000]]]]></Data>
+  <Data Format="Decorated">
+    <Structure DataType="UDT_Format">
+      <StructureMember Name="Cfg" DataType="UDT_ItrackCfg">
+        <DataValueMember Name="iActiveMoverNumber" DataType="INT" Radix="Decimal" Value="16" />
+        <DataValueMember Name="rITrackUnwind" DataType="REAL" Radix="Float" Value="5400.0" />
+        <DataValueMember Name="rAxFilmUnwind" DataType="REAL" Radix="Float" Value="120.0" />
+        <DataValueMember Name="rMoverWidth" DataType="REAL" Radix="Float" Value="60.0" />
+        <DataValueMember Name="rMinDistanceBtw2Movers" DataType="REAL" Radix="Float" Value="2.0" />
+        <DataValueMember Name="rTolerance" DataType="REAL" Radix="Float" Value="5.0" />
+      </StructureMember>
+      <StructureMember Name="Param" DataType="UDT_ITrack_Param">
+        <DataValueMember Name="rQuotaScaricoProdotto" DataType="REAL" Radix="Float" Value="1000.0" />
+        <DataValueMember Name="rQuotaCaricoProdotto" DataType="REAL" Radix="Float" Value="3750.0" />
+        <DataValueMember Name="rDistSenzaProdotto" DataType="REAL" Radix="Float" Value="30.0" />
+        <DataValueMember Name="rDistConProdotto" DataType="REAL" Radix="Float" Value="127.0" />
+        <DataValueMember Name="rQuotaPreScarico" DataType="REAL" Radix="Float" Value="750.0" />
+        <DataValueMember Name="rQuotaFineScarico" DataType="REAL" Radix="Float" Value="1300.0" />
+        <DataValueMember Name="rQuotaCtrlSinc" DataType="REAL" Radix="Float" Value="900.0" />
+        <DataValueMember Name="rQuotaInizioScartoSoffio" DataType="REAL" Radix="Float" Value="900.0" />
+        <DataValueMember Name="rQuotaFineScartoSoffio" DataType="REAL" Radix="Float" Value="1000.0" />
+        <DataValueMember Name="rQuotaInizioZonaBuffer" DataType="REAL" Radix="Float" Value="1.0" />
+        <DataValueMember Name="rQuotaFineZonaBuffer" DataType="REAL" Radix="Float" Value="920.0" />
+        <DataValueMember Name="rOffsetFilm" DataType="REAL" Radix="Float" Value="0.0" />
+      </StructureMember>
+    </Structure>
+  </Data>
+</Tag>

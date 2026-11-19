@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Module Name="IF8I" CatalogNumber="1756-IF8I/B" Vendor="1" ProductType="10" ProductCode="454" Major="3" Minor="1" ParentModule="Local" ParentModPortId="1" Inhibited="true" MajorFault="false" AutoDiagsEnabled="true" DataExchangeId="{E797731C-B70B-4DCF-A567-9B49E30268D0}">
+  <EKey State="CompatibleModule" />
+  <Ports>
+    <Port Id="1" Address="1" Type="ICP" Upstream="true" />
+  </Ports>
+  <Communications>
+    <ConfigTag ConfigSize="396" ExternalAccess="Read/Write" OpcUaAccess="None">
+      <Data Format="L5K"><![CDATA[[400,100,0,0,0.00000000e+000,[[3,0,9,1,0,0,0.00000000e+000,0.00000000e+000,2.00000000e+001,0.00000000e+000
+		,1.00000000e+002,0.00000000e+000,0.00000000e+000,1.00000000e+002,1.00000000e+002,0.00000000e+000
+		],[3,0,9,1,0,0,0.00000000e+000,0.00000000e+000,2.00000000e+001,0.00000000e+000,1.00000000e+002
+		,0.00000000e+000,0.00000000e+000,1.00000000e+002,1.00000000e+002,0.00000000e+000],[3,0,9,1,0,0
+		,0.00000000e+000,0.00000000e+000,2.00000000e+001,0.00000000e+000,1.00000000e+002,0.00000000e+000
+		,0.00000000e+000,1.00000000e+002,1.00000000e+002,0.00000000e+000],[3,0,9,1,0,0,0.00000000e+000
+		,0.00000000e+000,2.00000000e+001,0.00000000e+000,1.00000000e+002,0.00000000e+000,0.00000000e+000
+		,1.00000000e+002,1.00000000e+002,0.00000000e+000],[3,0,9,1,0,0,0.00000000e+000,0.00000000e+000
+		,2.00000000e+001,0.00000000e+000,1.00000000e+002,0.00000000e+000,0.00000000e+000,1.00000000e+002
+		,1.00000000e+002,0.00000000e+000],[3,0,9,1,0,0,0.00000000e+000,0.00000000e+000,2.00000000e+001
+		,0.00000000e+000,1.00000000e+002,0.00000000e+000,0.00000000e+000,1.00000000e+002,1.00000000e+002
+		,0.00000000e+000],[3,0,9,1,0,0,0.00000000e+000,0.00000000e+000,2.00000000e+001,0.00000000e+000
+		,1.00000000e+002,0.00000000e+000,0.00000000e+000,1.00000000e+002,1.00000000e+002,0.00000000e+000
+		],[3,0,9,1,0,0,0.00000000e+000,0.00000000e+000,2.00000000e+001,0.00000000e+000,1.00000000e+002
+		,0.00000000e+000,0.00000000e+000,1.00000000e+002,1.00000000e+002,0.00000000e+000]]]]]></Data>
+      <Data Format="Decorated">
+        <Structure DataType="AB:1756_IF8I:C:0">
+          <ArrayMember Name="Ch" DataType="AB:1756_IF8I_ChStruct:C:0" Dimensions="8">
+            <Element Index="[0]">
+              <Structure DataType="AB:1756_IF8I_ChStruct:C:0">
+                <DataValueMember Name="InputRange" DataType="SINT" Radix="Decimal" Value="3" />
+                <DataValueMember Name="NotchFilter" DataType="SINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="AlarmDisable" DataType="BOOL" Value="1" />
+                <DataValueMember Name="ProcessAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="RateAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Disable" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Sourcing" DataType="BOOL" Value="0" />
+                <DataValueMember Name="SynchronizeSampling" DataType="BOOL" Value="0" />
+                <DataValueMember Name="DigitalFilter" DataType="INT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="RateAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LowSignal" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighSignal" DataType="REAL" Radix="Float" Value="20.0" />
+                <DataValueMember Name="LowEngineering" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighEngineering" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="LLAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="HHAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="AlarmDeadband" DataType="REAL" Radix="Float" Value="0.0" />
+              </Structure>
+            </Element>
+            <Element Index="[1]">
+              <Structure DataType="AB:1756_IF8I_ChStruct:C:0">
+                <DataValueMember Name="InputRange" DataType="SINT" Radix="Decimal" Value="3" />
+                <DataValueMember Name="NotchFilter" DataType="SINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="AlarmDisable" DataType="BOOL" Value="1" />
+                <DataValueMember Name="ProcessAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="RateAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Disable" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Sourcing" DataType="BOOL" Value="0" />
+                <DataValueMember Name="SynchronizeSampling" DataType="BOOL" Value="0" />
+                <DataValueMember Name="DigitalFilter" DataType="INT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="RateAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LowSignal" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighSignal" DataType="REAL" Radix="Float" Value="20.0" />
+                <DataValueMember Name="LowEngineering" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighEngineering" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="LLAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="HHAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="AlarmDeadband" DataType="REAL" Radix="Float" Value="0.0" />
+              </Structure>
+            </Element>
+            <Element Index="[2]">
+              <Structure DataType="AB:1756_IF8I_ChStruct:C:0">
+                <DataValueMember Name="InputRange" DataType="SINT" Radix="Decimal" Value="3" />
+                <DataValueMember Name="NotchFilter" DataType="SINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="AlarmDisable" DataType="BOOL" Value="1" />
+                <DataValueMember Name="ProcessAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="RateAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Disable" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Sourcing" DataType="BOOL" Value="0" />
+                <DataValueMember Name="SynchronizeSampling" DataType="BOOL" Value="0" />
+                <DataValueMember Name="DigitalFilter" DataType="INT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="RateAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LowSignal" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighSignal" DataType="REAL" Radix="Float" Value="20.0" />
+                <DataValueMember Name="LowEngineering" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighEngineering" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="LLAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="HHAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="AlarmDeadband" DataType="REAL" Radix="Float" Value="0.0" />
+              </Structure>
+            </Element>
+            <Element Index="[3]">
+              <Structure DataType="AB:1756_IF8I_ChStruct:C:0">
+                <DataValueMember Name="InputRange" DataType="SINT" Radix="Decimal" Value="3" />
+                <DataValueMember Name="NotchFilter" DataType="SINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="AlarmDisable" DataType="BOOL" Value="1" />
+                <DataValueMember Name="ProcessAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="RateAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Disable" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Sourcing" DataType="BOOL" Value="0" />
+                <DataValueMember Name="SynchronizeSampling" DataType="BOOL" Value="0" />
+                <DataValueMember Name="DigitalFilter" DataType="INT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="RateAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LowSignal" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighSignal" DataType="REAL" Radix="Float" Value="20.0" />
+                <DataValueMember Name="LowEngineering" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighEngineering" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="LLAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="HHAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="AlarmDeadband" DataType="REAL" Radix="Float" Value="0.0" />
+              </Structure>
+            </Element>
+            <Element Index="[4]">
+              <Structure DataType="AB:1756_IF8I_ChStruct:C:0">
+                <DataValueMember Name="InputRange" DataType="SINT" Radix="Decimal" Value="3" />
+                <DataValueMember Name="NotchFilter" DataType="SINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="AlarmDisable" DataType="BOOL" Value="1" />
+                <DataValueMember Name="ProcessAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="RateAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Disable" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Sourcing" DataType="BOOL" Value="0" />
+                <DataValueMember Name="SynchronizeSampling" DataType="BOOL" Value="0" />
+                <DataValueMember Name="DigitalFilter" DataType="INT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="RateAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LowSignal" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighSignal" DataType="REAL" Radix="Float" Value="20.0" />
+                <DataValueMember Name="LowEngineering" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighEngineering" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="LLAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="HHAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="AlarmDeadband" DataType="REAL" Radix="Float" Value="0.0" />
+              </Structure>
+            </Element>
+            <Element Index="[5]">
+              <Structure DataType="AB:1756_IF8I_ChStruct:C:0">
+                <DataValueMember Name="InputRange" DataType="SINT" Radix="Decimal" Value="3" />
+                <DataValueMember Name="NotchFilter" DataType="SINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="AlarmDisable" DataType="BOOL" Value="1" />
+                <DataValueMember Name="ProcessAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="RateAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Disable" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Sourcing" DataType="BOOL" Value="0" />
+                <DataValueMember Name="SynchronizeSampling" DataType="BOOL" Value="0" />
+                <DataValueMember Name="DigitalFilter" DataType="INT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="RateAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LowSignal" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighSignal" DataType="REAL" Radix="Float" Value="20.0" />
+                <DataValueMember Name="LowEngineering" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighEngineering" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="LLAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="HHAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="AlarmDeadband" DataType="REAL" Radix="Float" Value="0.0" />
+              </Structure>
+            </Element>
+            <Element Index="[6]">
+              <Structure DataType="AB:1756_IF8I_ChStruct:C:0">
+                <DataValueMember Name="InputRange" DataType="SINT" Radix="Decimal" Value="3" />
+                <DataValueMember Name="NotchFilter" DataType="SINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="AlarmDisable" DataType="BOOL" Value="1" />
+                <DataValueMember Name="ProcessAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="RateAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Disable" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Sourcing" DataType="BOOL" Value="0" />
+                <DataValueMember Name="SynchronizeSampling" DataType="BOOL" Value="0" />
+                <DataValueMember Name="DigitalFilter" DataType="INT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="RateAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LowSignal" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighSignal" DataType="REAL" Radix="Float" Value="20.0" />
+                <DataValueMember Name="LowEngineering" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighEngineering" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="LLAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="HHAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="AlarmDeadband" DataType="REAL" Radix="Float" Value="0.0" />
+              </Structure>
+            </Element>
+            <Element Index="[7]">
+              <Structure DataType="AB:1756_IF8I_ChStruct:C:0">
+                <DataValueMember Name="InputRange" DataType="SINT" Radix="Decimal" Value="3" />
+                <DataValueMember Name="NotchFilter" DataType="SINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="AlarmDisable" DataType="BOOL" Value="1" />
+                <DataValueMember Name="ProcessAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="RateAlarmLatch" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Disable" DataType="BOOL" Value="0" />
+                <DataValueMember Name="Sourcing" DataType="BOOL" Value="0" />
+                <DataValueMember Name="SynchronizeSampling" DataType="BOOL" Value="0" />
+                <DataValueMember Name="DigitalFilter" DataType="INT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="RateAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LowSignal" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighSignal" DataType="REAL" Radix="Float" Value="20.0" />
+                <DataValueMember Name="LowEngineering" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HighEngineering" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="LLAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="LAlarmLimit" DataType="REAL" Radix="Float" Value="0.0" />
+                <DataValueMember Name="HAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="HHAlarmLimit" DataType="REAL" Radix="Float" Value="100.0" />
+                <DataValueMember Name="AlarmDeadband" DataType="REAL" Radix="Float" Value="0.0" />
+              </Structure>
+            </Element>
+          </ArrayMember>
+        </Structure>
+      </Data>
+    </ConfigTag>
+    <Connections>
+      <Connection Name="InputData" RPI="1000" Type="Output" EventID="0" ProgrammaticallySendEventTrigger="false" Unicast="false">
+        <InputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+          <Data Format="Decorated">
+            <Structure DataType="AB:1756_IF8I:I:0">
+              <DataValueMember Name="Fault" DataType="DINT" Radix="Binary" Value="2#1111_1111_1111_1111_1111_1111_1111_1111" />
+              <DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0" />
+              <DataValueMember Name="CIPSyncTimeOut" DataType="BOOL" Value="0" />
+              <DataValueMember Name="CIPSyncOffsetJump" DataType="BOOL" Value="0" />
+              <ArrayMember Name="Ch" DataType="AB:1756_8I_Struct:I:0" Dimensions="8">
+                <Element Index="[0]">
+                  <Structure DataType="AB:1756_8I_Struct:I:0">
+                    <DataValueMember Name="Fault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Uncertain" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Underrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Overrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalibrationFault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrating" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalSuccessful" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateOfChange" DataType="REAL" Radix="Float" Value="0.0" />
+                    <DataValueMember Name="Data" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+                <Element Index="[1]">
+                  <Structure DataType="AB:1756_8I_Struct:I:0">
+                    <DataValueMember Name="Fault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Uncertain" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Underrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Overrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalibrationFault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrating" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalSuccessful" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateOfChange" DataType="REAL" Radix="Float" Value="0.0" />
+                    <DataValueMember Name="Data" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+                <Element Index="[2]">
+                  <Structure DataType="AB:1756_8I_Struct:I:0">
+                    <DataValueMember Name="Fault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Uncertain" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Underrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Overrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalibrationFault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrating" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalSuccessful" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateOfChange" DataType="REAL" Radix="Float" Value="0.0" />
+                    <DataValueMember Name="Data" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+                <Element Index="[3]">
+                  <Structure DataType="AB:1756_8I_Struct:I:0">
+                    <DataValueMember Name="Fault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Uncertain" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Underrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Overrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalibrationFault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrating" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalSuccessful" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateOfChange" DataType="REAL" Radix="Float" Value="0.0" />
+                    <DataValueMember Name="Data" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+                <Element Index="[4]">
+                  <Structure DataType="AB:1756_8I_Struct:I:0">
+                    <DataValueMember Name="Fault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Uncertain" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Underrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Overrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalibrationFault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrating" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalSuccessful" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateOfChange" DataType="REAL" Radix="Float" Value="0.0" />
+                    <DataValueMember Name="Data" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+                <Element Index="[5]">
+                  <Structure DataType="AB:1756_8I_Struct:I:0">
+                    <DataValueMember Name="Fault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Uncertain" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Underrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Overrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalibrationFault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrating" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalSuccessful" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateOfChange" DataType="REAL" Radix="Float" Value="0.0" />
+                    <DataValueMember Name="Data" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+                <Element Index="[6]">
+                  <Structure DataType="AB:1756_8I_Struct:I:0">
+                    <DataValueMember Name="Fault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Uncertain" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Underrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Overrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalibrationFault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrating" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalSuccessful" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateOfChange" DataType="REAL" Radix="Float" Value="0.0" />
+                    <DataValueMember Name="Data" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+                <Element Index="[7]">
+                  <Structure DataType="AB:1756_8I_Struct:I:0">
+                    <DataValueMember Name="Fault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Uncertain" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Underrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Overrange" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarm" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalibrationFault" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrating" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalGoodHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalBadHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalSuccessful" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateOfChange" DataType="REAL" Radix="Float" Value="0.0" />
+                    <DataValueMember Name="Data" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+              </ArrayMember>
+              <ArrayMember Name="Timestamp" DataType="DINT" Dimensions="2" Radix="Decimal">
+                <Element Index="[0]" Value="0" />
+                <Element Index="[1]" Value="0" />
+              </ArrayMember>
+              <DataValueMember Name="RollingTimestamp" DataType="INT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Data>
+        </InputTag>
+        <OutputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+          <Data Format="L5K"><![CDATA[[[[0,0.00000000e+000],[0,0.00000000e+000],[0,0.00000000e+000],[0,0.00000000e+000],[0,0.00000000e+000],[0
+		,0.00000000e+000],[0,0.00000000e+000],[0,0.00000000e+000]]]]]></Data>
+          <Data Format="Decorated">
+            <Structure DataType="AB:1756_IF8I:O:0">
+              <ArrayMember Name="Ch" DataType="AB:1756_8I_OChStruct:O:0" Dimensions="8">
+                <Element Index="[0]">
+                  <Structure DataType="AB:1756_8I_OChStruct:O:0">
+                    <DataValueMember Name="LLAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrate" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="SensorOffset" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+                <Element Index="[1]">
+                  <Structure DataType="AB:1756_8I_OChStruct:O:0">
+                    <DataValueMember Name="LLAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrate" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="SensorOffset" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+                <Element Index="[2]">
+                  <Structure DataType="AB:1756_8I_OChStruct:O:0">
+                    <DataValueMember Name="LLAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrate" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="SensorOffset" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+                <Element Index="[3]">
+                  <Structure DataType="AB:1756_8I_OChStruct:O:0">
+                    <DataValueMember Name="LLAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrate" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="SensorOffset" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+                <Element Index="[4]">
+                  <Structure DataType="AB:1756_8I_OChStruct:O:0">
+                    <DataValueMember Name="LLAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrate" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="SensorOffset" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+                <Element Index="[5]">
+                  <Structure DataType="AB:1756_8I_OChStruct:O:0">
+                    <DataValueMember Name="LLAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrate" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="SensorOffset" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+                <Element Index="[6]">
+                  <Structure DataType="AB:1756_8I_OChStruct:O:0">
+                    <DataValueMember Name="LLAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrate" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="SensorOffset" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+                <Element Index="[7]">
+                  <Structure DataType="AB:1756_8I_OChStruct:O:0">
+                    <DataValueMember Name="LLAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmEn" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LLAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="LAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="HHAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="RateAlarmUnlatch" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="Calibrate" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalLowRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="CalHighRef" DataType="BOOL" Value="0" />
+                    <DataValueMember Name="SensorOffset" DataType="REAL" Radix="Float" Value="0.0" />
+                  </Structure>
+                </Element>
+              </ArrayMember>
+            </Structure>
+          </Data>
+        </OutputTag>
+      </Connection>
+    </Connections>
+  </Communications>
+  <ExtendedProperties>
+    <public>
+      <Vendor>Rockwell Automation/Allen-Bradley</Vendor>
+      <CatNum>1756-IF8I</CatNum>
+      <ConfigID>100</ConfigID>
+      <ADDAVersion>1</ADDAVersion>
+    </public>
+  </ExtendedProperties>
+</Module>

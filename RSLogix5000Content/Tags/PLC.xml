@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="PLC" Class="Standard" TagType="Base" DataType="FI_PLC" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[PLC Status, Major & Minor Fault, System Date & Time]]></LocalizedDescription>
+  </Description>
+  <Comments>
+    <Comment Operand=".DATEANDTIME">
+      <LocalizedComment Lang="en-US"><![CDATA[Data e Ora di Sistema]]></LocalizedComment>
+    </Comment>
+    <Comment Operand=".DATEANDTIME[0]">
+      <LocalizedComment Lang="en-US"><![CDATA[Data e Ora di Sistema; ANNO]]></LocalizedComment>
+    </Comment>
+    <Comment Operand=".DATEANDTIME[1]">
+      <LocalizedComment Lang="en-US"><![CDATA[Data e Ora di Sistema; MESE]]></LocalizedComment>
+    </Comment>
+    <Comment Operand=".DATEANDTIME[2]">
+      <LocalizedComment Lang="en-US"><![CDATA[Data e Ora di Sistema; GIORNO]]></LocalizedComment>
+    </Comment>
+    <Comment Operand=".DATEANDTIME[3]">
+      <LocalizedComment Lang="en-US"><![CDATA[Data e Ora di Sistema; ORA]]></LocalizedComment>
+    </Comment>
+    <Comment Operand=".DATEANDTIME[4]">
+      <LocalizedComment Lang="en-US"><![CDATA[Data e Ora di Sistema; MINUTI]]></LocalizedComment>
+    </Comment>
+    <Comment Operand=".DATEANDTIME[5]">
+      <LocalizedComment Lang="en-US"><![CDATA[Data e Ora di Sistema; SECONDI]]></LocalizedComment>
+    </Comment>
+    <Comment Operand=".DATEANDTIME[6]">
+      <LocalizedComment Lang="en-US"><![CDATA[Data e Ora di Sistema; MICROSECONDI]]></LocalizedComment>
+    </Comment>
+  </Comments>
+  <Data Format="L5K"><![CDATA[[0,[-1302183205,392680,4,20,[3,34271,46502,3874084,3925620,0,0,0]],[[-1069818029,5000,4285],0],[0,0,0,0,0,0,0]]]]></Data>
+  <Data Format="Decorated">
+    <Structure DataType="FI_PLC">
+      <DataValueMember Name="Status" DataType="INT" Radix="Decimal" Value="0" />
+      <StructureMember Name="MajorFault" DataType="FI_PLC_MajorFault">
+        <DataValueMember Name="TimeLow" DataType="DINT" Radix="Decimal" Value="-1302183205" />
+        <DataValueMember Name="TimeHigh" DataType="DINT" Radix="Decimal" Value="392680" />
+        <DataValueMember Name="Type" DataType="INT" Radix="Decimal" Value="4" />
+        <DataValueMember Name="Code" DataType="INT" Radix="Decimal" Value="20" />
+        <ArrayMember Name="Info" DataType="DINT" Dimensions="8" Radix="Hex">
+          <Element Index="[0]" Value="16#0000_0003" />
+          <Element Index="[1]" Value="16#0000_85df" />
+          <Element Index="[2]" Value="16#0000_b5a6" />
+          <Element Index="[3]" Value="16#003b_1d24" />
+          <Element Index="[4]" Value="16#003b_e674" />
+          <Element Index="[5]" Value="16#0000_0000" />
+          <Element Index="[6]" Value="16#0000_0000" />
+          <Element Index="[7]" Value="16#0000_0000" />
+        </ArrayMember>
+      </StructureMember>
+      <StructureMember Name="MinorFault" DataType="FI_PLC_MinorFault">
+        <StructureMember Name="TMR" DataType="TIMER">
+          <DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="5000" />
+          <DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="4285" />
+          <DataValueMember Name="EN" DataType="BOOL" Value="1" />
+          <DataValueMember Name="TT" DataType="BOOL" Value="1" />
+          <DataValueMember Name="DN" DataType="BOOL" Value="0" />
+        </StructureMember>
+        <DataValueMember Name="Bit" DataType="DINT" Radix="Decimal" Value="0" />
+      </StructureMember>
+      <ArrayMember Name="DateAndTime" DataType="DINT" Dimensions="7" Radix="Decimal">
+        <Element Index="[0]" Value="0" />
+        <Element Index="[1]" Value="0" />
+        <Element Index="[2]" Value="0" />
+        <Element Index="[3]" Value="0" />
+        <Element Index="[4]" Value="0" />
+        <Element Index="[5]" Value="0" />
+        <Element Index="[6]" Value="0" />
+      </ArrayMember>
+    </Structure>
+  </Data>
+</Tag>

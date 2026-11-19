@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="S_Dvc_Sts" TagType="Base" DataType="raM_UDT_ItfAD_PwrMotion_Sts" Dimensions="12" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_DH_Slave" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[[13,7,[0,0,0,0,0,[0,'MSF Error. Refer to Studio 5000 document$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883682043386212,[1998,1,1,19,14,3,386213],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],0,[0,0,0,0,0,0,0],0]],[13,7,[0,0,0,0,0,[0,'MSF Error. Refer to Studio 5000 document$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883682043386223,[1998,1,1,19,14,3,386225],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],0,[0,0,0,0,0,0,0],0]],[13,7,[0,0,0,0,0,[0,'MSF Error. Refer to Studio 5000 document$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883682043386237,[1998,1,1,19,14,3,386239],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],0,[0,0,0,0,0,0,0],0]],[13,7,[0,0,0,0,0,[0,'MSF Error. Refer to Studio 5000 document$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883682043386248,[1998,1,1,19,14,3,386250],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],0,[0,0,0,0,0,0,0],0]],[13,7,[0,0,0,0,0,[0,'MSF Error. Refer to Studio 5000 document$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883682043386260,[1998,1,1,19,14,3,386261],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],0,[0,0,0,0,0,0,0],0]],[13,7,[0,0,0,0,0,[0,'MSF Error. Refer to Studio 5000 document$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883682043386271,[1998,1,1,19,14,3,386272],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],0,[0,0,0,0,0,0,0],0]],[13,7,[0,0,0,0,0,[0,'MSF Error. Refer to Studio 5000 document$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883682043386282,[1998,1,1,19,14,3,386283],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],0,[0,0,0,0,0,0,0],0]],[13,7,[0,0,0,0,0,[0,'MSF Error. Refer to Studio 5000 document$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883682043386294,[1998,1,1,19,14,3,386295],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],0,[0,0,0,0,0,0,0],0]],[13,7,[0,0,0,0,0,[0,'MSF Error. Refer to Studio 5000 document$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883682043386305,[1998,1,1,19,14,3,386306],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],0,[0,0,0,0,0,0,0],0]],[13,7,[0,0,0,0,0,[0,'MSF Error. Refer to Studio 5000 document$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883682043386317,[1998,1,1,19,14,3,386318],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],0,[0,0,0,0,0,0,0],0]],[13,7,[0,0,0,0,0,[0,'MSF Error. Refer to Studio 5000 document$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883682043386328,[1998,1,1,19,14,3,386330],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],0,[0,0,0,0,0,0,0],0]],[13,7,[0,0,0,0,0,[0,'MSF Error. Refer to Studio 5000 document$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883682043386339,[1998,1,1,19,14,3,386341],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],0,[0,0,0,0,0,0,0],0]]]]]></Data>
+  <Data Format="Decorated">
+    <Array DataType="raM_UDT_ItfAD_PwrMotion_Sts" Dimensions="12">
+      <Element Index="[0]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Sts">
+          <DataValueMember Name="Physical" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Virtual" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Ready" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Activated" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Faulted" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Alarm" DataType="BOOL" Value="0" />
+          <DataValueMember Name="eState" DataType="SINT" Radix="Decimal" Value="7" />
+          <StructureMember Name="FaultEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-19:14:03.386_212Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="1998" />
+              <Element Index="[1]" Value="1" />
+              <Element Index="[2]" Value="1" />
+              <Element Index="[3]" Value="19" />
+              <Element Index="[4]" Value="14" />
+              <Element Index="[5]" Value="3" />
+              <Element Index="[6]" Value="386213" />
+            </ArrayMember>
+          </StructureMember>
+          <StructureMember Name="AlarmEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1970-01-01-00:00:00.000_000Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="0" />
+              <Element Index="[1]" Value="0" />
+              <Element Index="[2]" Value="0" />
+              <Element Index="[3]" Value="0" />
+              <Element Index="[4]" Value="0" />
+              <Element Index="[5]" Value="0" />
+              <Element Index="[6]" Value="0" />
+            </ArrayMember>
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[1]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Sts">
+          <DataValueMember Name="Physical" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Virtual" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Ready" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Activated" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Faulted" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Alarm" DataType="BOOL" Value="0" />
+          <DataValueMember Name="eState" DataType="SINT" Radix="Decimal" Value="7" />
+          <StructureMember Name="FaultEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-19:14:03.386_223Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="1998" />
+              <Element Index="[1]" Value="1" />
+              <Element Index="[2]" Value="1" />
+              <Element Index="[3]" Value="19" />
+              <Element Index="[4]" Value="14" />
+              <Element Index="[5]" Value="3" />
+              <Element Index="[6]" Value="386225" />
+            </ArrayMember>
+          </StructureMember>
+          <StructureMember Name="AlarmEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1970-01-01-00:00:00.000_000Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="0" />
+              <Element Index="[1]" Value="0" />
+              <Element Index="[2]" Value="0" />
+              <Element Index="[3]" Value="0" />
+              <Element Index="[4]" Value="0" />
+              <Element Index="[5]" Value="0" />
+              <Element Index="[6]" Value="0" />
+            </ArrayMember>
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[2]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Sts">
+          <DataValueMember Name="Physical" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Virtual" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Ready" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Activated" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Faulted" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Alarm" DataType="BOOL" Value="0" />
+          <DataValueMember Name="eState" DataType="SINT" Radix="Decimal" Value="7" />
+          <StructureMember Name="FaultEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-19:14:03.386_237Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="1998" />
+              <Element Index="[1]" Value="1" />
+              <Element Index="[2]" Value="1" />
+              <Element Index="[3]" Value="19" />
+              <Element Index="[4]" Value="14" />
+              <Element Index="[5]" Value="3" />
+              <Element Index="[6]" Value="386239" />
+            </ArrayMember>
+          </StructureMember>
+          <StructureMember Name="AlarmEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1970-01-01-00:00:00.000_000Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="0" />
+              <Element Index="[1]" Value="0" />
+              <Element Index="[2]" Value="0" />
+              <Element Index="[3]" Value="0" />
+              <Element Index="[4]" Value="0" />
+              <Element Index="[5]" Value="0" />
+              <Element Index="[6]" Value="0" />
+            </ArrayMember>
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[3]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Sts">
+          <DataValueMember Name="Physical" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Virtual" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Ready" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Activated" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Faulted" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Alarm" DataType="BOOL" Value="0" />
+          <DataValueMember Name="eState" DataType="SINT" Radix="Decimal" Value="7" />
+          <StructureMember Name="FaultEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-19:14:03.386_248Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="1998" />
+              <Element Index="[1]" Value="1" />
+              <Element Index="[2]" Value="1" />
+              <Element Index="[3]" Value="19" />
+              <Element Index="[4]" Value="14" />
+              <Element Index="[5]" Value="3" />
+              <Element Index="[6]" Value="386250" />
+            </ArrayMember>
+          </StructureMember>
+          <StructureMember Name="AlarmEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1970-01-01-00:00:00.000_000Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="0" />
+              <Element Index="[1]" Value="0" />
+              <Element Index="[2]" Value="0" />
+              <Element Index="[3]" Value="0" />
+              <Element Index="[4]" Value="0" />
+              <Element Index="[5]" Value="0" />
+              <Element Index="[6]" Value="0" />
+            </ArrayMember>
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[4]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Sts">
+          <DataValueMember Name="Physical" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Virtual" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Ready" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Activated" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Faulted" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Alarm" DataType="BOOL" Value="0" />
+          <DataValueMember Name="eState" DataType="SINT" Radix="Decimal" Value="7" />
+          <StructureMember Name="FaultEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-19:14:03.386_260Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="1998" />
+              <Element Index="[1]" Value="1" />
+              <Element Index="[2]" Value="1" />
+              <Element Index="[3]" Value="19" />
+              <Element Index="[4]" Value="14" />
+              <Element Index="[5]" Value="3" />
+              <Element Index="[6]" Value="386261" />
+            </ArrayMember>
+          </StructureMember>
+          <StructureMember Name="AlarmEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1970-01-01-00:00:00.000_000Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="0" />
+              <Element Index="[1]" Value="0" />
+              <Element Index="[2]" Value="0" />
+              <Element Index="[3]" Value="0" />
+              <Element Index="[4]" Value="0" />
+              <Element Index="[5]" Value="0" />
+              <Element Index="[6]" Value="0" />
+            </ArrayMember>
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[5]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Sts">
+          <DataValueMember Name="Physical" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Virtual" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Ready" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Activated" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Faulted" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Alarm" DataType="BOOL" Value="0" />
+          <DataValueMember Name="eState" DataType="SINT" Radix="Decimal" Value="7" />
+          <StructureMember Name="FaultEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-19:14:03.386_271Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="1998" />
+              <Element Index="[1]" Value="1" />
+              <Element Index="[2]" Value="1" />
+              <Element Index="[3]" Value="19" />
+              <Element Index="[4]" Value="14" />
+              <Element Index="[5]" Value="3" />
+              <Element Index="[6]" Value="386272" />
+            </ArrayMember>
+          </StructureMember>
+          <StructureMember Name="AlarmEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1970-01-01-00:00:00.000_000Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="0" />
+              <Element Index="[1]" Value="0" />
+              <Element Index="[2]" Value="0" />
+              <Element Index="[3]" Value="0" />
+              <Element Index="[4]" Value="0" />
+              <Element Index="[5]" Value="0" />
+              <Element Index="[6]" Value="0" />
+            </ArrayMember>
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[6]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Sts">
+          <DataValueMember Name="Physical" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Virtual" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Ready" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Activated" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Faulted" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Alarm" DataType="BOOL" Value="0" />
+          <DataValueMember Name="eState" DataType="SINT" Radix="Decimal" Value="7" />
+          <StructureMember Name="FaultEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-19:14:03.386_282Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="1998" />
+              <Element Index="[1]" Value="1" />
+              <Element Index="[2]" Value="1" />
+              <Element Index="[3]" Value="19" />
+              <Element Index="[4]" Value="14" />
+              <Element Index="[5]" Value="3" />
+              <Element Index="[6]" Value="386283" />
+            </ArrayMember>
+          </StructureMember>
+          <StructureMember Name="AlarmEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1970-01-01-00:00:00.000_000Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="0" />
+              <Element Index="[1]" Value="0" />
+              <Element Index="[2]" Value="0" />
+              <Element Index="[3]" Value="0" />
+              <Element Index="[4]" Value="0" />
+              <Element Index="[5]" Value="0" />
+              <Element Index="[6]" Value="0" />
+            </ArrayMember>
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[7]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Sts">
+          <DataValueMember Name="Physical" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Virtual" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Ready" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Activated" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Faulted" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Alarm" DataType="BOOL" Value="0" />
+          <DataValueMember Name="eState" DataType="SINT" Radix="Decimal" Value="7" />
+          <StructureMember Name="FaultEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-19:14:03.386_294Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="1998" />
+              <Element Index="[1]" Value="1" />
+              <Element Index="[2]" Value="1" />
+              <Element Index="[3]" Value="19" />
+              <Element Index="[4]" Value="14" />
+              <Element Index="[5]" Value="3" />
+              <Element Index="[6]" Value="386295" />
+            </ArrayMember>
+          </StructureMember>
+          <StructureMember Name="AlarmEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1970-01-01-00:00:00.000_000Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="0" />
+              <Element Index="[1]" Value="0" />
+              <Element Index="[2]" Value="0" />
+              <Element Index="[3]" Value="0" />
+              <Element Index="[4]" Value="0" />
+              <Element Index="[5]" Value="0" />
+              <Element Index="[6]" Value="0" />
+            </ArrayMember>
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[8]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Sts">
+          <DataValueMember Name="Physical" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Virtual" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Ready" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Activated" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Faulted" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Alarm" DataType="BOOL" Value="0" />
+          <DataValueMember Name="eState" DataType="SINT" Radix="Decimal" Value="7" />
+          <StructureMember Name="FaultEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-19:14:03.386_305Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="1998" />
+              <Element Index="[1]" Value="1" />
+              <Element Index="[2]" Value="1" />
+              <Element Index="[3]" Value="19" />
+              <Element Index="[4]" Value="14" />
+              <Element Index="[5]" Value="3" />
+              <Element Index="[6]" Value="386306" />
+            </ArrayMember>
+          </StructureMember>
+          <StructureMember Name="AlarmEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1970-01-01-00:00:00.000_000Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="0" />
+              <Element Index="[1]" Value="0" />
+              <Element Index="[2]" Value="0" />
+              <Element Index="[3]" Value="0" />
+              <Element Index="[4]" Value="0" />
+              <Element Index="[5]" Value="0" />
+              <Element Index="[6]" Value="0" />
+            </ArrayMember>
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[9]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Sts">
+          <DataValueMember Name="Physical" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Virtual" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Ready" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Activated" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Faulted" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Alarm" DataType="BOOL" Value="0" />
+          <DataValueMember Name="eState" DataType="SINT" Radix="Decimal" Value="7" />
+          <StructureMember Name="FaultEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-19:14:03.386_317Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="1998" />
+              <Element Index="[1]" Value="1" />
+              <Element Index="[2]" Value="1" />
+              <Element Index="[3]" Value="19" />
+              <Element Index="[4]" Value="14" />
+              <Element Index="[5]" Value="3" />
+              <Element Index="[6]" Value="386318" />
+            </ArrayMember>
+          </StructureMember>
+          <StructureMember Name="AlarmEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1970-01-01-00:00:00.000_000Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="0" />
+              <Element Index="[1]" Value="0" />
+              <Element Index="[2]" Value="0" />
+              <Element Index="[3]" Value="0" />
+              <Element Index="[4]" Value="0" />
+              <Element Index="[5]" Value="0" />
+              <Element Index="[6]" Value="0" />
+            </ArrayMember>
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[10]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Sts">
+          <DataValueMember Name="Physical" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Virtual" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Ready" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Activated" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Faulted" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Alarm" DataType="BOOL" Value="0" />
+          <DataValueMember Name="eState" DataType="SINT" Radix="Decimal" Value="7" />
+          <StructureMember Name="FaultEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-19:14:03.386_328Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="1998" />
+              <Element Index="[1]" Value="1" />
+              <Element Index="[2]" Value="1" />
+              <Element Index="[3]" Value="19" />
+              <Element Index="[4]" Value="14" />
+              <Element Index="[5]" Value="3" />
+              <Element Index="[6]" Value="386330" />
+            </ArrayMember>
+          </StructureMember>
+          <StructureMember Name="AlarmEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1970-01-01-00:00:00.000_000Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="0" />
+              <Element Index="[1]" Value="0" />
+              <Element Index="[2]" Value="0" />
+              <Element Index="[3]" Value="0" />
+              <Element Index="[4]" Value="0" />
+              <Element Index="[5]" Value="0" />
+              <Element Index="[6]" Value="0" />
+            </ArrayMember>
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[11]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Sts">
+          <DataValueMember Name="Physical" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Virtual" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Ready" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Activated" DataType="BOOL" Value="1" />
+          <DataValueMember Name="Faulted" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Alarm" DataType="BOOL" Value="0" />
+          <DataValueMember Name="eState" DataType="SINT" Radix="Decimal" Value="7" />
+          <StructureMember Name="FaultEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-19:14:03.386_339Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="1998" />
+              <Element Index="[1]" Value="1" />
+              <Element Index="[2]" Value="1" />
+              <Element Index="[3]" Value="19" />
+              <Element Index="[4]" Value="14" />
+              <Element Index="[5]" Value="3" />
+              <Element Index="[6]" Value="386341" />
+            </ArrayMember>
+          </StructureMember>
+          <StructureMember Name="AlarmEvent" DataType="raM_UDT_Opr_EventCreate_Members">
+            <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+            <StructureMember Name="Message" DataType="STRING">
+              <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            </StructureMember>
+            <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1970-01-01-00:00:00.000_000Z" />
+            <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+              <Element Index="[0]" Value="0" />
+              <Element Index="[1]" Value="0" />
+              <Element Index="[2]" Value="0" />
+              <Element Index="[3]" Value="0" />
+              <Element Index="[4]" Value="0" />
+              <Element Index="[5]" Value="0" />
+              <Element Index="[6]" Value="0" />
+            </ArrayMember>
+          </StructureMember>
+        </Structure>
+      </Element>
+    </Array>
+  </Data>
+</Tag>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="raM_UDT_ICT_Opr_Motion_QueuedMove" Family="NoFamily" Class="User">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_iTRAKBase" LGuid="9D24ABEB-41E6-4150-B6B1-5D01B578B527" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[QueuedMove interface for iTRAK Movers]]></LocalizedDescription>
+  </Description>
+  <Members>
+    <Member Name="Position" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Target position]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Velocity" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Target velocity]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Acceleration" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Target Acceleration]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Deceleration" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Target Deceleration]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Jerk" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Target Jerk]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="MinimumGap" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Minimum distance to next mover]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Sts_CommandedPosition" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Current commanded position]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Sts_ERR" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Command Error Code - See Instruction Help for Code Definition]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ZZZZZZZZZZraM_UDT_IC8" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="DisableFeedforward" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC8" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Disable look-ahead]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Sts_ER" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC8" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Command is in Error - See Sts_ERR / Sts_EXERR for Additional Error Information]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Sts_IP" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC8" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Command is 'In Process']]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Sts_PC" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC8" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Command Process is Complete]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Execute" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC8" BitNumber="4" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Execute motion]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Executed" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC8" BitNumber="5" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Command Acknowledged]]></LocalizedDescription>
+      </Description>
+    </Member>
+  </Members>
+</DataType>

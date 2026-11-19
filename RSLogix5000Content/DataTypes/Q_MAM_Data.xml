@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="Q_MAM_Data" Family="NoFamily" Class="User">
+  <Members>
+    <Member Name="CmdVelocity" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Q MAM Command Velocity]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="CmdAcc" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Q MAM Command Acceleration]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="CmdDec" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Q MAM Command Deceleration]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="CmdAccJerk" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Q MAM Command Acceleration Jerk in % of time]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="CmdDecJerk" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Q MAM Command Deceleration Jerk in % of time]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Track_Unwind" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Track Unwind]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Train_MinDistance" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Trains Minimum Distance]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ZZZZZZZZZZQ_MAM_Data7" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="EnablePositionFeedForward" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZQ_MAM_Data7" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Enable Position Feedforward]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="PositionFeedForwardMode" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Position Feedforward Mode:
+0 = Propagated Position Increment
+1 = Enable Queued Mode]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Cfg_TargetTolerance" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Target Tolerance. This value is evaluated when movement is complete in case of Digital Resolution Error. This value is evaluated also when placing the axis in Queued Mode]]></LocalizedDescription>
+      </Description>
+    </Member>
+  </Members>
+</DataType>

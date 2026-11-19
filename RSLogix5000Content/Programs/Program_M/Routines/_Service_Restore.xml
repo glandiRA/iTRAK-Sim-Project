@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="_Service_Restore" Type="RLL">
+  <RLLContent>
+    <Rung Type="N">
+      <Text><![CDATA[EQ(Step_Restore,10)[XIC(StatusMoversInCam.[SIndex]) ,XIC(StatusMoversInCamLock.[SIndex]) ]XIO(StatusMoversInQMAM.[SIndex])OTL(QMam_Cmd[SIndex]);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIO(StatusMoversInCam.[SIndex])XIO(StatusMoversInCamLock.[SIndex])MOVE(20,Step_Restore);]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="Logic" Type="RLL">
+  <RLLContent>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+Time Offset between CST and MOTION PLANNER
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[GSV(MotionGroup,MotionGroup,TimeOffset,TimeOffset[0])GSV(MotionGroup,MotionGroup,CoarseUpdatePeriod,CUR);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[EVALUATE IF TIMING IS ENOUGH]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[[XIC(MotionGroup.GroupSynced) GSV(MotionGroup,MotionGroup,StartTime,GroupStartCalcTime[0]) GSV(MotionGroup,MotionGroup,CycleStartTime,GroupCycleStartCalcTime[0]) [GSV(CST,,CurrentValue,CSTTimeNow[0]) ADD(CSTTimeNow[0],TimeOffset[0],MotionPlannerTimeNow) ,ADD(GroupStartCalcTime[0],CUR,NextStartTime) [SUB(NextStartTime,MotionPlannerTimeNow,TimeLeft) ,SUB(MotionPlannerTimeNow,GroupStartCalcTime[0],TimeElapsed) ,SUB(GroupCycleStartCalcTime[0],GroupStartCalcTime[0],ActualizationTimeOffset) ] ] ,XIO(MotionGroup.GroupSynced) OTE(ER) ];]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

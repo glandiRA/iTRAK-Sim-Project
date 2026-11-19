@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="iPS" TagType="Base" DataType="raM_UDT_ItfAD_PwrMotion_Strobe" Dimensions="1" Usage="Public" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_DH_Slave" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[[16#00b1_0027,[-1.#IND0000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000,4,0,0,0,0,6
+		]]]]]></Data>
+  <Data Format="Decorated">
+    <Array DataType="raM_UDT_ItfAD_PwrMotion_Strobe" Dimensions="1">
+      <Element Index="[0]">
+        <Structure DataType="raM_UDT_ItfAD_PwrMotion_Strobe">
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0027" />
+          <StructureMember Name="Data" DataType="raM_UDT_ItfAD_PwrMotion_AxisData">
+            <DataValueMember Name="Unwind" DataType="REAL" Radix="Float" Value="-1.#IND" />
+            <DataValueMember Name="CommandPosition" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="CommandVelocity" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="CommandAcceleration" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="ActualVelocity" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="ActualAcceleration" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="AverageVelocity" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="RecoveryPosition" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="PositionError" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="PositionFeedback1" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="CurrentCommand" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="CurrentFeedback" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="DCBusVoltage" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="InverterCapacity" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="MotorCapacity" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="CIPAxisState" DataType="INT" Radix="Decimal" Value="4" />
+            <DataValueMember Name="AxisFault" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="PhysicalFault" DataType="BOOL" Value="0" />
+            <DataValueMember Name="ModuleFault" DataType="BOOL" Value="0" />
+            <DataValueMember Name="ConfigFault" DataType="BOOL" Value="0" />
+            <DataValueMember Name="GroupFault" DataType="BOOL" Value="0" />
+            <DataValueMember Name="MotionFault" DataType="BOOL" Value="0" />
+            <DataValueMember Name="GuardFault" DataType="BOOL" Value="0" />
+            <DataValueMember Name="InitializationFault" DataType="BOOL" Value="0" />
+            <DataValueMember Name="APRFault" DataType="BOOL" Value="0" />
+            <DataValueMember Name="SafetyFault" DataType="BOOL" Value="0" />
+            <DataValueMember Name="MotionStatus" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="AccelStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="DecelStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="MoveStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="JogStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="GearingStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="HomingStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="StoppingStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="AxisHomedStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionCamStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="TimeCamStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionCamPendingStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="TimeCamPendingStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="GearingLockStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionCamLockStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="TimeCamLockStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="MasterOffsetMoveStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="CoordinatedMotionStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="TransformStateStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="ControlledByTransformStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="DirectVelocityControlStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="DirectTorqueControlStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="MoveLockStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="JogLockStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="MasterOffsetMoveLockStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="MaximumSpeedExceeded" DataType="BOOL" Value="0" />
+            <DataValueMember Name="CIPStartInhibits" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="CIPStartInhibitsRA" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="ConfigUpdateInProcess" DataType="BOOL" Value="0" />
+            <DataValueMember Name="DCBusUpStatus" DataType="BOOL" Value="1" />
+            <DataValueMember Name="PowerStructureEnabledStatus" DataType="BOOL" Value="1" />
+            <DataValueMember Name="ShutdownStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="SafeTorqueOffActiveStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="TrackingCommandStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="TorqueLimitStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="VelocityStandstillStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="RegEvent1ArmedStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="RegEvent2ArmedStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="Registration1InputStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="Registration2InputStatus" DataType="BOOL" Value="0" />
+            <DataValueMember Name="Alarm" DataType="BOOL" Value="0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+    </Array>
+  </Data>
+</Tag>

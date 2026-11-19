@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="QMam_Data" TagType="Base" DataType="Q_MAM_Data" Dimensions="21" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <Data Format="L5K"><![CDATA[[[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001,0.00000000e+000,3.60000000e+003
+		,6.00000000e+001,1,0,0.00000000e+000],[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001
+		,0.00000000e+000,3.60000000e+003,6.00000000e+001,1,0,0.00000000e+000],[1.50000000e+003,2.20000000e+003
+		,2.20000000e+003,3.00000000e+001,0.00000000e+000,3.60000000e+003,6.00000000e+001,1,0,0.00000000e+000
+		],[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001,0.00000000e+000,3.60000000e+003
+		,6.00000000e+001,1,0,0.00000000e+000],[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001
+		,0.00000000e+000,3.60000000e+003,6.00000000e+001,1,0,0.00000000e+000],[1.50000000e+003,2.20000000e+003
+		,2.20000000e+003,3.00000000e+001,0.00000000e+000,3.60000000e+003,6.00000000e+001,1,0,0.00000000e+000
+		],[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001,0.00000000e+000,3.60000000e+003
+		,6.00000000e+001,1,0,0.00000000e+000],[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001
+		,0.00000000e+000,3.60000000e+003,6.00000000e+001,1,0,0.00000000e+000],[1.50000000e+003,2.20000000e+003
+		,2.20000000e+003,3.00000000e+001,0.00000000e+000,3.60000000e+003,6.00000000e+001,1,0,0.00000000e+000
+		],[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001,0.00000000e+000,3.60000000e+003
+		,6.00000000e+001,1,0,0.00000000e+000],[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001
+		,0.00000000e+000,3.60000000e+003,6.00000000e+001,1,0,0.00000000e+000],[1.50000000e+003,2.20000000e+003
+		,2.20000000e+003,3.00000000e+001,0.00000000e+000,3.60000000e+003,6.00000000e+001,1,0,0.00000000e+000
+		],[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001,0.00000000e+000,3.60000000e+003
+		,6.00000000e+001,1,0,0.00000000e+000],[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001
+		,0.00000000e+000,3.60000000e+003,6.00000000e+001,1,0,0.00000000e+000],[1.50000000e+003,2.20000000e+003
+		,2.20000000e+003,3.00000000e+001,0.00000000e+000,3.60000000e+003,6.00000000e+001,1,0,0.00000000e+000
+		],[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001,0.00000000e+000,3.60000000e+003
+		,6.00000000e+001,1,0,0.00000000e+000],[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001
+		,0.00000000e+000,3.60000000e+003,6.00000000e+001,1,0,0.00000000e+000],[1.50000000e+003,2.20000000e+003
+		,2.20000000e+003,3.00000000e+001,0.00000000e+000,3.60000000e+003,6.00000000e+001,1,0,0.00000000e+000
+		],[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001,0.00000000e+000,3.60000000e+003
+		,6.00000000e+001,1,0,0.00000000e+000],[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001
+		,0.00000000e+000,3.60000000e+003,6.00000000e+001,1,0,0.00000000e+000],[1.50000000e+003,2.20000000e+003
+		,2.20000000e+003,3.00000000e+001,0.00000000e+000,3.60000000e+003,6.00000000e+001,1,0,0.00000000e+000
+		]]]]></Data>
+  <Data Format="Decorated">
+    <Array DataType="Q_MAM_Data" Dimensions="21">
+      <Element Index="[0]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[1]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[2]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[3]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[4]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[5]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[6]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[7]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[8]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[9]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[10]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[11]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[12]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[13]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[14]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[15]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[16]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[17]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[18]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[19]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[20]">
+        <Structure DataType="Q_MAM_Data">
+          <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+          <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+          <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="3600.0" />
+          <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="60.0" />
+          <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+    </Array>
+  </Data>
+</Tag>

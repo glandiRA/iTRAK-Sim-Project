@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="Cfg_GHIDAssignment" TagType="Base" DataType="DINT" Radix="Decimal" Usage="Public" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_LD_DH_SysIni" LGuid="21F1CDD5-7289-43C2-BA93-73C7D5CA4E77" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[Global Device Handler ID Assignment Configuration
+0 = System
+1 = User]]></LocalizedDescription>
+  </Description>
+  <Data Format="L5K"><![CDATA[0]]></Data>
+  <Data Format="Decorated">
+    <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+  </Data>
+</Tag>

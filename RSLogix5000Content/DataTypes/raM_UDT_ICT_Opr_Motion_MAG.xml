@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="raM_UDT_ICT_Opr_Motion_MAG" Family="NoFamily" Class="User">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_iTRAKBase" LGuid="9D24ABEB-41E6-4150-B6B1-5D01B578B527" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[MAG Interface for axes]]></LocalizedDescription>
+  </Description>
+  <Members>
+    <Member Name="MotionInstruction" DataType="MOTION_INSTRUCTION" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="AccelRate" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="SlaveCounts" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="MasterCounts" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="Master" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[0 - Master reference
+1 - Preceeding Mover
+2 - Next Mover]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Direction" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="ZZZZZZZZZZraM_UDT_IC6" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="Clutch" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC6" BitNumber="0" ExternalAccess="Read/Write" />
+    <Member Name="Execute" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC6" BitNumber="1" ExternalAccess="Read/Write" />
+    <Member Name="Executed" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC6" BitNumber="2" ExternalAccess="Read/Write" />
+  </Members>
+</DataType>

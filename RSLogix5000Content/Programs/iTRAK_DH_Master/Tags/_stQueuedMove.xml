@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="_stQueuedMove" TagType="Base" DataType="_raM_ICT_Tec_QueuedMove" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_DH_Master" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[15,0,0,0,4.00000000e+003,21,21,0,0.00000000e+000,3600,0,2,6.00000000e+001,1.14000000e+003,0.00000000e+000
+		,1,0,21,0,0.00000000e+000,0.00000000e+000,0.00000000e+000,[2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0
+		,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0
+		,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0
+		,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0
+		,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0
+		,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0],0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0.00000000e+000,4.00000019e-003,0,0.00000000e+000,0.00000000e+000,0.00000000e+000
+		]]]></Data>
+  <Data Format="Decorated">
+    <Structure DataType="_raM_ICT_Tec_QueuedMove">
+      <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+      <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_MtdID" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Sts_EN" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_EO" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_IP" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_PC" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_ER" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_ERR" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Sts_EXERR" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Cfg_CoarseUpdateRate" DataType="REAL" Radix="Float" Value="4000.0" />
+    </Structure>
+  </Data>
+</Tag>

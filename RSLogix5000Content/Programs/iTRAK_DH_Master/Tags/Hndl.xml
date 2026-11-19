@@ -1,0 +1,1461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="Hndl" TagType="Base" DataType="raM_UDT_iTRAK_Dvc_DataHndl" Usage="Public" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_DH_Master" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[[7,0,-128,1],[1,7,0,0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],1,12,50,[[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0
+		,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[19,'raM_iTRAK_Opr_Clear$00$00$00$00$00'
+		],[15,'Progecta_Double$00$00$00$00$00$00$00$00$00'],[9,'Program_M$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[21,'iTRAK_OpMMClearFaults$00$00$00'],1001,0],[[23,'raM_iTRAK_Opr_Configure$00'],[15,'Progecta_Double$00$00$00$00$00$00$00$00$00'
+		],[9,'Program_M$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[17,'iTRAK_OpMMStartup$00$00$00$00$00$00$00'
+		],1002,0],[[28,'raM_iTRAK_Opr_EnableReco'],[15,'Progecta_Double$00$00$00$00$00$00$00$00$00'],[9,'Program_M$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[17,'iTRAK_OpMMStartup$00$00$00$00$00$00$00'],1003,0],[[22,'raM_iTRAK_Opr_Energize$00$00'],[15
+		,'Progecta_Double$00$00$00$00$00$00$00$00$00'],[9,'Program_M$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[17,'iTRAK_OpMMStartup$00$00$00$00$00$00$00'],1004,0],[[25,'raM_iTRAK_Opr_RecoverZon'],[15,'Progecta_Double$00$00$00$00$00$00$00$00$00'
+		],[9,'Program_M$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[17,'iTRAK_OpMMStartup$00$00$00$00$00$00$00'
+		],1005,0],[[21,'raM_iTRAK_Opr_StopAll$00$00$00'],[15,'Progecta_Double$00$00$00$00$00$00$00$00$00'
+		],[9,'Program_M$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[18,'iTRAK_OpMMShutdown$00$00$00$00$00$00'
+		],1006,0],[[24,'raM_iTRAK_Opr_DeEnergize'],[15,'Progecta_Double$00$00$00$00$00$00$00$00$00'],[9,'Program_M$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[18,'iTRAK_OpMMShutdown$00$00$00$00$00$00'],1007,0],[[22,'raM_iTRAK_Opr_Energize$00$00'],[15,'Progecta_Double$00$00$00$00$00$00$00$00$00'
+		],[9,'Program_M$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[18,'iTRAK_OpMMRecovery$00$00$00$00$00$00'
+		],1008,0],[[25,'raM_iTRAK_Opr_RecoverZon'],[15,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[9,'Program_M$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[18,'iTRAK_OpMMRecovery$00$00$00$00$00$00'
+		],1009,0],[[22,'raM_iTRAK_Opr_CopyTune$00$00'],[15,'Progecta_Double$00$00$00$00$00$00$00$00$00'
+		],[9,'Program_M$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[14,'iTRAK_OpMMTune$00$00$00$00$00$00$00$00$00$00'
+		],1010,0],[[23,'raM_iTRAK_Opr_TuneMover$00'],[15,'Progecta_Double$00$00$00$00$00$00$00$00$00'
+		],[9,'Program_M$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[14,'iTRAK_OpMMTune$00$00$00$00$00$00$00$00$00$00'
+		],1011,0],[[21,'raM_iTRAK_Opr_StopAll$00$00$00'],[15,'Progecta_Double$00$00$00$00$00$00$00$00$00'
+		],[9,'Program_M$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[21,'Q_S_Sequence_Cam_QMAM$00$00$00'
+		],1012,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0
+		,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0]]],[[[1,1005
+		,16,0,0,[25,'raM_iTRAK_Opr_RecoverZone$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883613248548390,[1998,1,1,0,7,28,548393],0],[1,1002,4,0,0,[23,'raM_iTRAK_Opr_Configureovery$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],1794563476295609,[2026,11,13,9,51,16,295609],0],[1,1003,15,0,0,[28,'raM_iTRAK_Opr_EnableRecovery$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],1794563478615609,[2026,11,13,9,51,18,615609],0],[1,1004,2,0,0,[22,'raM_iTRAK_Opr_Energizeoneeryers not in correct state for MSO$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],1794563478615614,[2026,11,13,9,51,18,615614],0],[1,1005,16,0,0,[25,'raM_iTRAK_Opr_RecoverZoneery000 document$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],1794563478663613,[2026,11,13,9,51,18,663613],0],[1,1002,4,0,0,[23,'raM_iTRAK_Opr_Configurene$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883613245636332,[1998,1,1,0,7,25,636335],0],[1,1003,15,0,0,[28,'raM_iTRAK_Opr_EnableRecovery$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883613248500385,[1998,1,1,0,7,28,500387],0],[1,1004,2,0,0,[22,'raM_iTRAK_Opr_Energizecovery$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],883613248500405,[1998,1,1,0,7,28,500407],0]],5],[3],16,0,-100,-1,12,-1,0,21,21,1,1,12,1073741824,4000,300000,3600000
+		,0]]]></Data>
+  <Data Format="Decorated">
+    <Structure DataType="raM_UDT_iTRAK_Dvc_DataHndl">
+      <StructureMember Name="stStateMachine" DataType="raM_UDT_Dvc_xADH_StateMachine">
+        <DataValueMember Name="State" DataType="SINT" Radix="Decimal" Value="7" />
+        <DataValueMember Name="bInitialized" DataType="BOOL" Value="0" />
+        <DataValueMember Name="bConnect" DataType="BOOL" Value="0" />
+        <DataValueMember Name="bConnected" DataType="BOOL" Value="0" />
+        <DataValueMember Name="bDisconnected" DataType="BOOL" Value="0" />
+        <DataValueMember Name="bDeviceNotFound" DataType="BOOL" Value="0" />
+        <DataValueMember Name="bConfigured" DataType="BOOL" Value="0" />
+        <DataValueMember Name="bDisconnect" DataType="BOOL" Value="0" />
+        <DataValueMember Name="bConfigure" DataType="BOOL" Value="0" />
+        <DataValueMember Name="bReconfigure" DataType="BOOL" Value="0" />
+        <DataValueMember Name="stsInitialize" DataType="BOOL" Value="0" />
+        <DataValueMember Name="stsDisconnected" DataType="BOOL" Value="0" />
+        <DataValueMember Name="stsConnecting" DataType="BOOL" Value="0" />
+        <DataValueMember Name="stsDisconnecting" DataType="BOOL" Value="0" />
+        <DataValueMember Name="stsConfiguring" DataType="BOOL" Value="0" />
+        <DataValueMember Name="stsIdle" DataType="BOOL" Value="0" />
+        <DataValueMember Name="stsAvailable" DataType="BOOL" Value="1" />
+        <DataValueMember Name="stsConnected" DataType="BOOL" Value="1" />
+      </StructureMember>
+      <StructureMember Name="infHandler" DataType="raM_UDT_Dvc_xxDH_InfHandlerv3">
+        <DataValueMember Name="eMode" DataType="DINT" Radix="Decimal" Value="1" />
+        <DataValueMember Name="eState" DataType="DINT" Radix="Decimal" Value="7" />
+        <DataValueMember Name="bMode" DataType="DINT" Radix="Decimal" Value="0" />
+        <DataValueMember Name="bState" DataType="DINT" Radix="Decimal" Value="0" />
+      </StructureMember>
+      <StructureMember Name="MethodRegistry" DataType="raM_UDT_Dvc_xxDH_MethodRegistry">
+        <StructureMember Name="PAC" DataType="STR0040">
+          <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="DATA" DataType="STR0040" Radix="ASCII"><![CDATA[]]></DataValueMember>
+        </StructureMember>
+        <DataValueMember Name="HandlerID" DataType="DINT" Radix="Decimal" Value="1" />
+        <DataValueMember Name="PTR" DataType="DINT" Radix="Decimal" Value="12" />
+        <DataValueMember Name="Size" DataType="DINT" Radix="Decimal" Value="50" />
+        <ArrayMember Name="Method" DataType="raM_UDT_Opr_ObjectRegister_Members" Dimensions="50">
+          <Element Index="[0]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[1]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="19" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_Clear']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="15" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Progecta_Double']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Program_M']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="21" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['iTRAK_OpMMClearFaults']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1001" />
+            </Structure>
+          </Element>
+          <Element Index="[2]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="23" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_Configure']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="15" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Progecta_Double']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Program_M']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="17" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['iTRAK_OpMMStartup']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1002" />
+            </Structure>
+          </Element>
+          <Element Index="[3]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="28" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_EnableReco']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="15" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Progecta_Double']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Program_M']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="17" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['iTRAK_OpMMStartup']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1003" />
+            </Structure>
+          </Element>
+          <Element Index="[4]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="22" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_Energize']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="15" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Progecta_Double']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Program_M']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="17" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['iTRAK_OpMMStartup']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1004" />
+            </Structure>
+          </Element>
+          <Element Index="[5]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="25" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_RecoverZon']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="15" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Progecta_Double']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Program_M']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="17" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['iTRAK_OpMMStartup']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1005" />
+            </Structure>
+          </Element>
+          <Element Index="[6]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="21" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_StopAll']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="15" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Progecta_Double']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Program_M']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="18" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['iTRAK_OpMMShutdown']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1006" />
+            </Structure>
+          </Element>
+          <Element Index="[7]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="24" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_DeEnergize']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="15" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Progecta_Double']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Program_M']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="18" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['iTRAK_OpMMShutdown']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1007" />
+            </Structure>
+          </Element>
+          <Element Index="[8]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="22" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_Energize']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="15" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Progecta_Double']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Program_M']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="18" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['iTRAK_OpMMRecovery']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1008" />
+            </Structure>
+          </Element>
+          <Element Index="[9]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="25" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_RecoverZon']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="15" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Program_M']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="18" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['iTRAK_OpMMRecovery']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1009" />
+            </Structure>
+          </Element>
+          <Element Index="[10]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="22" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_CopyTune']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="15" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Progecta_Double']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Program_M']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['iTRAK_OpMMTune']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1010" />
+            </Structure>
+          </Element>
+          <Element Index="[11]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="23" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_TuneMover']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="15" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Progecta_Double']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Program_M']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['iTRAK_OpMMTune']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1011" />
+            </Structure>
+          </Element>
+          <Element Index="[12]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="21" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_StopAll']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="15" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Progecta_Double']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="9" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Program_M']]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="21" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA['Q_S_Sequence_Cam_QMAM']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1012" />
+            </Structure>
+          </Element>
+          <Element Index="[13]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[14]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[15]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[16]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[17]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[18]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[19]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[20]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[21]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[22]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[23]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[24]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[25]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[26]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[27]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[28]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[29]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[30]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[31]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[32]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[33]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[34]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[35]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[36]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[37]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[38]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[39]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[40]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[41]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[42]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[43]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[44]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[45]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[46]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[47]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[48]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+          <Element Index="[49]">
+            <Structure DataType="raM_UDT_Opr_ObjectRegister_Members">
+              <StructureMember Name="Name" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PAC" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="PRG" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <StructureMember Name="RTN" DataType="STR0024">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+                <DataValueMember Name="DATA" DataType="STR0024" Radix="ASCII"><![CDATA[]]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
+            </Structure>
+          </Element>
+        </ArrayMember>
+      </StructureMember>
+      <StructureMember Name="ctrlEvtQ" DataType="raM_UDT_Dvc_xxDH_EventQueue">
+        <ArrayMember Name="Queue" DataType="raM_UDT_Opr_EventCreate_Members" Dimensions="8">
+          <Element Index="[0]">
+            <Structure DataType="raM_UDT_Opr_EventCreate_Members">
+              <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="1" />
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1005" />
+              <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="16" />
+              <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+              <StructureMember Name="Message" DataType="STRING">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="25" />
+                <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_RecoverZone']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-00:07:28.548_390Z" />
+              <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+                <Element Index="[0]" Value="1998" />
+                <Element Index="[1]" Value="1" />
+                <Element Index="[2]" Value="1" />
+                <Element Index="[3]" Value="0" />
+                <Element Index="[4]" Value="7" />
+                <Element Index="[5]" Value="28" />
+                <Element Index="[6]" Value="548393" />
+              </ArrayMember>
+            </Structure>
+          </Element>
+          <Element Index="[1]">
+            <Structure DataType="raM_UDT_Opr_EventCreate_Members">
+              <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="1" />
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1002" />
+              <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="4" />
+              <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+              <StructureMember Name="Message" DataType="STRING">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="23" />
+                <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_Configure']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#2026-11-13-09:51:16.295_609Z" />
+              <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+                <Element Index="[0]" Value="2026" />
+                <Element Index="[1]" Value="11" />
+                <Element Index="[2]" Value="13" />
+                <Element Index="[3]" Value="9" />
+                <Element Index="[4]" Value="51" />
+                <Element Index="[5]" Value="16" />
+                <Element Index="[6]" Value="295609" />
+              </ArrayMember>
+            </Structure>
+          </Element>
+          <Element Index="[2]">
+            <Structure DataType="raM_UDT_Opr_EventCreate_Members">
+              <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="1" />
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1003" />
+              <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="15" />
+              <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+              <StructureMember Name="Message" DataType="STRING">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="28" />
+                <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_EnableRecovery']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#2026-11-13-09:51:18.615_609Z" />
+              <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+                <Element Index="[0]" Value="2026" />
+                <Element Index="[1]" Value="11" />
+                <Element Index="[2]" Value="13" />
+                <Element Index="[3]" Value="9" />
+                <Element Index="[4]" Value="51" />
+                <Element Index="[5]" Value="18" />
+                <Element Index="[6]" Value="615609" />
+              </ArrayMember>
+            </Structure>
+          </Element>
+          <Element Index="[3]">
+            <Structure DataType="raM_UDT_Opr_EventCreate_Members">
+              <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="1" />
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1004" />
+              <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="2" />
+              <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+              <StructureMember Name="Message" DataType="STRING">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="22" />
+                <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_Energize']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#2026-11-13-09:51:18.615_614Z" />
+              <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+                <Element Index="[0]" Value="2026" />
+                <Element Index="[1]" Value="11" />
+                <Element Index="[2]" Value="13" />
+                <Element Index="[3]" Value="9" />
+                <Element Index="[4]" Value="51" />
+                <Element Index="[5]" Value="18" />
+                <Element Index="[6]" Value="615614" />
+              </ArrayMember>
+            </Structure>
+          </Element>
+          <Element Index="[4]">
+            <Structure DataType="raM_UDT_Opr_EventCreate_Members">
+              <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="1" />
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1005" />
+              <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="16" />
+              <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+              <StructureMember Name="Message" DataType="STRING">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="25" />
+                <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_RecoverZone']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#2026-11-13-09:51:18.663_613Z" />
+              <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+                <Element Index="[0]" Value="2026" />
+                <Element Index="[1]" Value="11" />
+                <Element Index="[2]" Value="13" />
+                <Element Index="[3]" Value="9" />
+                <Element Index="[4]" Value="51" />
+                <Element Index="[5]" Value="18" />
+                <Element Index="[6]" Value="663613" />
+              </ArrayMember>
+            </Structure>
+          </Element>
+          <Element Index="[5]">
+            <Structure DataType="raM_UDT_Opr_EventCreate_Members">
+              <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="1" />
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1002" />
+              <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="4" />
+              <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+              <StructureMember Name="Message" DataType="STRING">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="23" />
+                <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_Configure']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-00:07:25.636_332Z" />
+              <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+                <Element Index="[0]" Value="1998" />
+                <Element Index="[1]" Value="1" />
+                <Element Index="[2]" Value="1" />
+                <Element Index="[3]" Value="0" />
+                <Element Index="[4]" Value="7" />
+                <Element Index="[5]" Value="25" />
+                <Element Index="[6]" Value="636335" />
+              </ArrayMember>
+            </Structure>
+          </Element>
+          <Element Index="[6]">
+            <Structure DataType="raM_UDT_Opr_EventCreate_Members">
+              <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="1" />
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1003" />
+              <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="15" />
+              <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+              <StructureMember Name="Message" DataType="STRING">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="28" />
+                <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_EnableRecovery']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-00:07:28.500_385Z" />
+              <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+                <Element Index="[0]" Value="1998" />
+                <Element Index="[1]" Value="1" />
+                <Element Index="[2]" Value="1" />
+                <Element Index="[3]" Value="0" />
+                <Element Index="[4]" Value="7" />
+                <Element Index="[5]" Value="28" />
+                <Element Index="[6]" Value="500387" />
+              </ArrayMember>
+            </Structure>
+          </Element>
+          <Element Index="[7]">
+            <Structure DataType="raM_UDT_Opr_EventCreate_Members">
+              <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="1" />
+              <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1004" />
+              <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="2" />
+              <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
+              <StructureMember Name="Message" DataType="STRING">
+                <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="22" />
+                <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_Energize']]></DataValueMember>
+              </StructureMember>
+              <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1998-01-01-00:07:28.500_405Z" />
+              <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
+                <Element Index="[0]" Value="1998" />
+                <Element Index="[1]" Value="1" />
+                <Element Index="[2]" Value="1" />
+                <Element Index="[3]" Value="0" />
+                <Element Index="[4]" Value="7" />
+                <Element Index="[5]" Value="28" />
+                <Element Index="[6]" Value="500407" />
+              </ArrayMember>
+            </Structure>
+          </Element>
+        </ArrayMember>
+        <DataValueMember Name="PTR" DataType="DINT" Radix="Decimal" Value="5" />
+      </StructureMember>
+      <StructureMember Name="Recovery" DataType="raM_UDT_iTRAK_Opr_AxisRecovery">
+        <DataValueMember Name="Enable" DataType="BOOL" Value="1" />
+        <DataValueMember Name="RecoveryComplete" DataType="BOOL" Value="1" />
+        <DataValueMember Name="RecoveryInProgress" DataType="BOOL" Value="0" />
+        <DataValueMember Name="RecoveryRequired" DataType="BOOL" Value="0" />
+      </StructureMember>
+      <DataValueMember Name="bMotionPolarity" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bReverseMoverNumbering" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bConfigurationRequest" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bConfigurationRequestReceived" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bTestMode" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bFaultReset" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bConverterFault" DataType="BOOL" Value="0" />
+      <DataValueMember Name="biPSFault" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bSectionFault" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bMoverFault" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bFaulted" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bConverterAlarm" DataType="BOOL" Value="0" />
+      <DataValueMember Name="biPSAlarm" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bSectionAlarm" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bMoverAlarm" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bAlarm" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bEnergize" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bDeEnergize" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bEnergized" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bAllSectionsEnergized" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bAllMoversEnergized" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bAllSectionsDeEnergized" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bAllMoversDeEnergized" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bAllSectionsConnected" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bAllMoversConnected" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bAllPowerSupplyConnected" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bAllConvertersConnected" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bAllSectionsAvailable" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bAllMoversAvailable" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bAllPowerSupplyAvailable" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bAllConvertersAvailable" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bPowerSupplyReady" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bLinearTrack" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bTestModeFault" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bDeviceObjectsConfigured" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bHardwareAvailable" DataType="BOOL" Value="1" />
+      <DataValueMember Name="nTargetType" DataType="SINT" Radix="Decimal" Value="-1" />
+      <DataValueMember Name="nTargetIndex" DataType="SINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="nMaxNumberOfMovers" DataType="INT" Radix="Decimal" Value="21" />
+      <DataValueMember Name="nActiveMovers" DataType="INT" Radix="Decimal" Value="21" />
+      <DataValueMember Name="nMaxNumberOfConverter" DataType="SINT" Radix="Decimal" Value="1" />
+      <DataValueMember Name="nMaxNumberOfiPS" DataType="SINT" Radix="Decimal" Value="1" />
+      <DataValueMember Name="nMaxNumberOfSections" DataType="SINT" Radix="Decimal" Value="12" />
+      <DataValueMember Name="ctrlIO" DataType="DINT" Radix="Decimal" Value="1073741824" />
+      <DataValueMember Name="nCoarseUpdatePeriod" DataType="DINT" Radix="Decimal" Value="4000" />
+      <DataValueMember Name="nSectionLength" DataType="DINT" Radix="Decimal" Value="300000" />
+      <DataValueMember Name="nTrackLength" DataType="DINT" Radix="Decimal" Value="3600000" />
+      <DataValueMember Name="nPositionOffset" DataType="DINT" Radix="Decimal" Value="0" />
+    </Structure>
+  </Data>
+</Tag>

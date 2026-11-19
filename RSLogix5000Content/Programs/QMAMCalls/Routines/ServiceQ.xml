@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="ServiceQ" Type="RLL">
+  <RLLContent>
+    <Rung Type="N">
+      <Text><![CDATA[EQ(Serv_Step,10)MOVE(\iTRAK_DH_Master.Mover[SIndex].Sts.Data.ActualPosition,PosArray[SIndex]);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[EQ(Serv_Step,20)XIO(QMam_MAM[SIndex].Sts_MoveStatus)OTE(StatusQMAMmoving.[SIndex])EQ(StatusQMAMmoving,MovDINT)MOVE(20,Serv_Step);]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

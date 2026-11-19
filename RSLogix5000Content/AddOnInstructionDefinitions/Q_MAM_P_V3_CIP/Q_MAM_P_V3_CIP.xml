@@ -1,0 +1,839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AddOnInstructionDefinition Name="Q_MAM_P_V3_CIP" Class="Standard" Revision="3.1" RevisionExtension="Positive Queue" ExecutePrescan="true" ExecutePostscan="false" ExecuteEnableInFalse="true" CreatedDate="2014-04-08T09:51:09.240Z" CreatedBy="Not Available" EditedDate="2026-11-06T16:37:51.201Z" EditedBy="VIT6K71M1310\glandi" SoftwareRevision="v38.03">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="0">
+      <Header xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Maj="1" Min="0" OExt="-1" UExt="1">
+        <Libs>
+          <LibHdr CatalogNumber="Q_MAM_P" Guid="21EB654C-AF8D-4339-A4B9-5C5957855F98" />
+        </Libs>
+      </Header>
+    </Provider>
+    <Provider ID="ACM" Ext="1">
+      <Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<DecoratedData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorRev="1" MinorRev="0" CRC="ToDo">
+  <Private xsi:type="AoiPrivateData" Guid="21EB654C-AF8D-4339-A4B9-5C5957855F98" ContentType="Routine">
+    <Attrib />
+    <Subs />
+  </Private>
+</DecoratedData>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[Queued MAM Positive with Preceding Axis Position Feedforward ]]></LocalizedDescription>
+  </Description>
+  <RevisionNote>
+    <LocalizedRevisionNote Lang="en-US"><![CDATA[V3.0
+simplified code
+simplified interface
+tolerance on target position
+V3.1
+change conditions for IP]]></LocalizedRevisionNote>
+  </RevisionNote>
+  <AdditionalHelpText>
+    <LocalizedAdditionalHelpText Lang="en-US"><![CDATA[This instruction targets a destination for a specific Mover. It checks wheter this target is reachable or not, drive Mover to the closest position (specified by input parameter) and, if left active, wait for the queue
+to proceed until it reaches its destination. The target position may be updated during movement, and additional movement, such as Position Cams or MDSC Moves or Jogs can be added on top.]]></LocalizedAdditionalHelpText>
+  </AdditionalHelpText>
+  <Parameters>
+    <Parameter Name="EnableIn" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Enable Input - System Defined Parameter]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="EnableOut" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Enable Output - System Defined Parameter]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="xxxxxxxxxxxxx_TargetPosition_xxxxxxxxxxx" TagType="Base" DataType="DINT" Usage="Input" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="in_TargetPosition" TagType="Base" DataType="REAL" Usage="Input" Radix="Float" Required="true" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Input Data:
+Axis Target Position]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="xxxxxxxxxxxxxxxx_AXES_xxxxxxxxxxxxxxxxxx" TagType="Base" DataType="DINT" Usage="Input" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="in_Axis" TagType="Base" DataType="AXIS_CIP_DRIVE" Usage="InOut" Required="true" Visible="true">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Selected Mover]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="in_Axis_Preceding" TagType="Base" DataType="AXIS_CIP_DRIVE" Usage="InOut" Required="true" Visible="true">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Preceding Mover
+(preceding Axis)]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="xxxxxxxxxx_MOTION_GROUP_xxxxxxxxxxxxxxxx" TagType="Base" DataType="DINT" Usage="Input" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Cfg_MotionGroup" TagType="Base" DataType="MOTION_GROUP" Usage="InOut" Required="true" Visible="true">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Motion
+Group]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="xxxxxxx_MOTION_DATA_xxxxxxxxxxxxxxxxxxxx" TagType="Base" DataType="DINT" Usage="Input" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[FIELD DATA SPECIFIER: MOTION DATA]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Cfg_Q_MAM_Data" TagType="Base" DataType="Q_MAM_Data" Usage="InOut" Required="true" Visible="true" Constant="false">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Q_MAM
+DATA]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="xxxxxxxxx_LINKED_PARAMETERS_xxxxxxxxxxxx" TagType="Base" DataType="DINT" Usage="Input" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="In_LinkedParametersInput" TagType="Base" DataType="UDT_Q_MAM_LinkedParameters" Usage="InOut" Required="true" Visible="true" Constant="false" />
+    <Parameter Name="Out_LinkedParametersOutput" TagType="Base" DataType="UDT_Q_MAM_LinkedParameters" Usage="InOut" Required="true" Visible="true" Constant="false" />
+    <Parameter Name="in_DisableMove" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Disable Motion
+Input for debug Purposes]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="xxxxxxxxx_DATA_OUTPUT_xxxxxxxxxxxxxxxxxx" TagType="Base" DataType="DINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="EN" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[INSTRUCTION 
+ENABLED]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="ER" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[INSTRUCTION
+FAULTED]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="IP" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[INSTRUCTION 
+IN PROCESS]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="PC" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[INSTRUCTION 
+COMPLETED]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Sts_QueueLeader" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[This Axis is the leader of a queued Movement]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Sts_Queued" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[THIS AXIS
+is 
+QUEUED]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Sts_MoveStatus" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis in Move Condition]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Sts_MoveCommand" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Generate a Move Command for this Axis ]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Sts_Mover_WayFree" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Way to Target 
+is Free]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Inf_Command_Position" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis Command Position]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Inf_FFActiveMode" TagType="Base" DataType="DINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Output: FF Mode currently Active]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="inf_TrainsActualDistance" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Current distance between the Preceding Axis and this Axis]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="inf_LastCmdPosIncrement" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="false" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Last Command Position Increment]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="xxxxxxxxx_ERROR_CODES_xxxxxxxxxxxxxxxxxx" TagType="Base" DataType="DINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="ERR" TagType="Base" DataType="DINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="EXERR" TagType="Base" DataType="DINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Axis_ip1_AdjustedCmdPosition" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="false" ExternalAccess="Read Only">
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </Parameter>
+  </Parameters>
+  <LocalTags>
+    <LocalTag Name="Axis_i_CmdVel" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Local Value
+for Command Velocity]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="i_Q_MAM_INC_MergeDisabled" DataType="MOTION_INSTRUCTION" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[MAM Merge Disabled
+Incremental]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[[0,0,0,0,0,0,0,0,0]]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <Structure DataType="MOTION_INSTRUCTION">
+          <DataValueMember Name="FLAGS" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="EN" DataType="BOOL" Value="0" />
+          <DataValueMember Name="DN" DataType="BOOL" Value="0" />
+          <DataValueMember Name="ER" DataType="BOOL" Value="0" />
+          <DataValueMember Name="PC" DataType="BOOL" Value="0" />
+          <DataValueMember Name="IP" DataType="BOOL" Value="0" />
+          <DataValueMember Name="AC" DataType="BOOL" Value="0" />
+          <DataValueMember Name="ACCEL" DataType="BOOL" Value="0" />
+          <DataValueMember Name="DECEL" DataType="BOOL" Value="0" />
+          <DataValueMember Name="TrackingMaster" DataType="BOOL" Value="0" />
+          <DataValueMember Name="CalculatedDataAvailable" DataType="BOOL" Value="0" />
+          <DataValueMember Name="ERR" DataType="INT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="STATUS" DataType="SINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="STATE" DataType="SINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="SEGMENT" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="EXERR" DataType="SINT" Radix="Decimal" Value="0" />
+        </Structure>
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="Axis_i_CmdDec" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Local Value
+for Command Deceleration]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="i_Q_MAM_INC_MergeEnabled" DataType="MOTION_INSTRUCTION" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[MAM Merge Enabled]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[[0,0,0,0,0,0,0,0,0]]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <Structure DataType="MOTION_INSTRUCTION">
+          <DataValueMember Name="FLAGS" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="EN" DataType="BOOL" Value="0" />
+          <DataValueMember Name="DN" DataType="BOOL" Value="0" />
+          <DataValueMember Name="ER" DataType="BOOL" Value="0" />
+          <DataValueMember Name="PC" DataType="BOOL" Value="0" />
+          <DataValueMember Name="IP" DataType="BOOL" Value="0" />
+          <DataValueMember Name="AC" DataType="BOOL" Value="0" />
+          <DataValueMember Name="ACCEL" DataType="BOOL" Value="0" />
+          <DataValueMember Name="DECEL" DataType="BOOL" Value="0" />
+          <DataValueMember Name="TrackingMaster" DataType="BOOL" Value="0" />
+          <DataValueMember Name="CalculatedDataAvailable" DataType="BOOL" Value="0" />
+          <DataValueMember Name="ERR" DataType="INT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="STATUS" DataType="SINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="STATE" DataType="SINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="SEGMENT" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="EXERR" DataType="SINT" Radix="Decimal" Value="0" />
+        </Structure>
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="rTotalDistanceToRecover" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Total Distance
+ To Recover]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="rLastDistanceCommanded" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Last increment
+given to Axis (Mover)]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="rMemCmdPos" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Last Target Position
+to be used to calculate distance still to recover]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="rDistanceToGo" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Incremental Movement
+Target for this Instruction Scan]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="Mem_Inc_Cmd" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="rCmdIncrement" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Additional Increment
+due to Target Position change]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="Loc_CmdPos" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Saved
+Target Position for Q_MAM Movement]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="Loc_RMem" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Last Target Position
+to be used to calculate distance still to recover]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="loc_bFirstMove" DataType="BOOL" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[First Move Command]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="UnwindMul" DataType="DINT" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Unwind Mul]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="Loc_rSaved_Target_Position" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[When entering the instruction save the target position. We will monitor if it changes while instruction is still enabled]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="UnwindMulReal" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="AbsoluteMoveAllowed" DataType="BOOL" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Absolute Move
+Allowed]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="i_Q_MAM_ABS_MergeEnabled" DataType="MOTION_INSTRUCTION" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[MAM Merge Enabled
+ABSOLUTE]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[[0,0,0,0,0,0,0,0,0]]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <Structure DataType="MOTION_INSTRUCTION">
+          <DataValueMember Name="FLAGS" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="EN" DataType="BOOL" Value="0" />
+          <DataValueMember Name="DN" DataType="BOOL" Value="0" />
+          <DataValueMember Name="ER" DataType="BOOL" Value="0" />
+          <DataValueMember Name="PC" DataType="BOOL" Value="0" />
+          <DataValueMember Name="IP" DataType="BOOL" Value="0" />
+          <DataValueMember Name="AC" DataType="BOOL" Value="0" />
+          <DataValueMember Name="ACCEL" DataType="BOOL" Value="0" />
+          <DataValueMember Name="DECEL" DataType="BOOL" Value="0" />
+          <DataValueMember Name="TrackingMaster" DataType="BOOL" Value="0" />
+          <DataValueMember Name="CalculatedDataAvailable" DataType="BOOL" Value="0" />
+          <DataValueMember Name="ERR" DataType="INT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="STATUS" DataType="SINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="STATE" DataType="SINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="SEGMENT" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="EXERR" DataType="SINT" Radix="Decimal" Value="0" />
+        </Structure>
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="i_Q_MAM_ABS_MergeDisabled" DataType="MOTION_INSTRUCTION" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[MAM Merge Disabled
+Absolute]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[[0,0,0,0,0,0,0,0,0]]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <Structure DataType="MOTION_INSTRUCTION">
+          <DataValueMember Name="FLAGS" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="EN" DataType="BOOL" Value="0" />
+          <DataValueMember Name="DN" DataType="BOOL" Value="0" />
+          <DataValueMember Name="ER" DataType="BOOL" Value="0" />
+          <DataValueMember Name="PC" DataType="BOOL" Value="0" />
+          <DataValueMember Name="IP" DataType="BOOL" Value="0" />
+          <DataValueMember Name="AC" DataType="BOOL" Value="0" />
+          <DataValueMember Name="ACCEL" DataType="BOOL" Value="0" />
+          <DataValueMember Name="DECEL" DataType="BOOL" Value="0" />
+          <DataValueMember Name="TrackingMaster" DataType="BOOL" Value="0" />
+          <DataValueMember Name="CalculatedDataAvailable" DataType="BOOL" Value="0" />
+          <DataValueMember Name="ERR" DataType="INT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="STATUS" DataType="SINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="STATE" DataType="SINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="SEGMENT" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="EXERR" DataType="SINT" Radix="Decimal" Value="0" />
+        </Structure>
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="Axis_i_CmdAccjerk" DataType="DINT" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Local Value
+for Command Acceleration Jerk]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="loc_bCurrentPosFeedForward" DataType="BOOL" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Feedforward Mode = 0
+Follower Axis use Leader Axis Propagated increment to enable Position FeedForward]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="loc_bCurrentPosMode_Follower" DataType="BOOL" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[This Mover is a Follower
+according to Mode = 0]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="AuxWayFree" DataType="BOOL" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis Target Available
+Rising Edge]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="AOI_RICM" DataType="AOI_ReadInterpolatedActualPositionCIP" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Read Interpolated Command
+Position]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[[1,0,0.00000000e+000,0.00000000e+000,[0,0]]]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <Structure DataType="AOI_ReadInterpolatedActualPositionCIP">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="0" />
+          <DataValueMember Name="TimeOffset" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="InterpolatedActualPosition" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="InterpolatedCommandPosition" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="TimeOffset" DataType="DINT" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Time Offset to calculate the interpolated Command Position]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="Get_TimeLeft" DataType="AOI_MotionPlannerCountDown" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[[1,0,0,0,0,[0,0],[0,0],[0,0],0,0,[0,0]]]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <Structure DataType="AOI_MotionPlannerCountDown">
+          <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+          <DataValueMember Name="EnableOut" DataType="BOOL" Value="0" />
+          <DataValueMember Name="CUR" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="TimeElapsed" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="TimeLeft" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="ER" DataType="BOOL" Value="0" />
+          <DataValueMember Name="ActualizationTimeOffset" DataType="DINT" Radix="Decimal" Value="0" />
+        </Structure>
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="loc_bTargetPosition_Changed" DataType="BOOL" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[New Command Position 
+Has been targeted to current Axis]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="AxisPreceding_AdjPos" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Feed Forward:
+Preceding Axes current position increment]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="CUR_Usec" DataType="DINT" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Coarse Update Rate 
+expressed in micro secs]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="CUR" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Coarse Update Rate 
+expressed in secs]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="AbsoluteMoveNotAllowed" DataType="BOOL" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Absolute Move Not allowed as a different Motion Instruction has modified the absolute positon target]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="ThisAxis_InterpolatedActualPos" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="ThisAxis_InterpolatedCmdPos" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="RollOverSafeLimit" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Unwind Roll-Over
+Safe Limit]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="MoveTargetToleranceNeg" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="loc_rMem_Commanded_Position" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Last Command Position]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="Axis_i_IncremCmdPos" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[THIS AXIS
+Incremental Position
+for Motion Command]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="Loc_rAvailableSpaceForward" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Position Available to move in
+from follower Mover]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="AxisPreceding_AdjustedCmdPosition" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis Preceding Command Position Adjusted: modified with FeedForward increments (if enabled)]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="Axis_ip1_BoundaryPos" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Preceding Axis (Mover)
+Boundary Position
+This is the limit for this Axis Movement]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="loc_rAxisPreceding_PosAdvance" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Preceding Axis Incremental Postion 
+calculated using Logix Extrapolation]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="Loc_LastCyleAvailableSpaceForward" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="ApplyEarlyCmdVal" DataType="BOOL" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Apply an early increment not to lose a scan]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="LimSup" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="LimInf" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="PrecedingMoverCmdIncrement" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Last Increment commanded to the preceding Mover]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="loc_QueuedModeActive" DataType="BOOL" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Queued Mode:
+Axis change state to queued state when reaching minimum distance from the preceding axis]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="AuxQsts" DataType="BOOL" Radix="Decimal" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="InitQueuedState" DataType="BOOL" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis Entering Queued State: first increment]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="Axis_i_CmdDecJerk" DataType="DINT" Radix="Decimal" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Local Value
+for Command Deceleration Jerk]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="Axis_i_CmdAcc" DataType="REAL" Radix="Float" ExternalAccess="None">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Local Value
+for Command Acceleration]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="EarlyCommandValue" DataType="DINT" Radix="Decimal" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+  </LocalTags>
+  <Routines />
+  <Dependencies>
+    <Dependency Type="AddOnInstructionDefinition" Name="AOI_ReadInterpolatedActualPositionCIP" />
+    <Dependency Type="DataType" Name="Q_MAM_Data" />
+    <Dependency Type="AddOnInstructionDefinition" Name="AOI_MotionPlannerCountDown" />
+    <Dependency Type="DataType" Name="UDT_Q_MAM_LinkedParameters" />
+  </Dependencies>
+</AddOnInstructionDefinition>

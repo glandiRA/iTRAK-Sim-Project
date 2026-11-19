@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="raM_UDT_ItfAD_PwrMotion_Inf" Family="NoFamily" Class="User">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_Dvc_CIPAxis" LGuid="E7B354AE-DB40-4E33-804E-D8EB6669BD77" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[Device Interface - Power Motion]]></LocalizedDescription>
+  </Description>
+  <Members>
+    <Member Name="ModulePath" DataType="STR0032" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Module CIP Path.]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="AxisID" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Axis identification unique within a controller]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Dimension="0" Radix="Hex" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Physical Axis Reference]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="DataType" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="None" />
+    <Member Name="Lock" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="DataType" BitNumber="0" ExternalAccess="None" />
+  </Members>
+  <Dependencies>
+    <Dependency Type="DataType" Name="STR0032" />
+  </Dependencies>
+</DataType>

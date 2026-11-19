@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="Service" Type="RLL">
+  <RLLContent>
+    <Rung Type="N">
+      <Text><![CDATA[EQ(Serv_Step,10)MUL(PosDist,SIndex,PosSub)SUB(PosInit,PosSub,Pos)[,LT(Pos,0) ADD(Pos,Track_Unwind,Pos) ][MOVE(Pos,\iTRAK_DH_Master.Mover[SIndex].MRP.Position) ,MOVE(0,\iTRAK_DH_Master.Mover[SIndex].MRP.Type) ,OTL(\iTRAK_DH_Master.Mover[SIndex].MRP.Execute) ,OTU(\iTRAK_DH_Master.Mover[SIndex].MRP.Executed) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[EQ(Serv_Step,20)XIC(\iTRAK_DH_Master.Mover[SIndex].MRP.Execute)XIC(\iTRAK_DH_Master.Mover[SIndex].MRP.Executed)OTL(MRPExec.[SIndex]);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[EQ(Serv_Step,30)OTU(QMam_Cmd[SIndex]);]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

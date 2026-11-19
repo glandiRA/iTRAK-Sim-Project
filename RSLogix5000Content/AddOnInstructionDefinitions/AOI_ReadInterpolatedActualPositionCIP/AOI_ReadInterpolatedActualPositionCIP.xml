@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AddOnInstructionDefinition Name="AOI_ReadInterpolatedActualPositionCIP" Class="Standard" Revision="1.0" ExecutePrescan="false" ExecutePostscan="false" ExecuteEnableInFalse="false" CreatedDate="2019-06-27T10:10:00.329Z" CreatedBy="CTPACKVMWIN7\admin" EditedDate="2026-11-06T16:38:26.444Z" EditedBy="VIT6K71M1310\glandi" SoftwareRevision="v38.03">
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[Read Interpolated Actual Position]]></LocalizedDescription>
+  </Description>
+  <Parameters>
+    <Parameter Name="EnableIn" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Enable Input - System Defined Parameter]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="EnableOut" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Enable Output - System Defined Parameter]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="Axis" TagType="Base" DataType="AXIS_CIP_DRIVE" Usage="InOut" Required="true" Visible="true" />
+    <Parameter Name="TimeOffset" TagType="Base" DataType="DINT" Usage="Input" Radix="Decimal" Required="true" Visible="true" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="InterpolatedActualPosition" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="true" Visible="true" ExternalAccess="Read Only">
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="InterpolatedCommandPosition" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="true" Visible="true" ExternalAccess="Read Only">
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </Parameter>
+  </Parameters>
+  <LocalTags>
+    <LocalTag Name="Current_CST_Time" DataType="DINT" Dimensions="2" Radix="Decimal" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[[0,0]]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <Array DataType="DINT" Dimensions="2" Radix="Decimal">
+          <Element Index="[0]" Value="0" />
+          <Element Index="[1]" Value="0" />
+        </Array>
+      </DefaultData>
+    </LocalTag>
+  </LocalTags>
+  <Routines />
+</AddOnInstructionDefinition>

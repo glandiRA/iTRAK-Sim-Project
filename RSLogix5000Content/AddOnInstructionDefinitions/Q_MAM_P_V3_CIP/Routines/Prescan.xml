@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="Prescan" Type="RLL">
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[Initialize Instruction]]></LocalizedDescription>
+  </Description>
+  <RLLContent>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+*
+INITIALIZE INSTRUCTIION
+*
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[NOP();]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[OTU(in_DisableMove)OTU(EN);]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

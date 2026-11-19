@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="Logic" Type="RLL">
+  <RLLContent>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[QUED MAM
+V3.0
+TF Rockwell Automation 2025]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[NOP();]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[Verify the Command Position that is been configured]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[MOVE(in_TargetPosition,Loc_rSaved_Target_Position)GT(in_TargetPosition,Cfg_Q_MAM_Data.Track_Unwind)[DIV(in_TargetPosition,Cfg_Q_MAM_Data.Track_Unwind,UnwindMulReal) TRUNC(UnwindMulReal,UnwindMul) ,CPT(Loc_rSaved_Target_Position,in_TargetPosition-UnwindMul*Cfg_Q_MAM_Data.Track_Unwind) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIO(EN)GSV(MotionGroup,Cfg_MotionGroup,CoarseUpdatePeriod,CUR_Usec)DIV(CUR_Usec,1000000,CUR);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+Clear Saved Fault Data at Start-Uo
+*
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIO(EN)MOVE(0,EXERR)MOVE(0,ERR);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIO(EN)XIO(Cfg_MotionGroup.GroupSynced)MOVE(1001,ERR)OTL(ER);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[Set the initial Values and 
+request a Merge Disabled First Move Command. When the instruciton is enabled it will turn all existing movement into a pure move.
+Subsequently, if desired, a movement can be summed.]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIO(EN)[OTU(PC) OTU(ER) OTU(IP) OTU(AbsoluteMoveNotAllowed) OTU(AuxWayFree) ,MOVE(in_Axis.CommandPosition,loc_rMem_Commanded_Position) MOVE(Loc_rSaved_Target_Position,rMemCmdPos) MOVE(0,rLastDistanceCommanded) ,MOVE(0,Loc_LastCyleAvailableSpaceForward) ,SUB(Loc_rSaved_Target_Position,loc_rMem_Commanded_Position,rTotalDistanceToRecover) LT(rTotalDistanceToRecover,0) ADD(rTotalDistanceToRecover,Cfg_Q_MAM_Data.Track_Unwind,rTotalDistanceToRecover) ,MOVE(in_Axis_Preceding.CommandPosition,AxisPreceding_AdjustedCmdPosition) ,MOVE(0,PrecedingMoverCmdIncrement) ,OTE(loc_bFirstMove) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[Instruction Enabled (eventually!!!)]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[OTE(EN);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[NEG(Cfg_Q_MAM_Data.Train_MinDistance,RollOverSafeLimit);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+EVALUATE FEED FORWARD MODE
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIC(Cfg_Q_MAM_Data.EnablePositionFeedForward)XIO(in_Axis.MoveStatus)MOVE(1,Inf_FFActiveMode)OTL(loc_bCurrentPosFeedForward);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(Cfg_Q_MAM_Data.EnablePositionFeedForward)XIO(in_Axis.MoveStatus)[EQ(Cfg_Q_MAM_Data.PositionFeedForwardMode,1) OTL(loc_QueuedModeActive) ,NE(Cfg_Q_MAM_Data.PositionFeedForwardMode,1) OTU(loc_QueuedModeActive) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIO(Cfg_Q_MAM_Data.EnablePositionFeedForward)XIO(in_Axis.MoveStatus)OTU(loc_bCurrentPosFeedForward)OTU(loc_QueuedModeActive)MOVE(-1,Inf_FFActiveMode);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[Update Command Positon if target has been changed during instruction execution]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIC(EN)NE(Loc_rSaved_Target_Position,rMemCmdPos)[MOVE(rMemCmdPos,Loc_RMem) MOVE(Loc_rSaved_Target_Position,Loc_CmdPos) ,SUB(Loc_rSaved_Target_Position,rMemCmdPos,rCmdIncrement) LT(rCmdIncrement,0) ADD(rCmdIncrement,Cfg_Q_MAM_Data.Track_Unwind,rCmdIncrement) ,ADD(rTotalDistanceToRecover,rCmdIncrement,rTotalDistanceToRecover) ,MOVE(Loc_rSaved_Target_Position,rMemCmdPos) OTE(loc_bTargetPosition_Changed) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[INSTRUCTION SCAN STARTS]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[NOP();]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[MOVE(In_LinkedParametersInput.PPI_Value,AxisPreceding_AdjPos);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(In_LinkedParametersInput.Out_MoveCommand)MOVE(In_LinkedParametersInput.Out_CmdIncrement,PrecedingMoverCmdIncrement);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+QUEUE MODE
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[NOP();]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[CPT(inf_TrainsActualDistance,((in_Axis_Preceding.CommandPosition - in_Axis.CommandPosition) + Cfg_Q_MAM_Data.Track_Unwind) MOD Cfg_Q_MAM_Data.Track_Unwind);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIO(in_Axis.MoveStatus)OTU(Sts_Queued)XIC(loc_QueuedModeActive)[ADD(Cfg_Q_MAM_Data.Train_MinDistance,Cfg_Q_MAM_Data.Cfg_TargetTolerance,LimSup) SUB(Cfg_Q_MAM_Data.Train_MinDistance,Cfg_Q_MAM_Data.Cfg_TargetTolerance,LimInf) ,LIMIT(LimInf,inf_TrainsActualDistance,LimSup) OTL(Sts_Queued) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(Sts_Queued)ONS(AuxQsts)XIC(In_LinkedParametersInput.Out_MoveCommand)ADD(in_Axis_Preceding.CommandPosition,PrecedingMoverCmdIncrement,Axis_ip1_AdjustedCmdPosition)OTE(InitQueuedState);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[Axis Queued State: add preceding axis movement increment]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIC(Sts_Queued)XIO(InitQueuedState)XIC(In_LinkedParametersInput.Out_MoveCommand)ADD(Axis_ip1_AdjustedCmdPosition,PrecedingMoverCmdIncrement,Axis_ip1_AdjustedCmdPosition);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[Axis not in Queued State: Adjust Preceding Mover Position]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIO(Sts_Queued)ADD(in_Axis_Preceding.CommandPosition,AxisPreceding_AdjPos,Axis_ip1_AdjustedCmdPosition);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[GT(Axis_ip1_AdjustedCmdPosition,Cfg_Q_MAM_Data.Track_Unwind)SUB(Axis_ip1_AdjustedCmdPosition,Cfg_Q_MAM_Data.Track_Unwind,Axis_ip1_AdjustedCmdPosition);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+BOUNDARY POSITION
+*
+TARGET FOR MOVE COMMANDS
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[SUB(Axis_ip1_AdjustedCmdPosition,Cfg_Q_MAM_Data.Train_MinDistance,Axis_ip1_BoundaryPos)LT(Axis_ip1_BoundaryPos,0)ADD(Axis_ip1_BoundaryPos,Cfg_Q_MAM_Data.Track_Unwind,Axis_ip1_BoundaryPos);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[SUB(Axis_ip1_BoundaryPos,loc_rMem_Commanded_Position,Loc_rAvailableSpaceForward)[LT(Loc_rAvailableSpaceForward,0) GT(Loc_rAvailableSpaceForward,RollOverSafeLimit) MOVE(0,Loc_rAvailableSpaceForward) ,LT(Loc_rAvailableSpaceForward,RollOverSafeLimit) ADD(Loc_rAvailableSpaceForward,Cfg_Q_MAM_Data.Track_Unwind,Loc_rAvailableSpaceForward) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+*
+Calculate Available Increment 
+in Position
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[NOP();]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[SUB(rTotalDistanceToRecover,rLastDistanceCommanded,rDistanceToGo)EQ(rDistanceToGo,0)MOVE(0,Axis_i_IncremCmdPos);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[GT(Loc_rAvailableSpaceForward,rDistanceToGo)GT(rDistanceToGo,0)MOVE(rDistanceToGo,Axis_i_IncremCmdPos)OTE(Sts_Mover_WayFree);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[GE(Loc_rAvailableSpaceForward,0)LE(Loc_rAvailableSpaceForward,rDistanceToGo)MOVE(Loc_rAvailableSpaceForward,Axis_i_IncremCmdPos)OTE(loc_bCurrentPosMode_Follower);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[LE(Loc_rAvailableSpaceForward,0)MOVE(0,Axis_i_IncremCmdPos);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(loc_bCurrentPosFeedForward)XIC(loc_bCurrentPosMode_Follower)OTE(Out_LinkedParametersOutput.PPI_State);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+This Axis is the leader of a queued Movement
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIC(loc_bCurrentPosFeedForward)XIO(loc_bCurrentPosMode_Follower)OTE(Sts_QueueLeader);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(EN)XIC(in_Axis.JogStatus)XIC(in_Axis.PositionCamStatus)XIC(in_Axis.TimeCamStatus)XIC(in_Axis.GearingStatus)OTL(AbsoluteMoveNotAllowed);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+When way is free we will apply an absolute MAM to the Axis (Mover) to compensate for possible incremental summing errors
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIC(Sts_Mover_WayFree)XIO(in_Axis.JogStatus)XIO(in_Axis.PositionCamStatus)XIO(in_Axis.TimeCamStatus)XIO(in_Axis.GearingStatus)XIO(AbsoluteMoveNotAllowed)OTE(AbsoluteMoveAllowed);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+Load INPUT DATA for Movement
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[[MOVE(Cfg_Q_MAM_Data.CmdVelocity,Axis_i_CmdVel) MOVE(Cfg_Q_MAM_Data.CmdAcc,Axis_i_CmdAcc) MOVE(Cfg_Q_MAM_Data.CmdDec,Axis_i_CmdDec) ,MOVE(Cfg_Q_MAM_Data.CmdAccJerk,Axis_i_CmdAccjerk) MOVE(Cfg_Q_MAM_Data.CmdDecJerk,Axis_i_CmdDecJerk) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+While in Queued Mode
+Dynamics is read from Preceding Axis
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIC(Sts_Queued)[MOVE(In_LinkedParametersInput.Out_AxisDynamics.CmdVelocity,Axis_i_CmdVel) MOVE(In_LinkedParametersInput.Out_AxisDynamics.CmdAcc,Axis_i_CmdAcc) MOVE(In_LinkedParametersInput.Out_AxisDynamics.CmdDec,Axis_i_CmdDec) ,MOVE(In_LinkedParametersInput.Out_AxisDynamics.CmdAccJerk,Axis_i_CmdAccjerk) MOVE(In_LinkedParametersInput.Out_AxisDynamics.CmdDecJerk,Axis_i_CmdDecJerk) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[Transmit Dynamics Value to
+the next axis in line
+]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[[MOVE(Axis_i_CmdVel,Out_LinkedParametersOutput.Out_AxisDynamics.CmdVelocity) MOVE(Axis_i_CmdAcc,Out_LinkedParametersOutput.Out_AxisDynamics.CmdAcc) MOVE(Axis_i_CmdDec,Out_LinkedParametersOutput.Out_AxisDynamics.CmdDec) ,MOVE(Axis_i_CmdAccjerk,Out_LinkedParametersOutput.Out_AxisDynamics.CmdAccJerk) MOVE(Axis_i_CmdDecJerk,Out_LinkedParametersOutput.Out_AxisDynamics.CmdDecJerk) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[LE(Axis_i_CmdVel,0) ,LE(Axis_i_CmdAcc,0) ,LE(Axis_i_CmdDec,0) ]MOVE(1001,ERR)OTL(ER);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+*
+MOTION COMMANDS
+*
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[NOP();]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[GT(Axis_i_IncremCmdPos,0)GT(rDistanceToGo,0)XIO(in_Axis.StoppingStatus)[OTE(Sts_MoveCommand) ,MOVE(Axis_i_IncremCmdPos,Mem_Inc_Cmd) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[MOVE(Axis_i_IncremCmdPos,Out_LinkedParametersOutput.Out_CmdIncrement);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+*
+MOVE COMMANDS
+*
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[NOP();]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(Sts_MoveCommand)XIO(Sts_MoveStatus)XIO(loc_bCurrentPosMode_Follower)CPT(EarlyCommandValue,0.5*(Axis_i_CmdAcc/(1+Axis_i_CmdAccjerk/200))*CUR*CUR)OTE(ApplyEarlyCmdVal);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[MOVE(Axis_i_IncremCmdPos,inf_LastCmdPosIncrement);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[Move Positive
+Motion Command]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIC(Sts_MoveCommand)XIC(loc_bFirstMove)XIO(in_DisableMove)[XIO(AbsoluteMoveAllowed) OTU(i_Q_MAM_INC_MergeEnabled.EN) MAM(in_Axis,i_Q_MAM_INC_MergeEnabled,1,Axis_i_IncremCmdPos,Axis_i_CmdVel,Units per sec,Axis_i_CmdAcc,Units per sec2,Axis_i_CmdDec,Units per sec2,S-Curve,Axis_i_CmdAccjerk,Axis_i_CmdDecJerk,% of Time,Enabled,Programmed,0,None,0,0) ,XIC(AbsoluteMoveAllowed) MAM(in_Axis,i_Q_MAM_ABS_MergeEnabled,3,Loc_rSaved_Target_Position,Axis_i_CmdVel,Units per sec,Axis_i_CmdAcc,Units per sec2,Axis_i_CmdDec,Units per sec2,S-Curve,Axis_i_CmdAccjerk,Axis_i_CmdDecJerk,% of Time,Enabled,Programmed,0,None,0,0) ,OTU(loc_bFirstMove) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[Move Positive
+Motion Command]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIC(Sts_MoveCommand)XIO(loc_bFirstMove)XIO(in_DisableMove)[XIO(AbsoluteMoveAllowed) OTU(i_Q_MAM_INC_MergeDisabled.EN) MAM(in_Axis,i_Q_MAM_INC_MergeDisabled,1,Axis_i_IncremCmdPos,Axis_i_CmdVel,Units per sec,Axis_i_CmdAcc,Units per sec2,Axis_i_CmdDec,Units per sec2,S-Curve,Axis_i_CmdAccjerk,Axis_i_CmdDecJerk,% of Time,Disabled,Programmed,0,None,0,0) ,XIC(AbsoluteMoveAllowed) MAM(in_Axis,i_Q_MAM_ABS_MergeDisabled,3,Loc_rSaved_Target_Position,Axis_i_CmdVel,Units per sec,Axis_i_CmdAcc,Units per sec2,Axis_i_CmdDec,Units per sec2,S-Curve,Axis_i_CmdAccjerk,Axis_i_CmdDecJerk,% of Time,Disabled,Programmed,0,None,0,0) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(Sts_MoveCommand)XIO(in_DisableMove)[ADD(Axis_i_IncremCmdPos,rLastDistanceCommanded,rLastDistanceCommanded) ,ADD(loc_rMem_Commanded_Position,Axis_i_IncremCmdPos,loc_rMem_Commanded_Position) GT(loc_rMem_Commanded_Position,Cfg_Q_MAM_Data.Track_Unwind) SUB(loc_rMem_Commanded_Position,Cfg_Q_MAM_Data.Track_Unwind,loc_rMem_Commanded_Position) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(Sts_MoveCommand)OTE(Out_LinkedParametersOutput.Out_MoveCommand);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+*
+FEED FORWARD
+*
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[NOP();]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIO(loc_bCurrentPosMode_Follower) ,XIO(loc_bCurrentPosFeedForward) ]AOI_MotionPlannerCountDown(Get_TimeLeft,Cfg_MotionGroup);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIO(loc_bCurrentPosMode_Follower) ,XIO(loc_bCurrentPosFeedForward) ][ADD(Get_TimeLeft.TimeLeft,Get_TimeLeft.ActualizationTimeOffset,TimeOffset) ,AOI_ReadInterpolatedActualPositionCIP(AOI_RICM,in_Axis,TimeOffset,ThisAxis_InterpolatedActualPos,ThisAxis_InterpolatedCmdPos) SUB(ThisAxis_InterpolatedCmdPos,in_Axis.CommandPosition,loc_rAxisPreceding_PosAdvance) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(ApplyEarlyCmdVal)MOVE(EarlyCommandValue,loc_rAxisPreceding_PosAdvance);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIO(loc_bCurrentPosMode_Follower) ,XIO(loc_bCurrentPosFeedForward) ][CMP(loc_rAxisPreceding_PosAdvance < -Cfg_Q_MAM_Data.Track_Unwind/2) ADD(loc_rAxisPreceding_PosAdvance,Cfg_Q_MAM_Data.Track_Unwind,loc_rAxisPreceding_PosAdvance) ,CMP(loc_rAxisPreceding_PosAdvance >Cfg_Q_MAM_Data.Track_Unwind/2) MOVE(0,loc_rAxisPreceding_PosAdvance) ,LE(loc_rAxisPreceding_PosAdvance,0) MOVE(0,loc_rAxisPreceding_PosAdvance) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIO(loc_bCurrentPosMode_Follower) ,XIO(loc_bCurrentPosFeedForward) ]MOVE(loc_rAxisPreceding_PosAdvance,Out_LinkedParametersOutput.PPI_Value);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(loc_bCurrentPosFeedForward)XIC(loc_bCurrentPosMode_Follower)[MOVE(In_LinkedParametersInput.PPI_Value,Out_LinkedParametersOutput.PPI_Value) ,MOVE(0,loc_rAxisPreceding_PosAdvance) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+If an Extenal Action is trying to Stop the Axis we shall allow this action to be completed
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[[XIC(i_Q_MAM_INC_MergeDisabled.IP) ,XIC(i_Q_MAM_ABS_MergeDisabled.IP) ,XIC(i_Q_MAM_ABS_MergeEnabled.IP) ,XIC(i_Q_MAM_INC_MergeEnabled.IP) ]XIC(in_Axis.StoppingStatus)OTU(EN);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+In Process
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIC(EN)XIO(PC)GT(rDistanceToGo,0.0)OTL(IP);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+ERROR(S)
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[[XIC(i_Q_MAM_INC_MergeDisabled.ER) [MOVE(i_Q_MAM_INC_MergeDisabled.ERR,ERR) ,MOVE(i_Q_MAM_INC_MergeDisabled.EXERR,EXERR) ] ,XIC(i_Q_MAM_INC_MergeEnabled.ER) [MOVE(i_Q_MAM_INC_MergeEnabled.ERR,ERR) ,MOVE(i_Q_MAM_INC_MergeEnabled.EXERR,EXERR) ] ,XIC(i_Q_MAM_ABS_MergeDisabled.ER) [MOVE(i_Q_MAM_ABS_MergeDisabled.ERR,ERR) ,MOVE(i_Q_MAM_ABS_MergeDisabled.EXERR,EXERR) ] ,XIC(i_Q_MAM_ABS_MergeEnabled.ER) [MOVE(i_Q_MAM_ABS_MergeEnabled.ERR,ERR) ,MOVE(i_Q_MAM_ABS_MergeEnabled.EXERR,EXERR) ] ]OTL(ER);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[LT(Cfg_Q_MAM_Data.Cfg_TargetTolerance,0)MOVE(1002,ERR)OTL(ER);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+Process Completed
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[NEG(Cfg_Q_MAM_Data.Cfg_TargetTolerance,MoveTargetToleranceNeg)LIMIT(MoveTargetToleranceNeg,rDistanceToGo,Cfg_Q_MAM_Data.Cfg_TargetTolerance)XIO(in_Axis.MoveStatus)[XIC(i_Q_MAM_INC_MergeDisabled.PC) ,XIC(i_Q_MAM_INC_MergeEnabled.PC) ,XIC(i_Q_MAM_ABS_MergeDisabled.PC) ,XIC(i_Q_MAM_ABS_MergeEnabled.PC) ]OTU(IP)OTE(PC);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+Output: Current Move Process data
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIC(in_Axis.MoveStatus)OTE(Sts_MoveStatus);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[MOVE(in_Axis.CommandPosition,Inf_Command_Position);]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

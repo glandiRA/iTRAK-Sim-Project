@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Module Name="SectionM_10B" CatalogNumber="iTRAK 5730" Vendor="1" ProductType="169" ProductCode="1" Major="12" Minor="1" ParentModule="Local" ParentModPortId="2" Inhibited="false" MajorFault="false" SafetyNetwork="16#0000_461b_03e7_8f65" SafetyEnabled="true" DataExchangeId="{6685BBB6-5439-4CAD-8444-C825992C3FE6}">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_DH_Master" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <EKey State="CompatibleModule" />
+  <Ports>
+    <Port Id="2" Address="192.168.1.30" Type="Ethernet" Upstream="true" />
+  </Ports>
+  <Communications>
+    <ConfigData ConfigSize="468">
+      <Data Format="L5K"><![CDATA[[472,7,1793,1,18874383,120,10000,33686020,31,0,0,0,0,0,0,0,0,-1027080192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33686018,2,83886080
+		,0,512,1045220557,0,0,0,0,1120403456,1120403456,0,1120403456,1124859904,0,0,1120403456,1,2,3,4,5,0,0,0,1,0
+		,2,0,3,0,4,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,16384258,16384250,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,101058054,6,168430083
+		,10]]]></Data>
+    </ConfigData>
+    <SafetyScript Size="205">
+      <Data Format="L5K"><![CDATA[[-55,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,-71,0,0,0,0,0,0,0,0,3,0,0,0,-85,0,0,0,0,0,0,-92,0,0,0,101,0,0,0,36,97,-46,-16,-80,-52,-24,3,27,70,0,0,0
+		,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-128,63,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-128
+		,63,1,1,1,1,0,0,1,0,0,0,-128,63,1,0,0,0,-1,-1,121,-60,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,-128,63,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,-128
+		,63,0,0,0,0,0,0,1,0,0]]]></Data>
+    </SafetyScript>
+    <Connections>
+      <Connection Name="A_MotionDiagnostics" RPI="1000" Type="DiagnosticInput" EventID="0" ProgrammaticallySendEventTrigger="false">
+        <InputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+          <Data Format="Decorated">
+            <Structure DataType="AB:Motion_Diagnostics:S:1">
+              <DataValueMember Name="LostControllerToDriveTransmissions" DataType="INT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="LateControllerToDriveTransmissions" DataType="INT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="LostDriveToControllerTransmissions" DataType="INT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="LateDriveToControllerTransmissions" DataType="INT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="LastControllerToDriveTime" DataType="INT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="AverageControllerToDriveTime" DataType="INT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="MaximumControllerToDriveTime" DataType="INT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="LastDriveToControllerTime" DataType="INT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="AverageDriveToControllerTime" DataType="INT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="MaximumDriveToControllerTime" DataType="INT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="LastSystemClockJitter" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="AverageSystemClockJitter" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="MaximumSystemClockJitter" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="TimingStatisticsEnabled" DataType="SINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="ControllerToDriveConnectionSize" DataType="INT" Radix="Decimal" Value="24" />
+              <DataValueMember Name="DriveToControllerConnectionSize" DataType="INT" Radix="Decimal" Value="8" />
+              <DataValueMember Name="NominalControllerToDriveTime" DataType="INT" Radix="Decimal" Value="2000" />
+              <DataValueMember Name="NominalDriveToControllerTime" DataType="INT" Radix="Decimal" Value="2000" />
+              <DataValueMember Name="CoarseUpdatePeriod" DataType="INT" Radix="Decimal" Value="4000" />
+            </Structure>
+          </Data>
+        </InputTag>
+      </Connection>
+      <Connection Name="B_MotionSync2" RPI="4000" Type="MotionSync" EventID="0" ProgrammaticallySendEventTrigger="false" />
+      <Connection Name="C_Safety_Output2" Type="SafetyOutputDataDriven" OutputSize="14" EventID="0" ProgrammaticallySendEventTrigger="false" TimeoutMultiplier="2" NetworkDelayMultiplier="200" ReactionTimeLimit="60" MaxObservedNetworkDelay="0" Priority="High" InputConnectionType="Unicast" InputProductionTrigger="Application" ConnectionPath="20 04 24 65 20 04 25 00 01 03 20 04 24 c7" OutputTagSuffix="SO">
+        <OutputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+          <Data Format="L5K"><![CDATA[[0,0,0,0,0,0,0,1]]]></Data>
+          <Data Format="Decorated">
+            <Structure DataType="AB:CIP_Motion_Device_Safety1:SO:0">
+              <DataValueMember Name="PassThruDataA" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000" />
+              <DataValueMember Name="PassThruDataB" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000" />
+              <DataValueMember Name="PassThruStopStatus" DataType="SINT" Radix="Binary" Value="2#0000_0000" />
+              <DataValueMember Name="SBCIntegrity" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SBCActive" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SBCBrakeEngaged" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SS1Active" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SS2Active" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SOSActive" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SOSStandstill" DataType="BOOL" Value="0" />
+              <DataValueMember Name="PassThruSpeedLimitStatus" DataType="SINT" Radix="Binary" Value="2#0000_0000" />
+              <DataValueMember Name="SSMActive" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SSMStatus" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SLSActive" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SLSLimit" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SDIActive" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SDILimit" DataType="BOOL" Value="0" />
+              <DataValueMember Name="PassThruPositionLimitStatus" DataType="SINT" Radix="Binary" Value="2#0000_0000" />
+              <DataValueMember Name="SCAActive" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SCAStatus" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SLPActive" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SLPLimit" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SFHomed" DataType="BOOL" Value="0" />
+              <DataValueMember Name="PassThruStopFaults" DataType="SINT" Radix="Binary" Value="2#0000_0000" />
+              <DataValueMember Name="SFXFault" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SBCFault" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SS1Fault" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SS2Fault" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SOSFault" DataType="BOOL" Value="0" />
+              <DataValueMember Name="PassThruLimitFaults" DataType="SINT" Radix="Binary" Value="2#0000_0000" />
+              <DataValueMember Name="SSMFault" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SLSFault" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SDIFault" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SCAFault" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SLPFault" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SafetyStopFunctions" DataType="SINT" Radix="Binary" Value="2#0000_0001" />
+              <DataValueMember Name="STOOutput" DataType="BOOL" Value="1" />
+              <DataValueMember Name="SBCOutput" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SS1Request" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SS2Request" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SOSRequest" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SMTRequest" DataType="BOOL" Value="0" />
+              <DataValueMember Name="ResetRequest" DataType="BOOL" Value="0" />
+            </Structure>
+          </Data>
+        </OutputTag>
+      </Connection>
+      <Connection Name="D_Safety_Input2" RPI="10000" Type="SafetyInputDataDriven" InputSize="24" EventID="0" ProgrammaticallySendEventTrigger="false" TimeoutMultiplier="2" NetworkDelayMultiplier="200" ReactionTimeLimit="40.064" MaxObservedNetworkDelay="0" Priority="High" InputConnectionType="Unicast" InputProductionTrigger="Application" ConnectionPath="20 04 24 65 20 04 24 c7 20 04 25 00 01 04" InputTagSuffix="SI">
+        <InputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+          <Data Format="Decorated">
+            <Structure DataType="AB:CIP_Motion_Device_Safety1:SI:0">
+              <DataValueMember Name="ConnectionStatus" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0001" />
+              <DataValueMember Name="RunMode" DataType="BOOL" Value="1" />
+              <DataValueMember Name="ConnectionFaulted" DataType="BOOL" Value="0" />
+              <DataValueMember Name="FeedbackPosition" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="FeedbackVelocity" DataType="REAL" Radix="Float" Value="0.0" />
+              <DataValueMember Name="SecondaryFeedbackPosition" DataType="DINT" Radix="Decimal" Value="0" />
+              <DataValueMember Name="SecondaryFeedbackVelocity" DataType="REAL" Radix="Float" Value="0.0" />
+              <DataValueMember Name="StopStatus" DataType="SINT" Radix="Binary" Value="2#0000_0000" />
+              <DataValueMember Name="STOActive" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SBCActive" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SS1Active" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SS2Active" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SOSStandstill" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SMTOvertemp" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SafetyFault" DataType="BOOL" Value="0" />
+              <DataValueMember Name="RestartRequired" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SafeStatus" DataType="SINT" Radix="Binary" Value="2#0000_0000" />
+              <DataValueMember Name="TorqueDisabled" DataType="BOOL" Value="0" />
+              <DataValueMember Name="BrakeEngaged" DataType="BOOL" Value="0" />
+              <DataValueMember Name="MotionStatus" DataType="SINT" Radix="Binary" Value="2#0000_0000" />
+              <DataValueMember Name="MotionPositive" DataType="BOOL" Value="0" />
+              <DataValueMember Name="MotionNegative" DataType="BOOL" Value="0" />
+              <DataValueMember Name="FunctionSupport" DataType="SINT" Radix="Binary" Value="2#0001_0000" />
+              <DataValueMember Name="PrimaryFeedbackValid" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SecondaryFeedbackValid" DataType="BOOL" Value="0" />
+              <DataValueMember Name="DiscrepancyCheckingActive" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SBCReady" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SS1Ready" DataType="BOOL" Value="1" />
+              <DataValueMember Name="SS2Ready" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SOSReady" DataType="BOOL" Value="0" />
+              <DataValueMember Name="SMTReady" DataType="BOOL" Value="0" />
+            </Structure>
+          </Data>
+        </InputTag>
+      </Connection>
+    </Connections>
+  </Communications>
+  <ExtendedProperties>
+    <public>
+      <Vendor>Rockwell Automation/Allen-Bradley</Vendor>
+      <CatNum>iTRAK 5730</CatNum>
+      <FeedbackDevice1>1</FeedbackDevice1>
+      <FeedbackDevice2>2</FeedbackDevice2>
+      <FeedbackDevice3>3</FeedbackDevice3>
+      <FeedbackDevice4>4</FeedbackDevice4>
+      <FeedbackDevice5>5</FeedbackDevice5>
+      <PrivateTag InstanceID="TrackSystemPrivateTag" DataType="AB:CIP_Motion_Track_System:P:0">&lt;Data&gt;18 00 00 00 32 31 39 38 54 2D 4C 32 30 2D 54 30 33 30 39 2D 44 31 38 2D 53 32 2D 42 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0E 00 00 00 32 31 39 38 54 2D 56 54 30 33 30 34 2D 45 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 66 66 66 40&lt;/Data&gt;
+</PrivateTag>
+      <PrivateTag InstanceID="MotionSafetyPrivateTag" DataType="AB:CIP_Motion_Device_Safety:P:0">&lt;Data&gt;FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 01 00 00 00 00 00 80 3F 00 00 80 3F 00 00 00 00 80 3F 0E 00 00 00 50 6F 73 69 74 69 6F 6E 20 55 6E 69 74 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00&lt;/Data&gt;
+</PrivateTag>
+      <ConfigID>50331748</ConfigID>
+    </public>
+  </ExtendedProperties>
+</Module>

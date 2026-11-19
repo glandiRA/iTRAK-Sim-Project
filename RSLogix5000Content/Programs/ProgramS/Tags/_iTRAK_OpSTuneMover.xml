@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="_iTRAK_OpSTuneMover" TagType="Base" DataType="raM_iTRAK_Opr_TuneMover" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpS" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[128,-1,6.64442587e+000,0.00000000e+000,0,2.65777035e+001,0.00000000e+000,0,1.00000000e+002
+		,0.00000000e+000,2.39531509e+002,2.00194788e+003,1.00000000e+000,5.00000000e+001,1.32888519e+002
+		,2.16804409e+000,0,4.80000000e+001,0.00000000e+000,0,0,1011,0,[0,0,0,0,0,0,0,0,0,6,0,0],20,0,[0,0,0,0,0,0,0,0,0,[27,'raX_Yyy_FrameworkGeneric_ST$00$00$00$00$00'
+		],0,0,0,0,0,0,0,0],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[95,23,1,0,0,1011,[22,'raM_Opr_ObjectRegisteric_ST$00$00$00$00$00'],0,0,3,0,24,40,50,11,23],0,0,[1,0,0,0,0,0,0,0
+		,0,4,0,0],[0,0.00000000e+000,0,0],[23,'raM_iTRAK_Opr_TuneMover$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],0]]]></Data>
+  <Data Format="Decorated">
+    <Structure DataType="raM_iTRAK_Opr_TuneMover">
+      <DataValueMember Name="EnableIn" DataType="BOOL" Value="0" />
+      <DataValueMember Name="EnableOut" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Cfg_MoverID" DataType="DINT" Radix="Decimal" Value="-1" />
+      <DataValueMember Name="Set_PositionBandwidth" DataType="REAL" Radix="Float" Value="6.644426" />
+      <DataValueMember Name="Set_PositionIntegratorBandwidth" DataType="REAL" Radix="Float" Value="0.0" />
+      <DataValueMember Name="Set_PositionIntegratorHold" DataType="SINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Set_VelocityBandwidth" DataType="REAL" Radix="Float" Value="26.577703" />
+      <DataValueMember Name="Set_VelocityIntegratorBandwidth" DataType="REAL" Radix="Float" Value="0.0" />
+      <DataValueMember Name="Set_VelocityIntegratorHold" DataType="SINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Set_VelocityFeedforward" DataType="REAL" Radix="Float" Value="100.0" />
+      <DataValueMember Name="Set_AccelerationFeedforward" DataType="REAL" Radix="Float" Value="0.0" />
+      <DataValueMember Name="Set_PositionErrorTolerance" DataType="REAL" Radix="Float" Value="239.53151" />
+      <DataValueMember Name="Set_VelocityErrorTolerance" DataType="REAL" Radix="Float" Value="2001.9479" />
+      <DataValueMember Name="Set_PositionLockTolerance" DataType="REAL" Radix="Float" Value="1.0" />
+      <DataValueMember Name="Set_VelocityLockTolerance" DataType="REAL" Radix="Float" Value="50.0" />
+      <DataValueMember Name="Set_TorqueLowPassFilterBandwidth" DataType="REAL" Radix="Float" Value="132.88852" />
+      <DataValueMember Name="Set_SystemInertia" DataType="REAL" Radix="Float" Value="2.168044" />
+      <DataValueMember Name="Set_LoadObserver" DataType="SINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Set_LoadObserverBandwidth" DataType="REAL" Radix="Float" Value="48.0" />
+      <DataValueMember Name="Set_LoadObserverIntegratorBandwidth" DataType="REAL" Radix="Float" Value="0.0" />
+      <DataValueMember Name="Set_AdaptiveTuningConfiguration" DataType="SINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Set_NoOfNotchFilters" DataType="SINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Sts_MtdID" DataType="DINT" Radix="Decimal" Value="1011" />
+      <DataValueMember Name="Sts_EO" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_EN" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_ER" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_ERR" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Sts_IP" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_PC" DataType="BOOL" Value="0" />
+    </Structure>
+  </Data>
+</Tag>

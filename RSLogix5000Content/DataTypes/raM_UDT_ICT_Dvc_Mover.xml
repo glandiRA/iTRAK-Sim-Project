@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="raM_UDT_ICT_Dvc_Mover" Family="NoFamily" Class="User">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_iTRAKBase" LGuid="9D24ABEB-41E6-4150-B6B1-5D01B578B527" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Members>
+    <Member Name="ZZZZZZZZZZraM_UDT_IC0" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="Enabled" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC0" BitNumber="0" ExternalAccess="Read/Write" />
+    <Member Name="Recover" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC0" BitNumber="1" ExternalAccess="Read/Write" />
+    <Member Name="RecoveryPositionCaptured" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC0" BitNumber="2" ExternalAccess="Read/Write" />
+    <Member Name="MotionFunctionCompleted" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC0" BitNumber="3" ExternalAccess="Read/Write" />
+    <Member Name="MotionFunctionStatus" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="PositionOffset" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="TargetID" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="Sts" DataType="raM_UDT_ItfAD_PwrMotion_Strobe" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="CAM" DataType="raM_UDT_ICT_Opr_Motion_CAM" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="MAJ" DataType="raM_UDT_ICT_Opr_Motion_MAJ" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="MAG" DataType="raM_UDT_ICT_Opr_Motion_MAG" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="MAM" DataType="raM_UDT_ICT_Opr_Motion_MAM" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="MAS" DataType="raM_UDT_ICT_Opr_Motion_MAS" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="MRP" DataType="raM_UDT_ICT_Opr_Motion_MRP" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="MAPC" DataType="raM_UDT_ICT_Opr_Motion_MAPC" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="MATC" DataType="raM_UDT_ICT_Opr_Motion_MATC" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="MCD" DataType="raM_UDT_ICT_Opr_Motion_MCD" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="MDAC" DataType="raM_UDT_ICT_Opr_Motion_MDAC" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="QueuedMove" DataType="raM_UDT_ICT_Opr_Motion_QueuedMove" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="CIPMaster1" DataType="REF_TO_AXIS_CIP_DRIVE" Dimension="0" Radix="Hex" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="CIPMaster2" DataType="REF_TO_AXIS_CIP_DRIVE" Dimension="0" Radix="Hex" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="VirtualMaster" DataType="REF_TO_AXIS_VIRTUAL" Dimension="0" Radix="Hex" Hidden="false" ExternalAccess="Read/Write" />
+  </Members>
+  <Dependencies>
+    <Dependency Type="DataType" Name="raM_UDT_ItfAD_PwrMotion_Strobe" />
+    <Dependency Type="DataType" Name="raM_UDT_ICT_Opr_Motion_CAM" />
+    <Dependency Type="DataType" Name="raM_UDT_ICT_Opr_Motion_MAJ" />
+    <Dependency Type="DataType" Name="raM_UDT_ICT_Opr_Motion_MAG" />
+    <Dependency Type="DataType" Name="raM_UDT_ICT_Opr_Motion_MAM" />
+    <Dependency Type="DataType" Name="raM_UDT_ICT_Opr_Motion_MAS" />
+    <Dependency Type="DataType" Name="raM_UDT_ICT_Opr_Motion_MRP" />
+    <Dependency Type="DataType" Name="raM_UDT_ICT_Opr_Motion_MAPC" />
+    <Dependency Type="DataType" Name="raM_UDT_ICT_Opr_Motion_MATC" />
+    <Dependency Type="DataType" Name="raM_UDT_ICT_Opr_Motion_MCD" />
+    <Dependency Type="DataType" Name="raM_UDT_ICT_Opr_Motion_MDAC" />
+    <Dependency Type="DataType" Name="raM_UDT_ICT_Opr_Motion_QueuedMove" />
+  </Dependencies>
+</DataType>

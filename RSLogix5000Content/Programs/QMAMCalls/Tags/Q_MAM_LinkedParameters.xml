@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="Q_MAM_LinkedParameters" TagType="Base" DataType="UDT_Q_MAM_LinkedParameters" Dimensions="21" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <Data Format="L5K"><![CDATA[[[1,0.00000000e+000,0,0.00000000e+000,[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0,0,0.00000000e+000]],[1,0.00000000e+000,0,0.00000000e+000
+		,[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0,0,0.00000000e+000]],[1,0.00000000e+000,0,0.00000000e+000,[1.50000000e+003,2.20000000e+003
+		,2.20000000e+003,3.00000000e+001,0.00000000e+000,0.00000000e+000,0.00000000e+000,0,0,0.00000000e+000
+		]],[1,0.00000000e+000,0,0.00000000e+000,[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0,0,0.00000000e+000]],[1,0.00000000e+000,0,0.00000000e+000
+		,[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0,0,0.00000000e+000]],[1,0.00000000e+000,0,0.00000000e+000,[1.50000000e+003,2.20000000e+003
+		,2.20000000e+003,3.00000000e+001,0.00000000e+000,0.00000000e+000,0.00000000e+000,0,0,0.00000000e+000
+		]],[1,0.00000000e+000,0,0.00000000e+000,[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0,0,0.00000000e+000]],[1,0.00000000e+000,0,0.00000000e+000
+		,[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0,0,0.00000000e+000]],[1,0.00000000e+000,0,0.00000000e+000,[1.50000000e+003,2.20000000e+003
+		,2.20000000e+003,3.00000000e+001,0.00000000e+000,0.00000000e+000,0.00000000e+000,0,0,0.00000000e+000
+		]],[1,0.00000000e+000,0,0.00000000e+000,[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0,0,0.00000000e+000]],[1,0.00000000e+000,0,0.00000000e+000
+		,[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0,0,0.00000000e+000]],[1,0.00000000e+000,0,0.00000000e+000,[1.50000000e+003,2.20000000e+003
+		,2.20000000e+003,3.00000000e+001,0.00000000e+000,0.00000000e+000,0.00000000e+000,0,0,0.00000000e+000
+		]],[1,0.00000000e+000,0,0.00000000e+000,[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0,0,0.00000000e+000]],[1,0.00000000e+000,0,0.00000000e+000
+		,[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0,0,0.00000000e+000]],[1,0.00000000e+000,0,0.00000000e+000,[1.50000000e+003,2.20000000e+003
+		,2.20000000e+003,3.00000000e+001,0.00000000e+000,0.00000000e+000,0.00000000e+000,0,0,0.00000000e+000
+		]],[1,0.00000000e+000,0,0.00000000e+000,[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0,0,0.00000000e+000]],[1,0.00000000e+000,0,0.00000000e+000
+		,[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0,0,0.00000000e+000]],[0,0.00000000e+000,0,0.00000000e+000,[1.50000000e+003,2.20000000e+003
+		,2.20000000e+003,3.00000000e+001,0.00000000e+000,0.00000000e+000,0.00000000e+000,0,0,0.00000000e+000
+		]],[0,0.00000000e+000,0,0.00000000e+000,[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0,0,0.00000000e+000]],[1,0.00000000e+000,0,0.00000000e+000
+		,[1.50000000e+003,2.20000000e+003,2.20000000e+003,3.00000000e+001,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0,0,0.00000000e+000]],[1,0.00000000e+000,0,0.00000000e+000,[1.50000000e+003,2.20000000e+003
+		,2.20000000e+003,3.00000000e+001,0.00000000e+000,0.00000000e+000,0.00000000e+000,0,0,0.00000000e+000
+		]]]]]></Data>
+  <Data Format="Decorated">
+    <Array DataType="UDT_Q_MAM_LinkedParameters" Dimensions="21">
+      <Element Index="[0]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[1]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[2]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[3]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[4]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[5]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[6]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[7]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[8]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[9]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[10]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[11]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[12]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[13]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[14]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[15]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[16]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[17]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="0" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[18]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="0" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[19]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+      <Element Index="[20]">
+        <Structure DataType="UDT_Q_MAM_LinkedParameters">
+          <DataValueMember Name="PPI_State" DataType="BOOL" Value="1" />
+          <DataValueMember Name="PPI_Value" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="Out_MoveCommand" DataType="BOOL" Value="0" />
+          <DataValueMember Name="Out_CmdIncrement" DataType="REAL" Radix="Float" Value="0.0" />
+          <StructureMember Name="Out_AxisDynamics" DataType="Q_MAM_Data">
+            <DataValueMember Name="CmdVelocity" DataType="REAL" Radix="Float" Value="1500.0" />
+            <DataValueMember Name="CmdAcc" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdDec" DataType="REAL" Radix="Float" Value="2200.0" />
+            <DataValueMember Name="CmdAccJerk" DataType="REAL" Radix="Float" Value="30.0" />
+            <DataValueMember Name="CmdDecJerk" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Track_Unwind" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="Train_MinDistance" DataType="REAL" Radix="Float" Value="0.0" />
+            <DataValueMember Name="EnablePositionFeedForward" DataType="BOOL" Value="0" />
+            <DataValueMember Name="PositionFeedForwardMode" DataType="DINT" Radix="Decimal" Value="0" />
+            <DataValueMember Name="Cfg_TargetTolerance" DataType="REAL" Radix="Float" Value="0.0" />
+          </StructureMember>
+        </Structure>
+      </Element>
+    </Array>
+  </Data>
+</Tag>

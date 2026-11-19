@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AddOnInstructionDefinition Name="AOI_MotionPlannerCountDown" Class="Standard" Revision="1.0" ExecutePrescan="false" ExecutePostscan="false" ExecuteEnableInFalse="false" CreatedDate="2020-09-25T09:27:26.694Z" CreatedBy="LAB09-F1LABF9II\Labuser" EditedDate="2021-04-12T09:40:50.940Z" EditedBy="LAB09-F1LABF9II\Labuser" SoftwareRevision="v33.00">
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[This AOI reports back the time left (in microseconds) to next call of motion planner, and time elapsed from last excution]]></LocalizedDescription>
+  </Description>
+  <Parameters>
+    <Parameter Name="EnableIn" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Enable Input - System Defined Parameter]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="EnableOut" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Enable Output - System Defined Parameter]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="MotionGroup" TagType="Base" DataType="MOTION_GROUP" Usage="InOut" Required="true" Visible="true" />
+    <Parameter Name="CUR" TagType="Base" DataType="DINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="TimeElapsed" TagType="Base" DataType="DINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="TimeLeft" TagType="Base" DataType="DINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="ER" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="ActualizationTimeOffset" TagType="Base" DataType="DINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+  </Parameters>
+  <LocalTags>
+    <LocalTag Name="TimeOffset" DataType="DINT" Dimensions="2" Radix="Decimal" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[[0,0]]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <Array DataType="DINT" Dimensions="2" Radix="Decimal">
+          <Element Index="[0]" Value="0" />
+          <Element Index="[1]" Value="0" />
+        </Array>
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="GroupStartCalcTime" DataType="DINT" Dimensions="2" Radix="Decimal" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[[0,0]]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <Array DataType="DINT" Dimensions="2" Radix="Decimal">
+          <Element Index="[0]" Value="0" />
+          <Element Index="[1]" Value="0" />
+        </Array>
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="CSTTimeNow" DataType="DINT" Dimensions="2" Radix="Decimal" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[[0,0]]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <Array DataType="DINT" Dimensions="2" Radix="Decimal">
+          <Element Index="[0]" Value="0" />
+          <Element Index="[1]" Value="0" />
+        </Array>
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="MotionPlannerTimeNow" DataType="DINT" Radix="Decimal" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="NextStartTime" DataType="DINT" Radix="Decimal" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </LocalTag>
+    <LocalTag Name="GroupCycleStartCalcTime" DataType="DINT" Dimensions="2" Radix="Decimal" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[[0,0]]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <Array DataType="DINT" Dimensions="2" Radix="Decimal">
+          <Element Index="[0]" Value="0" />
+          <Element Index="[1]" Value="0" />
+        </Array>
+      </DefaultData>
+    </LocalTag>
+  </LocalTags>
+  <Routines />
+</AddOnInstructionDefinition>

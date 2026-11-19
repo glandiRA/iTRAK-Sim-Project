@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="FaultRoutine" Type="RLL">
+  <RLLContent>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*********************************************************************************************************************
+FAULT ROUTINE
+
+Fast Task
+*********************************************************************************************************************]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[OTL(ALM_Sys[0].1);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[Fault Type & Code Reading]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[GSV(Program,THIS,MAJORFAULTRECORD,PLC.MajorFault.TimeLow);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[If Fault Code Indicates A Programming Error (Code = 4) And The Fault Type Is "Array Subscript Out of Range" (Type=20) Then We Can Delete The Fault Record And Trasmit It To The Object PROGRAM:MAJORFAULTRECORD By SSV Instruction To Delete The Fault.]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[EQ(PLC.MajorFault.Type,4)[XIO(Cpu_Scanning) EQ(PLC.MajorFault.Code,20) OTL(ALM_Sys[0].2) ,EQ(PLC.MajorFault.Code,34) OTL(ALM_Sys[0].3) ][CLR(PLC.MajorFault.TimeLow) ,COP(PLC.MajorFault.TimeLow,PLC.MajorFault.TimeHigh,10) ,SSV(Program,THIS,MAJORFAULTRECORD,PLC.MajorFault.TimeLow) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[NE(PLC.MajorFault.Code,4)OTL(ALM_Sys[0].4);]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

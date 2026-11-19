@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="raC_UDT_ControllerFaultRecord" Family="NoFamily" Class="User">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_LD_DH_SysIni" LGuid="21F1CDD5-7289-43C2-BA93-73C7D5CA4E77" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[MajorFaultRecord attribute or MinorFault Record of the PROGRAM object]]></LocalizedDescription>
+  </Description>
+  <Members>
+    <Member Name="TimeLow" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Fault Timestamp - Lower 32]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="TimeHigh" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Fault Timestamp - Upper 32]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Type" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Fault Type]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Code" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Fault Code]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Info" DataType="DINT" Dimension="8" Radix="Hex" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Fault Specific Information]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="DataType" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="None" />
+    <Member Name="Lock" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="true" Target="DataType" BitNumber="0" ExternalAccess="None" />
+  </Members>
+</DataType>

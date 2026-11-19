@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="raM_UDT_ICT_Opr_Motion_MAM" Family="NoFamily" Class="User">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_iTRAKBase" LGuid="9D24ABEB-41E6-4150-B6B1-5D01B578B527" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[MAM interface for iTRAK Movers]]></LocalizedDescription>
+  </Description>
+  <Members>
+    <Member Name="MotionInstruction" DataType="MOTION_INSTRUCTION" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="MotionInstructionMerge" DataType="MOTION_INSTRUCTION" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="Position" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Target position]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Speed" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Target velocity]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="AccelRate" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Target Acceleration]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="DecelRate" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Target Deceleration]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="AccelJerk" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Target Acceleration Jerk]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="DecelJerk" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Target Deceleration Jerk]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="LockPosition" DataType="REAL" Dimension="0" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Master Axis Position]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="MoveType" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[0 = Absolute
+1 = Incremental
+2 =Shortest Path
+3 = Positive
+4 =Negative
+5 =Absolute Master Offset
+6 = Incremental Master Offset]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Units" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[0 = Units/Time
+1 = Units/Master Units]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="LockDirection" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write" />
+    <Member Name="ZZZZZZZZZZraM_UDT_IC12" DataType="SINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="Read/Write" />
+    <Member Name="Merge" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC12" BitNumber="0" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Motion exclusively governed by this instruction]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ContinuousExecution" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC12" BitNumber="1" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Enable continous execution of motion]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Execute" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC12" BitNumber="2" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Execute motion]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Executed" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="false" Target="ZZZZZZZZZZraM_UDT_IC12" BitNumber="3" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Command Acknowledged]]></LocalizedDescription>
+      </Description>
+    </Member>
+  </Members>
+</DataType>

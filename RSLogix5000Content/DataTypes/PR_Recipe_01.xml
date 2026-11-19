@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="PR_Recipe_01" Family="NoFamily" Class="User">
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[Rev: 1.0
+Recipe
+* (13/05/2020 pr/FaAl) *]]></LocalizedDescription>
+  </Description>
+  <Members>
+    <Member Name="Code" DataType="STRING" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Code]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Description" DataType="STRING" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Description]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Number" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Recipe Number]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Parameters" DataType="REAL" Dimension="1000" Radix="Float" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Parameters]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="BoolData" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write" />
+  </Members>
+</DataType>

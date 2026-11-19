@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="_iTRAK_OpSZone" TagType="Base" DataType="raM_iTRAK_Opr_RecoverZone" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_OpS" LGuid="37BB6414-2140-441E-95D3-B09BF9B94B31" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[128,0.00000000e+000,3.60000000e+003,1,0,6.00000000e+002,-6.00000000e+002,5.00000000e+002
+		,5.00000000e+003,4.00000000e+001,1009,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[127,25,1,1013,0,1009,[22,'raM_Opr_ObjectRegisteric_ST$00$00$00$00$00'],0,1013,7,1,24,40,50,9,24],0,[0,0,0
+		,0,0,0,0,0,0,[27,'raX_Yyy_FrameworkGeneric_ST$00$00$00$00$00'],0,0,0,0,0,0,0,0],16,0,0.00000000e+000,0,0,[2#0
+		,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0
+		,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0
+		,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0
+		,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0
+		,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0],0,[25,'raM_iTRAK_Opr_RecoverZone$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		]]]]></Data>
+  <Data Format="Decorated">
+    <Structure DataType="raM_iTRAK_Opr_RecoverZone">
+      <DataValueMember Name="EnableIn" DataType="BOOL" Value="0" />
+      <DataValueMember Name="EnableOut" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Set_ZoneStart" DataType="REAL" Radix="Float" Value="0.0" />
+      <DataValueMember Name="Set_ZoneEnd" DataType="REAL" Radix="Float" Value="3600.0" />
+      <DataValueMember Name="Cfg_SyncType" DataType="DINT" Radix="Decimal" Value="1" />
+      <DataValueMember Name="Cfg_SyncStyle" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Set_TravelLimPos" DataType="REAL" Radix="Float" Value="600.0" />
+      <DataValueMember Name="Set_TravelLimNeg" DataType="REAL" Radix="Float" Value="-600.0" />
+      <DataValueMember Name="Set_Velocity" DataType="REAL" Radix="Float" Value="500.0" />
+      <DataValueMember Name="Set_AccDec" DataType="REAL" Radix="Float" Value="5000.0" />
+      <DataValueMember Name="Set_Jerk" DataType="REAL" Radix="Float" Value="40.0" />
+      <DataValueMember Name="Sts_MtdID" DataType="DINT" Radix="Decimal" Value="1009" />
+      <DataValueMember Name="Sts_EO" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_EN" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_ER" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_IP" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_PC" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_ERR" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Sts_EXERR" DataType="DINT" Radix="Decimal" Value="0" />
+    </Structure>
+  </Data>
+</Tag>

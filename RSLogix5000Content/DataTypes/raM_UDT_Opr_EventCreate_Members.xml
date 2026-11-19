@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="raM_UDT_Opr_EventCreate_Members" Family="NoFamily" Class="User">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_Opr_Event" LGuid="DA56E79D-C0BC-4279-9874-2C8127FCFEAC" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Members>
+    <Member Name="Type" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Event Type - 1=Notification, 
+2=Warning, 
+3=Fault, 
+4...n=User]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="ID" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[User definable event ID]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Category" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[User definable category (Electrical,Mechanical,Materials,Utility,etc.)]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Action" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[User definable event 
+action code]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Value" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[User definable event value or fault code]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Message" DataType="STRING" Dimension="0" Radix="NullType" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Event message text]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="EventTime_L" DataType="LINT" Dimension="0" Radix="Date/Time" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Timestamp]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="EventTime_D" DataType="DINT" Dimension="7" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Timestamp (Y,M,D,h,m,s,us)]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="DataType" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="true" ExternalAccess="None" />
+    <Member Name="Lock" DataType="BIT" Dimension="0" Radix="Decimal" Hidden="true" Target="DataType" BitNumber="0" ExternalAccess="None" />
+  </Members>
+</DataType>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="stConfigureMoverAxis" TagType="Base" DataType="_raM_Dvc_ConfigureAxis" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_DH_Master" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[19,3600000,0.00000000e+000,0,0,0,0,1,2,0.00000000e+000,3.60000000e+007,36000000,[-1476395008,0,0
+		,17,0,0,0,0,0],1.00000000e+004,0,6]]]></Data>
+  <Data Format="Decorated">
+    <Structure DataType="_raM_Dvc_ConfigureAxis">
+      <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+      <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+      <DataValueMember Name="LinearTrack" DataType="BOOL" Value="0" />
+      <DataValueMember Name="MotionPolarity" DataType="BOOL" Value="0" />
+      <DataValueMember Name="AxisUnwind" DataType="DINT" Radix="Decimal" Value="3600000" />
+      <DataValueMember Name="TrackOffset" DataType="REAL" Radix="Float" Value="0.0" />
+      <DataValueMember Name="Sts_AxisConfigured" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_ERR" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Sts_EXERR" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Sts_ER" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_EN" DataType="BOOL" Value="0" />
+    </Structure>
+  </Data>
+</Tag>

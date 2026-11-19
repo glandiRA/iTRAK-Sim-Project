@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Task Name="ms0128p09" Type="PERIODIC" Rate="128" Priority="9" Watchdog="500" DisableUpdateOutputs="false" InhibitTask="false" Class="Standard" SynchronizeRedundancyDataDisabled="false">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="ms0128p09" LGuid="F28E1F66-6594-4AAA-9537-88A0847D1D33" />
+    <OwnedBy InstName="Progecta_Double" LGuid="7E84211B-ACB1-4441-BB76-7AE52F32DBB5" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[Task Description]]></LocalizedDescription>
+  </Description>
+</Task>

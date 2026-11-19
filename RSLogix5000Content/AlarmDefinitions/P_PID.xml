@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DatatypeAlarmDefinition Name="P_PID">
+  <MemberAlarmDefinition Name="Alm_Fail" Input=".Sts_Fail" ConditionType="TRIP" Limit="0.0" Severity="500" OnDelay="0" OffDelay="0" ShelveDuration="480" MaxShelveDuration="480" Deadband="0.0" Required="false" AlarmSetOperIncluded="true" AlarmSetRollupIncluded="true" AckRequired="true" Latched="false" EvaluationPeriod="500 millisecond" Expression="= 1" IsTemplate="true">
+    <AlarmConfig>
+      <Messages>
+        <Message Type="ADM">
+          <Text Lang="en-US"><![CDATA[/*S:0 %.@Description*/: Instruction failure (SP, PV, CV or HandFdbk is bad quality)]]></Text>
+        </Message>
+      </Messages>
+    </AlarmConfig>
+  </MemberAlarmDefinition>
+  <MemberAlarmDefinition Name="Alm_HiDev" Input=".Sts_HiDev" ConditionType="TRIP" Limit="0.0" Severity="500" OnDelay="0" OffDelay="0" ShelveDuration="480" MaxShelveDuration="480" Deadband="0.0" Required="false" AlarmSetOperIncluded="true" AlarmSetRollupIncluded="true" AckRequired="true" Latched="false" EvaluationPeriod="500 millisecond" Expression="= 1" AssocTag1=".Val_E" AssocTag2=".Cfg_HiDevLim" IsTemplate="true">
+    <AlarmConfig>
+      <Messages>
+        <Message Type="ADM">
+          <Text Lang="en-US"><![CDATA[/*S:0 %.@Description*/: Difference between SP and PV, Error: /*N:8 %Tag1 NOFILL DP:3*/ /*S:0 %.Inp_PV.@EngineeringUnit*/ Above high deviation limit: /*N:8 %Tag2 NOFILL DP:3*/ /*S:0 %.Inp_PV.@EngineeringUnit*/]]></Text>
+        </Message>
+      </Messages>
+    </AlarmConfig>
+  </MemberAlarmDefinition>
+  <MemberAlarmDefinition Name="Alm_HiHiDev" Input=".Sts_HiHiDev" ConditionType="TRIP" Limit="0.0" Severity="500" OnDelay="0" OffDelay="0" ShelveDuration="480" MaxShelveDuration="480" Deadband="0.0" Required="false" AlarmSetOperIncluded="true" AlarmSetRollupIncluded="true" AckRequired="true" Latched="false" EvaluationPeriod="500 millisecond" Expression="= 1" AssocTag1=".Val_E" AssocTag2=".Cfg_HiHiDevLim" IsTemplate="true">
+    <AlarmConfig>
+      <Messages>
+        <Message Type="ADM">
+          <Text Lang="en-US"><![CDATA[/*S:0 %.@Description*/: Difference between SP and PV, Error: /*N:8 %Tag1 NOFILL DP:3*/ /*S:0 %.Inp_PV.@EngineeringUnit*/ Above high high deviation limit: /*N:8 %Tag2 NOFILL DP:3*/ /*S:0 %.Inp_PV.@EngineeringUnit*/]]></Text>
+        </Message>
+      </Messages>
+    </AlarmConfig>
+  </MemberAlarmDefinition>
+  <MemberAlarmDefinition Name="Alm_IntlkTrip" Input=".Sts_IntlkTrip" ConditionType="TRIP" Limit="0.0" Severity="500" OnDelay="0" OffDelay="0" ShelveDuration="480" MaxShelveDuration="480" Deadband="0.0" Required="false" AlarmSetOperIncluded="true" AlarmSetRollupIncluded="true" AckRequired="true" Latched="false" EvaluationPeriod="500 millisecond" Expression="= 1" IsTemplate="true">
+    <AlarmConfig>
+      <Messages>
+        <Message Type="ADM">
+          <Text Lang="en-US"><![CDATA[/*S:0 %.@Description*/: Interlock trip]]></Text>
+        </Message>
+      </Messages>
+    </AlarmConfig>
+  </MemberAlarmDefinition>
+  <MemberAlarmDefinition Name="Alm_LoDev" Input=".Sts_LoDev" ConditionType="TRIP" Limit="0.0" Severity="500" OnDelay="0" OffDelay="0" ShelveDuration="480" MaxShelveDuration="480" Deadband="0.0" Required="false" AlarmSetOperIncluded="true" AlarmSetRollupIncluded="true" AckRequired="true" Latched="false" EvaluationPeriod="500 millisecond" Expression="= 1" AssocTag1=".Val_E" AssocTag2=".Cfg_LoDevLim" IsTemplate="true">
+    <AlarmConfig>
+      <Messages>
+        <Message Type="ADM">
+          <Text Lang="en-US"><![CDATA[/*S:0 %.@Description*/: Difference between SP and PV, Error: /*N:8 %Tag1 NOFILL DP:3*/ /*S:0 %.Inp_PV.@EngineeringUnit*/ Below low deviation limit: /*N:8 %Tag2 NOFILL DP:3*/ /*S:0 %.Inp_PV.@EngineeringUnit*/]]></Text>
+        </Message>
+      </Messages>
+    </AlarmConfig>
+  </MemberAlarmDefinition>
+  <MemberAlarmDefinition Name="Alm_LoLoDev" Input=".Sts_LoLoDev" ConditionType="TRIP" Limit="0.0" Severity="500" OnDelay="0" OffDelay="0" ShelveDuration="480" MaxShelveDuration="480" Deadband="0.0" Required="false" AlarmSetOperIncluded="true" AlarmSetRollupIncluded="true" AckRequired="true" Latched="false" EvaluationPeriod="500 millisecond" Expression="= 1" AssocTag1=".Val_E" AssocTag2=".Cfg_LoLoDevLim" IsTemplate="true">
+    <AlarmConfig>
+      <Messages>
+        <Message Type="ADM">
+          <Text Lang="en-US"><![CDATA[/*S:0 %.@Description*/: Difference between SP and PV, Error: /*N:8 %Tag1 NOFILL DP:3*/ /*S:0 %.Inp_PV.@EngineeringUnit*/ Below low low deviation limit: /*N:8 %Tag2 NOFILL DP:3*/ /*S:0 %.Inp_PV.@EngineeringUnit*/]]></Text>
+        </Message>
+      </Messages>
+    </AlarmConfig>
+  </MemberAlarmDefinition>
+</DatatypeAlarmDefinition>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="_EventWatch_Fault" TagType="Base" DataType="raM_Opr_EventWatch" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_DH_Slave" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[1747,0,3,-1,-1,-1,-1,0,0,-1,[18,'raM_Opr_EventWatcheneric_ST$00$00$00$00$00'],0,0,3,0,6,8,6,5,5,6,1]]]></Data>
+  <Data Format="Decorated">
+    <Structure DataType="raM_Opr_EventWatch">
+      <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+      <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Cfg_DetectMultipleEvent" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Cfg_ReArm" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Cfg_Type" DataType="DINT" Radix="Decimal" Value="3" />
+      <DataValueMember Name="Cfg_ID" DataType="DINT" Radix="Decimal" Value="-1" />
+      <DataValueMember Name="Cfg_Category" DataType="DINT" Radix="Decimal" Value="-1" />
+      <DataValueMember Name="Cfg_Action" DataType="DINT" Radix="Decimal" Value="-1" />
+      <DataValueMember Name="Cfg_Value" DataType="DINT" Radix="Decimal" Value="-1" />
+      <DataValueMember Name="Cmd_ReArm" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_EO" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_EN" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_ER" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_ERR" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Sts_EXERR" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Out_SourceLocation" DataType="DINT" Radix="Decimal" Value="-1" />
+      <DataValueMember Name="Sts_IP" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_PC" DataType="BOOL" Value="0" />
+      <DataValueMember Name="raM_Opr_EventWatch" DataType="BOOL" Value="1" />
+    </Structure>
+  </Data>
+</Tag>

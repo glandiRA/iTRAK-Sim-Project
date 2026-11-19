@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="_Service_00_Status" Type="RLL">
+  <RLLContent>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(\iTRAK_DH_Master.Mover[0].Sts.Data.PositionCamStatus) OTE(StatusMoversInCam.0) ,XIC(\iTRAK_DH_Master.Mover[0].Sts.Data.PositionCamLockStatus) OTE(StatusMoversInCamLock.0) ,XIC(QMam_MAM[0].IP) OTE(StatusMoversInQMAM.0) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(\iTRAK_DH_Master.Mover[1].Sts.Data.PositionCamStatus) OTE(StatusMoversInCam.1) ,XIC(\iTRAK_DH_Master.Mover[1].Sts.Data.PositionCamLockStatus) OTE(StatusMoversInCamLock.1) ,XIC(QMam_MAM[1].IP) OTE(StatusMoversInQMAM.1) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(\iTRAK_DH_Master.Mover[2].Sts.Data.PositionCamStatus) OTE(StatusMoversInCam.2) ,XIC(\iTRAK_DH_Master.Mover[2].Sts.Data.PositionCamLockStatus) OTE(StatusMoversInCamLock.2) ,XIC(QMam_MAM[2].IP) OTE(StatusMoversInQMAM.2) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(\iTRAK_DH_Master.Mover[3].Sts.Data.PositionCamStatus) OTE(StatusMoversInCam.3) ,XIC(\iTRAK_DH_Master.Mover[3].Sts.Data.PositionCamLockStatus) OTE(StatusMoversInCamLock.3) ,XIC(QMam_MAM[3].IP) OTE(StatusMoversInQMAM.3) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(\iTRAK_DH_Master.Mover[4].Sts.Data.PositionCamStatus) OTE(StatusMoversInCam.4) ,XIC(\iTRAK_DH_Master.Mover[4].Sts.Data.PositionCamLockStatus) OTE(StatusMoversInCamLock.4) ,XIC(QMam_MAM[4].IP) OTE(StatusMoversInQMAM.4) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(\iTRAK_DH_Master.Mover[5].Sts.Data.PositionCamStatus) OTE(StatusMoversInCam.5) ,XIC(\iTRAK_DH_Master.Mover[5].Sts.Data.PositionCamLockStatus) OTE(StatusMoversInCamLock.5) ,XIC(QMam_MAM[5].IP) OTE(StatusMoversInQMAM.5) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(\iTRAK_DH_Master.Mover[6].Sts.Data.PositionCamStatus) OTE(StatusMoversInCam.6) ,XIC(\iTRAK_DH_Master.Mover[6].Sts.Data.PositionCamLockStatus) OTE(StatusMoversInCamLock.6) ,XIC(QMam_MAM[6].IP) OTE(StatusMoversInQMAM.6) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(\iTRAK_DH_Master.Mover[7].Sts.Data.PositionCamStatus) OTE(StatusMoversInCam.7) ,XIC(\iTRAK_DH_Master.Mover[7].Sts.Data.PositionCamLockStatus) OTE(StatusMoversInCamLock.7) ,XIC(QMam_MAM[7].IP) OTE(StatusMoversInQMAM.7) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(\iTRAK_DH_Master.Mover[8].Sts.Data.PositionCamStatus) OTE(StatusMoversInCam.8) ,XIC(\iTRAK_DH_Master.Mover[8].Sts.Data.PositionCamLockStatus) OTE(StatusMoversInCamLock.8) ,XIC(QMam_MAM[8].IP) OTE(StatusMoversInQMAM.8) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(\iTRAK_DH_Master.Mover[9].Sts.Data.PositionCamStatus) OTE(StatusMoversInCam.9) ,XIC(\iTRAK_DH_Master.Mover[9].Sts.Data.PositionCamLockStatus) OTE(StatusMoversInCamLock.9) ,XIC(QMam_MAM[9].IP) OTE(StatusMoversInQMAM.9) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(\iTRAK_DH_Master.Mover[10].Sts.Data.PositionCamStatus) OTE(StatusMoversInCam.10) ,XIC(\iTRAK_DH_Master.Mover[10].Sts.Data.PositionCamLockStatus) OTE(StatusMoversInCamLock.10) ,XIC(QMam_MAM[10].IP) OTE(StatusMoversInQMAM.10) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(\iTRAK_DH_Master.Mover[11].Sts.Data.PositionCamStatus) OTE(StatusMoversInCam.11) ,XIC(\iTRAK_DH_Master.Mover[11].Sts.Data.PositionCamLockStatus) OTE(StatusMoversInCamLock.11) ,XIC(QMam_MAM[11].IP) OTE(StatusMoversInQMAM.11) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(\iTRAK_DH_Master.Mover[12].Sts.Data.PositionCamStatus) OTE(StatusMoversInCam.12) ,XIC(\iTRAK_DH_Master.Mover[12].Sts.Data.PositionCamLockStatus) OTE(StatusMoversInCamLock.12) ,XIC(QMam_MAM[12].IP) OTE(StatusMoversInQMAM.12) ];]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(\iTRAK_DH_Master.Mover[13].Sts.Data.PositionCamStatus) OTE(StatusMoversInCam.13) ,XIC(\iTRAK_DH_Master.Mover[13].Sts.Data.PositionCamLockStatus) OTE(StatusMoversInCamLock.13) ,XIC(QMam_MAM[13].IP) OTE(StatusMoversInQMAM.13) ];]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

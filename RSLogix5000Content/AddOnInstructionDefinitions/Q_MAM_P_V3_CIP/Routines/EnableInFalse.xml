@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="EnableInFalse" Type="RLL">
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[Enable In FALSE]]></LocalizedDescription>
+  </Description>
+  <RLLContent>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+ENABLE IN FALSE
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[NOP();]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[OTU(EN);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+If an Extenal Action is trying to Stop the Axis we shall allow this action to be completed
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIO(i_Q_MAM_INC_MergeDisabled.IP)XIO(i_Q_MAM_INC_MergeEnabled.IP)XIO(i_Q_MAM_ABS_MergeDisabled.IP)XIO(i_Q_MAM_ABS_MergeEnabled.IP)OTU(IP);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[CPT(inf_TrainsActualDistance,((in_Axis_Preceding.CommandPosition - in_Axis.CommandPosition) + Cfg_Q_MAM_Data.Track_Unwind) MOD Cfg_Q_MAM_Data.Track_Unwind);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[OTU(In_LinkedParametersInput.PPI_State);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[OTU(Out_LinkedParametersOutput.Out_MoveCommand);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[MOVE(0,Out_LinkedParametersOutput.PPI_Value)MOVE(0,Out_LinkedParametersOutput.Out_CmdIncrement);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[MOVE(-1,Inf_FFActiveMode);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIO(in_Axis.MoveStatus)OTU(Sts_Queued);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[OTU(Sts_QueueLeader);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Comment>
+        <LocalizedComment Lang="en-US"><![CDATA[*
+Process Completed
+*]]></LocalizedComment>
+      </Comment>
+      <Text><![CDATA[XIC(in_Axis.MoveStatus)OTE(Sts_MoveStatus);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[MOVE(in_Axis.CommandPosition,Inf_Command_Position);]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

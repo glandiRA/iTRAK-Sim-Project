@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataType Name="FI_PLC_MajorFault" Family="NoFamily" Class="User">
+  <Description>
+    <LocalizedDescription Lang="en-US"><![CDATA[Rev: 0.0 
+Stores the MajorFaultRecord attribute or MinorFaultRecord attribute of the PROGRAM object]]></LocalizedDescription>
+  </Description>
+  <Members>
+    <Member Name="TimeLow" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Lower 32 bits of the Fault Timestamp value]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="TimeHigh" DataType="DINT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Upper 32 bits of the Fault Timestamp value]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Type" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Fault type (Program, I/O, etc.)]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Code" DataType="INT" Dimension="0" Radix="Decimal" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Unique Code for the Fault]]></LocalizedDescription>
+      </Description>
+    </Member>
+    <Member Name="Info" DataType="DINT" Dimension="8" Radix="Hex" Hidden="false" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Fault specific information]]></LocalizedDescription>
+      </Description>
+    </Member>
+  </Members>
+</DataType>

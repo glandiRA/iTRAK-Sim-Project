@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="HMI_ModeNames" TagType="Base" DataType="STR0016" Dimensions="8" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_DH_Master" LGuid="34CC0AA1-6AE7-4A7B-9954-05DAD40D6867" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[8,'Physical$00$00$00$00$00$00$00$00'
+		],[7,'Virtual$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		]]]]></Data>
+  <Data Format="Decorated">
+    <Array DataType="STR0016" Dimensions="8">
+      <Element Index="[0]">
+        <Structure DataType="STR0016">
+          <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="DATA" DataType="STR0016" Radix="ASCII"><![CDATA[]]></DataValueMember>
+        </Structure>
+      </Element>
+      <Element Index="[1]">
+        <Structure DataType="STR0016">
+          <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="8" />
+          <DataValueMember Name="DATA" DataType="STR0016" Radix="ASCII"><![CDATA['Physical']]></DataValueMember>
+        </Structure>
+      </Element>
+      <Element Index="[2]">
+        <Structure DataType="STR0016">
+          <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="7" />
+          <DataValueMember Name="DATA" DataType="STR0016" Radix="ASCII"><![CDATA['Virtual']]></DataValueMember>
+        </Structure>
+      </Element>
+      <Element Index="[3]">
+        <Structure DataType="STR0016">
+          <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="DATA" DataType="STR0016" Radix="ASCII"><![CDATA[]]></DataValueMember>
+        </Structure>
+      </Element>
+      <Element Index="[4]">
+        <Structure DataType="STR0016">
+          <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="DATA" DataType="STR0016" Radix="ASCII"><![CDATA[]]></DataValueMember>
+        </Structure>
+      </Element>
+      <Element Index="[5]">
+        <Structure DataType="STR0016">
+          <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="DATA" DataType="STR0016" Radix="ASCII"><![CDATA[]]></DataValueMember>
+        </Structure>
+      </Element>
+      <Element Index="[6]">
+        <Structure DataType="STR0016">
+          <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="DATA" DataType="STR0016" Radix="ASCII"><![CDATA[]]></DataValueMember>
+        </Structure>
+      </Element>
+      <Element Index="[7]">
+        <Structure DataType="STR0016">
+          <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="DATA" DataType="STR0016" Radix="ASCII"><![CDATA[]]></DataValueMember>
+        </Structure>
+      </Element>
+    </Array>
+  </Data>
+</Tag>

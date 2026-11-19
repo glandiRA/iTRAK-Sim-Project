@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EncodedData EncodedType="AddOnInstructionDefinition" Name="_raM_Opr_GetAxisTuneParams" Class="Standard" Revision="1.0" EditedDate="2026-05-26T05:56:44.564Z" SoftwareRevision="v38.01" EncryptionConfig="9">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="raM_iTRAK_Opr_CopyTune" LGuid="9B4B578A-7A87-493F-8079-BD6CFFA1E5EF" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Parameters>
+    <Parameter Name="EnableIn" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Enable Input - System Defined Parameter]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="EnableOut" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Enable Output - System Defined Parameter]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="Ref_Axis" TagType="Base" DataType="AXIS_CIP_DRIVE" Usage="InOut" Required="true" Visible="true" />
+    <Parameter Name="Ref_Destination" TagType="Base" DataType="raM_iTRAK_Opr_TuneMover" Usage="InOut" Required="true" Visible="true" Constant="false" />
+    <Parameter Name="Sts_EN" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read/Write">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Sts_PC" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Sts_IP" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="None">
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="BOOL" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_PositionBandwidth" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Hz]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[6.64442587e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="6.644426" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_PositionIntegratorBandwidth" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Hz]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_PositionIntegratorHold" TagType="Base" DataType="SINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Hz]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="SINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_VelocityBandwidth" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Hz]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[2.65777035e+001]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="26.577703" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_VelocityIntegratorBandwidth" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Hz]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_VelocityIntegratorHold" TagType="Base" DataType="SINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Hz]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="SINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_VelocityFeedforward" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[%]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[1.00000000e+002]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="100.0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_AccelerationFeedforward" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[%]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_PositionErrorTolerance" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Position Units]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[2.39531509e+002]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="239.53151" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_VelocityErrorTolerance" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Position Units/s]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[2.00194788e+003]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="2001.9479" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_PositionLockTolerance" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Position Units]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[2.39531509e+002]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="239.53151" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_VelocityLockTolerance" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Position Units]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[2.39531509e+002]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="239.53151" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_TorqueLowPassFilterBandwidth" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Hz]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[1.32888519e+002]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="132.88852" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_SystemInertia" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read/Write">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[% Rated (Meter/s^2)]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[2.16804409e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="2.168044" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_LoadObserver" TagType="Base" DataType="SINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Load observer configuration]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="SINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_LoadObserverBandWidth" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Hz]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_LoadObserverIntegratorBandWidth" TagType="Base" DataType="REAL" Usage="Output" Radix="Float" Required="false" Visible="true" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Hz]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0.00000000e+000]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="REAL" Radix="Float" Value="0.0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_AdaptiveTuningConfiguration" TagType="Base" DataType="SINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Adaptiv tuning configuration]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="SINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_NotchFilterCount" TagType="Base" DataType="DINT" Usage="Output" Radix="Decimal" Required="false" Visible="true" ExternalAccess="Read Only">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Notch filter count]]></LocalizedDescription>
+      </Description>
+      <DefaultData Format="L5K"><![CDATA[0]]></DefaultData>
+      <DefaultData Format="Decorated">
+        <DataValue DataType="DINT" Radix="Decimal" Value="0" />
+      </DefaultData>
+    </Parameter>
+    <Parameter Name="Val_NotchFilterFrequency" TagType="Base" DataType="REAL" Dimensions="4" Usage="InOut" Radix="Float" Required="true" Visible="true" Constant="false">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Hz]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+    <Parameter Name="Val_CommandNotchFilterFrequency" TagType="Base" DataType="REAL" Dimensions="2" Usage="InOut" Radix="Float" Required="true" Visible="true" Constant="false">
+      <Description>
+        <LocalizedDescription Lang="en-US"><![CDATA[Hz]]></LocalizedDescription>
+      </Description>
+    </Parameter>
+  </Parameters>
+  <Dependencies>
+    <Dependency Type="AddOnInstructionDefinition" Name="raM_iTRAK_Opr_TuneMover" />
+  </Dependencies>
+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</EncodedData>

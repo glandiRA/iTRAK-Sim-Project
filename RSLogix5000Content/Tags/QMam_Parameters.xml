@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="QMam_Parameters" Class="Standard" TagType="Base" DataType="UDT_QMam_P_params" Dimensions="30" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="0">
+      <Header xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Maj="1" Min="0" OExt="-1" UExt="1">
+        <Libs>
+          <LibHdr CatalogNumber="Q_MAM_P" Guid="21EB654C-AF8D-4339-A4B9-5C5957855F98" />
+        </Libs>
+      </Header>
+    </Provider>
+    <Provider ID="ACM" Ext="1">
+      <Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<DecoratedData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MajorRev="1" MinorRev="0" CRC="ToDo">
+  <Private xsi:type="TagPrivateData" Guid="21EB654C-AF8D-4339-A4B9-5C5957855F98" ContentType="Routine">
+    <Attrib>
+      <RPerIns>true</RPerIns>
+    </Attrib>
+    <Subs />
+    <OPCExps />
+  </Private>
+</DecoratedData>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[[1.00000000e+002,1.50000000e+003,1.00000000e+004,1.00000000e+004,1.25000000e+002],[1.00000000e+002
+		,1.50000000e+003,1.00000000e+004,1.00000000e+004,1.25000000e+002],[1.00000000e+002,1.50000000e+003
+		,1.00000000e+004,1.00000000e+004,1.25000000e+002],[1.00000000e+002,1.50000000e+003,1.00000000e+004
+		,1.00000000e+004,1.25000000e+002],[1.00000000e+002,1.50000000e+003,1.00000000e+004,1.00000000e+004
+		,1.25000000e+002],[1.00000000e+002,1.50000000e+003,1.00000000e+004,1.00000000e+004,1.25000000e+002
+		],[1.00000000e+002,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000],[1.00000000e+002
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000],[1.00000000e+002,0.00000000e+000
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000],[1.00000000e+002,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0.00000000e+000],[1.00000000e+002,0.00000000e+000,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000],[1.00000000e+002,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000
+		],[1.00000000e+002,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000],[1.00000000e+002
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000],[1.00000000e+002,0.00000000e+000
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000],[1.00000000e+002,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0.00000000e+000],[1.00000000e+002,0.00000000e+000,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000],[1.00000000e+002,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000
+		],[1.00000000e+002,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000],[1.00000000e+002
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000],[1.00000000e+002,0.00000000e+000
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000],[1.00000000e+002,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0.00000000e+000],[1.00000000e+002,0.00000000e+000,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000],[1.00000000e+002,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000
+		],[1.00000000e+002,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000],[1.00000000e+002
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000],[1.00000000e+002,0.00000000e+000
+		,0.00000000e+000,0.00000000e+000,0.00000000e+000],[1.00000000e+002,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000,0.00000000e+000],[1.00000000e+002,0.00000000e+000,0.00000000e+000,0.00000000e+000
+		,0.00000000e+000],[1.00000000e+002,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000
+		]]]]></Data>
+  <Data Format="Decorated">
+    <Array DataType="UDT_QMam_P_params" Dimensions="30">
+      <Element Index="[0]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="10000.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="10000.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="125.0" />
+        </Structure>
+      </Element>
+      <Element Index="[1]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="10000.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="10000.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="125.0" />
+        </Structure>
+      </Element>
+      <Element Index="[2]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="10000.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="10000.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="125.0" />
+        </Structure>
+      </Element>
+      <Element Index="[3]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="10000.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="10000.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="125.0" />
+        </Structure>
+      </Element>
+      <Element Index="[4]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="10000.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="10000.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="125.0" />
+        </Structure>
+      </Element>
+      <Element Index="[5]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="1500.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="10000.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="10000.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="125.0" />
+        </Structure>
+      </Element>
+      <Element Index="[6]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[7]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[8]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[9]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[10]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[11]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[12]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[13]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[14]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[15]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[16]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[17]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[18]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[19]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[20]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[21]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[22]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[23]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[24]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[25]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[26]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[27]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[28]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+      <Element Index="[29]">
+        <Structure DataType="UDT_QMam_P_params">
+          <DataValueMember Name="rTargetPos" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="rVel" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rAcc" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDec" DataType="REAL" Radix="Float" Value="0.0" />
+          <DataValueMember Name="rDistanceTokeep" DataType="REAL" Radix="Float" Value="0.0" />
+        </Structure>
+      </Element>
+    </Array>
+  </Data>
+</Tag>

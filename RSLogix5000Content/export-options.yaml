@@ -1,0 +1,5 @@
+schema_version: 2
+serialization_format: Xml
+xml_attribute_per_line: false
+omit_export_date: true
+unsafe_skip_dependency_check: false
