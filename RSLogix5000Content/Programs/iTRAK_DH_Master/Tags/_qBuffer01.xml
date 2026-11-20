@@ -14,10 +14,10 @@
       </Data>
     </Provider>
   </CustomProperties>
-  <Data Format="L5K"><![CDATA[[[1,1005,16,0,0,[25,'raM_iTRAK_Opr_RecoverZoneery000 document$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
-		],1794563478663613,[2026,11,13,9,51,18,663613],0],[1,1004,2,0,0,[22,'raM_iTRAK_Opr_Energizeoneeryers not in correct state for MSO$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
-		],1794563478615614,[2026,11,13,9,51,18,615614],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
-		],0,[0,0,0,0,0,0,0],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+  <Data Format="L5K"><![CDATA[[[1,1013,17,0,0,[31,'raM_iTRAK5730_Tec_HMI_Animation$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],1795184242272055,[2026,11,20,14,17,22,272056],0],[1,1004,2,0,0,[22,'raM_iTRAK_Opr_Energizecovery$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],1795174243923600,[2026,11,20,11,30,43,923600],0],[1,1013,17,0,0,[31,'raM_iTRAK5730_Tec_HMI_Animation$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],1795174243923648,[2026,11,20,11,30,43,923648],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
 		],0,[0,0,0,0,0,0,0],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
 		],0,[0,0,0,0,0,0,0],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
 		],0,[0,0,0,0,0,0,0],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
@@ -28,23 +28,23 @@
       <Element Index="[0]">
         <Structure DataType="raM_UDT_Opr_EventCreate_Members">
           <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="1" />
-          <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1005" />
-          <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="16" />
+          <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1013" />
+          <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="17" />
           <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
           <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
           <StructureMember Name="Message" DataType="STRING">
-            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="25" />
-            <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_RecoverZone']]></DataValueMember>
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="31" />
+            <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA['raM_iTRAK5730_Tec_HMI_Animation']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#2026-11-13-09:51:18.663_613Z" />
+          <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#2026-11-20-14:17:22.272_055Z" />
           <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
             <Element Index="[0]" Value="2026" />
             <Element Index="[1]" Value="11" />
-            <Element Index="[2]" Value="13" />
-            <Element Index="[3]" Value="9" />
-            <Element Index="[4]" Value="51" />
-            <Element Index="[5]" Value="18" />
-            <Element Index="[6]" Value="663613" />
+            <Element Index="[2]" Value="20" />
+            <Element Index="[3]" Value="14" />
+            <Element Index="[4]" Value="17" />
+            <Element Index="[5]" Value="22" />
+            <Element Index="[6]" Value="272056" />
           </ArrayMember>
         </Structure>
       </Element>
@@ -59,38 +59,38 @@
             <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="22" />
             <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA['raM_iTRAK_Opr_Energize']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#2026-11-13-09:51:18.615_614Z" />
+          <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#2026-11-20-11:30:43.923_600Z" />
           <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
             <Element Index="[0]" Value="2026" />
             <Element Index="[1]" Value="11" />
-            <Element Index="[2]" Value="13" />
-            <Element Index="[3]" Value="9" />
-            <Element Index="[4]" Value="51" />
-            <Element Index="[5]" Value="18" />
-            <Element Index="[6]" Value="615614" />
+            <Element Index="[2]" Value="20" />
+            <Element Index="[3]" Value="11" />
+            <Element Index="[4]" Value="30" />
+            <Element Index="[5]" Value="43" />
+            <Element Index="[6]" Value="923600" />
           </ArrayMember>
         </Structure>
       </Element>
       <Element Index="[2]">
         <Structure DataType="raM_UDT_Opr_EventCreate_Members">
-          <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="0" />
-          <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="0" />
-          <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="Type" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ID" DataType="DINT" Radix="Decimal" Value="1013" />
+          <DataValueMember Name="Category" DataType="DINT" Radix="Decimal" Value="17" />
           <DataValueMember Name="Action" DataType="DINT" Radix="Decimal" Value="0" />
           <DataValueMember Name="Value" DataType="DINT" Radix="Decimal" Value="0" />
           <StructureMember Name="Message" DataType="STRING">
-            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="0" />
-            <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA[]]></DataValueMember>
+            <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="31" />
+            <DataValueMember Name="DATA" DataType="STRING" Radix="ASCII"><![CDATA['raM_iTRAK5730_Tec_HMI_Animation']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#1970-01-01-00:00:00.000_000Z" />
+          <DataValueMember Name="EventTime_L" DataType="LINT" Radix="Date/Time" Value="DT#2026-11-20-11:30:43.923_648Z" />
           <ArrayMember Name="EventTime_D" DataType="DINT" Dimensions="7" Radix="Decimal">
-            <Element Index="[0]" Value="0" />
-            <Element Index="[1]" Value="0" />
-            <Element Index="[2]" Value="0" />
-            <Element Index="[3]" Value="0" />
-            <Element Index="[4]" Value="0" />
-            <Element Index="[5]" Value="0" />
-            <Element Index="[6]" Value="0" />
+            <Element Index="[0]" Value="2026" />
+            <Element Index="[1]" Value="11" />
+            <Element Index="[2]" Value="20" />
+            <Element Index="[3]" Value="11" />
+            <Element Index="[4]" Value="30" />
+            <Element Index="[5]" Value="43" />
+            <Element Index="[6]" Value="923648" />
           </ArrayMember>
         </Structure>
       </Element>

@@ -14,7 +14,7 @@
       </Data>
     </Provider>
   </CustomProperties>
-  <Data Format="L5K"><![CDATA[[19391515,0,0,0,21,21,12,1,1,3.60000000e+003]]]></Data>
+  <Data Format="L5K"><![CDATA[[52251,0,0,0,0,21,12,1,1,3.60000000e+003]]]></Data>
   <Data Format="Decorated">
     <Structure DataType="raM_iTRAK_Dvc_DeviceStatus">
       <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
@@ -28,27 +28,27 @@
       <DataValueMember Name="Sts_Connecting" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_Disconnecting" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_Connected" DataType="BOOL" Value="1" />
-      <DataValueMember Name="Sts_Idle" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_Idle" DataType="BOOL" Value="1" />
       <DataValueMember Name="Sts_Configuring" DataType="BOOL" Value="0" />
-      <DataValueMember Name="Sts_Available" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_Available" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_Ready" DataType="BOOL" Value="1" />
       <DataValueMember Name="Sts_DCBus" DataType="BOOL" Value="1" />
-      <DataValueMember Name="Sts_Energized" DataType="BOOL" Value="1" />
-      <DataValueMember Name="Sts_AllSectionsEnergized" DataType="BOOL" Value="1" />
-      <DataValueMember Name="Sts_AllMoversEnergized" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_Energized" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_AllSectionsEnergized" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_AllMoversEnergized" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_AllSectionsDeEnergized" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_AllMoversDeEnergized" DataType="BOOL" Value="0" />
-      <DataValueMember Name="Sts_RecoveryEnabled" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_RecoveryEnabled" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_RecoveryRequired" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_RecoveryInProgress" DataType="BOOL" Value="0" />
-      <DataValueMember Name="Sts_RecoveryComplete" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_RecoveryComplete" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_Alarm" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_Faulted" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_MtdRegistryFull" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_ERR" DataType="DINT" Radix="Decimal" Value="0" />
       <DataValueMember Name="Sts_EXERR" DataType="DINT" Radix="Decimal" Value="0" />
       <DataValueMember Name="Sts_HardwareTypeFaulted" DataType="DINT" Radix="Decimal" Value="0" />
-      <DataValueMember Name="Sts_NoOfActiveMovers" DataType="INT" Radix="Decimal" Value="21" />
+      <DataValueMember Name="Sts_NoOfActiveMovers" DataType="INT" Radix="Decimal" Value="0" />
       <DataValueMember Name="Val_NoOfMovers" DataType="INT" Radix="Decimal" Value="21" />
       <DataValueMember Name="Val_NoOfSections" DataType="INT" Radix="Decimal" Value="12" />
       <DataValueMember Name="Val_NoOfPowerSupplies" DataType="SINT" Radix="Decimal" Value="1" />

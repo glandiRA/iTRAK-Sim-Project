@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Tag Name="MRIdx" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
-  <Data Format="L5K"><![CDATA[18]]></Data>
+  <Data Format="L5K"><![CDATA[15]]></Data>
   <Data Format="Decorated">
-    <DataValue DataType="DINT" Radix="Decimal" Value="18" />
+    <DataValue DataType="DINT" Radix="Decimal" Value="15" />
   </Data>
 </Tag>

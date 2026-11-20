@@ -14,7 +14,7 @@
       </Data>
     </Provider>
   </CustomProperties>
-  <Data Format="L5K"><![CDATA[[[16#00b1_0026,[-1.#IND0000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000
+  <Data Format="L5K"><![CDATA[[[16#00b1_0046,[-1.#IND0000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000
 		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000
 		,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000,0.00000000e+000,4,0,0,0,0,2
 		]]]]]></Data>
@@ -22,7 +22,7 @@
     <Array DataType="raM_UDT_ItfAD_PwrMotion_Strobe" Dimensions="1">
       <Element Index="[0]">
         <Structure DataType="raM_UDT_ItfAD_PwrMotion_Strobe">
-          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0026" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0046" />
           <StructureMember Name="Data" DataType="raM_UDT_ItfAD_PwrMotion_AxisData">
             <DataValueMember Name="Unwind" DataType="REAL" Radix="Float" Value="-1.#IND" />
             <DataValueMember Name="CommandPosition" DataType="REAL" Radix="Float" Value="0.0" />

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Tag Name="MAG07" Class="Standard" TagType="Base" DataType="MOTION_INSTRUCTION" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
-  <Data Format="L5K"><![CDATA[[-1509949440,0,0,0,0,0,0,0,0]]]></Data>
+  <Data Format="L5K"><![CDATA[[33554432,0,0,0,0,0,0,0,0]]]></Data>
   <Data Format="Decorated">
     <Structure DataType="MOTION_INSTRUCTION">
-      <DataValueMember Name="FLAGS" DataType="DINT" Radix="Decimal" Value="-1509949440" />
-      <DataValueMember Name="EN" DataType="BOOL" Value="1" />
-      <DataValueMember Name="DN" DataType="BOOL" Value="1" />
+      <DataValueMember Name="FLAGS" DataType="DINT" Radix="Decimal" Value="33554432" />
+      <DataValueMember Name="EN" DataType="BOOL" Value="0" />
+      <DataValueMember Name="DN" DataType="BOOL" Value="0" />
       <DataValueMember Name="ER" DataType="BOOL" Value="0" />
       <DataValueMember Name="PC" DataType="BOOL" Value="0" />
-      <DataValueMember Name="IP" DataType="BOOL" Value="1" />
+      <DataValueMember Name="IP" DataType="BOOL" Value="0" />
       <DataValueMember Name="AC" DataType="BOOL" Value="0" />
       <DataValueMember Name="ACCEL" DataType="BOOL" Value="0" />
       <DataValueMember Name="DECEL" DataType="BOOL" Value="0" />

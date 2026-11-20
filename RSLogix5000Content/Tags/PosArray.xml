@@ -1,32 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Tag Name="PosArray" Class="Standard" TagType="Base" DataType="REAL" Dimensions="21" Radix="Float" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
-  <Data Format="L5K"><![CDATA[[3.51999609e+003,3.45999609e+003,3.39999609e+003,3.34000000e+003,3.28000000e+003,3.22000000e+003
-		,3.16000000e+003,3.09999609e+003,3.04000000e+003,2.97999609e+003,2.91999609e+003,2.86000000e+003
-		,2.79999609e+003,2.74000000e+003,2.68000000e+003,2.62000000e+003,2.55999609e+003,2.49999609e+003
-		,1.00000000e+002,4.00000000e+001,3.57999609e+003]]]></Data>
+  <Data Format="L5K"><![CDATA[[3.33999609e+003,3.27999609e+003,3.21999609e+003,3.16000000e+003,3.09999609e+003,3.04000000e+003
+		,2.97999609e+003,2.92000000e+003,2.85999609e+003,2.79999609e+003,2.74000000e+003,2.68000000e+003
+		,2.61999609e+003,2.56000000e+003,2.49999609e+003,1.00000000e+002,4.00000000e+001,3.58000000e+003
+		,3.52000000e+003,3.45999609e+003,3.40000000e+003]]]></Data>
   <Data Format="Decorated">
     <Array DataType="REAL" Dimensions="21" Radix="Float">
-      <Element Index="[0]" Value="3519.996" />
-      <Element Index="[1]" Value="3459.996" />
-      <Element Index="[2]" Value="3399.996" />
-      <Element Index="[3]" Value="3340.0" />
-      <Element Index="[4]" Value="3280.0" />
-      <Element Index="[5]" Value="3220.0" />
-      <Element Index="[6]" Value="3160.0" />
-      <Element Index="[7]" Value="3099.996" />
-      <Element Index="[8]" Value="3040.0" />
-      <Element Index="[9]" Value="2979.996" />
-      <Element Index="[10]" Value="2919.996" />
-      <Element Index="[11]" Value="2860.0" />
-      <Element Index="[12]" Value="2799.996" />
-      <Element Index="[13]" Value="2740.0" />
-      <Element Index="[14]" Value="2680.0" />
-      <Element Index="[15]" Value="2620.0" />
-      <Element Index="[16]" Value="2559.996" />
-      <Element Index="[17]" Value="2499.996" />
-      <Element Index="[18]" Value="100.0" />
-      <Element Index="[19]" Value="40.0" />
-      <Element Index="[20]" Value="3579.996" />
+      <Element Index="[0]" Value="3339.996" />
+      <Element Index="[1]" Value="3279.996" />
+      <Element Index="[2]" Value="3219.996" />
+      <Element Index="[3]" Value="3160.0" />
+      <Element Index="[4]" Value="3099.996" />
+      <Element Index="[5]" Value="3040.0" />
+      <Element Index="[6]" Value="2979.996" />
+      <Element Index="[7]" Value="2920.0" />
+      <Element Index="[8]" Value="2859.996" />
+      <Element Index="[9]" Value="2799.996" />
+      <Element Index="[10]" Value="2740.0" />
+      <Element Index="[11]" Value="2680.0" />
+      <Element Index="[12]" Value="2619.996" />
+      <Element Index="[13]" Value="2560.0" />
+      <Element Index="[14]" Value="2499.996" />
+      <Element Index="[15]" Value="100.0" />
+      <Element Index="[16]" Value="40.0" />
+      <Element Index="[17]" Value="3580.0" />
+      <Element Index="[18]" Value="3520.0" />
+      <Element Index="[19]" Value="3459.996" />
+      <Element Index="[20]" Value="3400.0" />
     </Array>
   </Data>
 </Tag>

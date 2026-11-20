@@ -14,8 +14,8 @@
       </Data>
     </Provider>
   </CustomProperties>
-  <Data Format="L5K"><![CDATA[1.71428574e+002]]></Data>
+  <Data Format="L5K"><![CDATA[0.00000000e+000]]></Data>
   <Data Format="Decorated">
-    <DataValue DataType="REAL" Radix="Float" Value="171.42857" />
+    <DataValue DataType="REAL" Radix="Float" Value="0.0" />
   </Data>
 </Tag>

@@ -14,18 +14,18 @@
       </Data>
     </Provider>
   </CustomProperties>
-  <Data Format="L5K"><![CDATA[[[[14,'$12$p192.168.1.20$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],31,16#00b1_001f
-		,0],[[14,'$12$p192.168.1.21$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],32,16#00b1_0020
-		,0],[[14,'$12$p192.168.1.22$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],33,16#00b1_0021
-		,0],[[14,'$12$p192.168.1.23$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],25,16#00b1_0019
-		,0],[[14,'$12$p192.168.1.24$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],26,16#00b1_001a
-		,0],[[14,'$12$p192.168.1.25$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],27,16#00b1_001b
-		,0],[[14,'$12$p192.168.1.26$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],34,16#00b1_0022
-		,0],[[14,'$12$p192.168.1.27$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],35,16#00b1_0023
-		,0],[[14,'$12$p192.168.1.28$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],36,16#00b1_0024
-		,0],[[14,'$12$p192.168.1.29$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],28,16#00b1_001c
-		,0],[[14,'$12$p192.168.1.30$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],29,16#00b1_001d
-		,0],[[14,'$12$p192.168.1.31$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],30,16#00b1_001e
+  <Data Format="L5K"><![CDATA[[[[14,'$12$p192.168.1.20$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],45,16#00b1_002d
+		,0],[[14,'$12$p192.168.1.21$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],46,16#00b1_002e
+		,0],[[14,'$12$p192.168.1.22$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],47,16#00b1_002f
+		,0],[[14,'$12$p192.168.1.23$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],48,16#00b1_0030
+		,0],[[14,'$12$p192.168.1.24$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],49,16#00b1_0031
+		,0],[[14,'$12$p192.168.1.25$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],50,16#00b1_0032
+		,0],[[14,'$12$p192.168.1.26$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],51,16#00b1_0033
+		,0],[[14,'$12$p192.168.1.27$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],52,16#00b1_0034
+		,0],[[14,'$12$p192.168.1.28$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],53,16#00b1_0035
+		,0],[[14,'$12$p192.168.1.29$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],54,16#00b1_0036
+		,0],[[14,'$12$p192.168.1.30$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],55,16#00b1_0037
+		,0],[[14,'$12$p192.168.1.31$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],56,16#00b1_0038
 		,0]]]]></Data>
   <Data Format="Decorated">
     <Array DataType="raM_UDT_ItfAD_PwrMotion_Inf" Dimensions="12">
@@ -35,8 +35,8 @@
             <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
             <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA['$12$p192.168.1.20']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="31" />
-          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_001f" />
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="45" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_002d" />
           <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
         </Structure>
       </Element>
@@ -46,8 +46,8 @@
             <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
             <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA['$12$p192.168.1.21']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="32" />
-          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0020" />
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="46" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_002e" />
           <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
         </Structure>
       </Element>
@@ -57,8 +57,8 @@
             <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
             <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA['$12$p192.168.1.22']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="33" />
-          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0021" />
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="47" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_002f" />
           <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
         </Structure>
       </Element>
@@ -68,8 +68,8 @@
             <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
             <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA['$12$p192.168.1.23']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="25" />
-          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0019" />
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="48" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0030" />
           <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
         </Structure>
       </Element>
@@ -79,8 +79,8 @@
             <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
             <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA['$12$p192.168.1.24']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="26" />
-          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_001a" />
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="49" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0031" />
           <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
         </Structure>
       </Element>
@@ -90,8 +90,8 @@
             <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
             <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA['$12$p192.168.1.25']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="27" />
-          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_001b" />
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="50" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0032" />
           <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
         </Structure>
       </Element>
@@ -101,8 +101,8 @@
             <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
             <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA['$12$p192.168.1.26']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="34" />
-          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0022" />
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="51" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0033" />
           <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
         </Structure>
       </Element>
@@ -112,8 +112,8 @@
             <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
             <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA['$12$p192.168.1.27']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="35" />
-          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0023" />
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="52" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0034" />
           <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
         </Structure>
       </Element>
@@ -123,8 +123,8 @@
             <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
             <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA['$12$p192.168.1.28']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="36" />
-          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0024" />
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="53" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0035" />
           <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
         </Structure>
       </Element>
@@ -134,8 +134,8 @@
             <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
             <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA['$12$p192.168.1.29']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="28" />
-          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_001c" />
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="54" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0036" />
           <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
         </Structure>
       </Element>
@@ -145,8 +145,8 @@
             <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
             <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA['$12$p192.168.1.30']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="29" />
-          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_001d" />
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="55" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0037" />
           <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
         </Structure>
       </Element>
@@ -156,8 +156,8 @@
             <DataValueMember Name="LEN" DataType="DINT" Radix="Decimal" Value="14" />
             <DataValueMember Name="DATA" DataType="STR0032" Radix="ASCII"><![CDATA['$12$p192.168.1.31']]></DataValueMember>
           </StructureMember>
-          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="30" />
-          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_001e" />
+          <DataValueMember Name="AxisID" DataType="DINT" Radix="Decimal" Value="56" />
+          <DataValueMember Name="AxisReference" DataType="REF_TO_AXIS_CIP_DRIVE" Radix="Hex" Value="16#00b1_0038" />
           <DataValueMember Name="Lock" DataType="BOOL" Value="0" />
         </Structure>
       </Element>

@@ -14,8 +14,8 @@
       </Data>
     </Provider>
   </CustomProperties>
-  <Data Format="L5K"><![CDATA[20]]></Data>
+  <Data Format="L5K"><![CDATA[0]]></Data>
   <Data Format="Decorated">
-    <DataValue DataType="DINT" Radix="Decimal" Value="20" />
+    <DataValue DataType="DINT" Radix="Decimal" Value="0" />
   </Data>
 </Tag>

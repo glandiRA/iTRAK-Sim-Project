@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="Mover_iTRAK_Animation" TagType="Base" DataType="raM_UDT_iTRAK_Opr_MoverAnimation" Dimensions="21" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_Animation" LGuid="57943C2D-6350-4DEC-B3AF-3947540218ED" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[[4.49713470e+002,1.36000000e+002,1.80000000e+002,3.33999609e+003,3.33999609e+003,0,1,1,1],[4.74120239e+002
+		,1.36000000e+002,1.80000000e+002,3.27999609e+003,3.27999609e+003,1,1,1,1],[4.98527008e+002,1.36000000e+002
+		,1.80000000e+002,3.21999609e+003,3.21999609e+003,2,1,1,1],[5.22932190e+002,1.36000000e+002,1.80000000e+002
+		,3.16000000e+003,3.16000000e+003,3,1,1,1],[5.47340576e+002,1.36000000e+002,1.80000000e+002,3.09999609e+003
+		,3.09999609e+003,4,1,1,1],[5.71745789e+002,1.36000000e+002,1.80000000e+002,3.04000000e+003,3.04000000e+003
+		,5,1,1,1],[5.96154175e+002,1.36000000e+002,1.80000000e+002,2.97999609e+003,2.97999609e+003,6,1
+		,1,1],[6.20559326e+002,1.36000000e+002,1.80000000e+002,2.92000000e+003,2.92000000e+003,7,1,1,1
+		],[6.44967712e+002,1.36000000e+002,1.80000000e+002,2.85999609e+003,2.85999609e+003,8,1,1,1],[6.69374451e+002
+		,1.36000000e+002,1.80000000e+002,2.79999609e+003,2.79999609e+003,9,1,1,1],[6.93779663e+002,1.36000000e+002
+		,1.80000000e+002,2.74000000e+003,2.74000000e+003,10,1,1,1],[7.18186462e+002,1.36000000e+002,1.80000000e+002
+		,2.68000000e+003,2.68000000e+003,11,1,1,1],[7.42594788e+002,1.36000000e+002,1.80000000e+002,2.61999609e+003
+		,2.61999609e+003,12,1,1,1],[7.67000000e+002,1.36000000e+002,1.80000000e+002,2.56000000e+003,2.56000000e+003
+		,13,1,1,1],[7.89753052e+002,1.39210663e+002,1.97420486e+002,2.49999609e+003,2.49999609e+003,14
+		,1,1,1],[3.03271210e+002,1.36000000e+002,1.80000000e+002,1.00000000e+002,1.00000000e+002,15,1
+		,1,1],[3.27677979e+002,1.36000000e+002,1.80000000e+002,4.00000000e+001,4.00000000e+001,16,1,1
+		,1],[3.52084747e+002,1.36000000e+002,1.80000000e+002,3.58000000e+003,3.58000000e+003,17,1,1,1
+		],[3.76491547e+002,1.36000000e+002,1.80000000e+002,3.52000000e+003,3.52000000e+003,18,1,1,1],[4.00899900e+002
+		,1.36000000e+002,1.80000000e+002,3.45999609e+003,3.45999609e+003,19,1,1,1],[4.25305084e+002,1.36000000e+002
+		,1.80000000e+002,3.40000000e+003,3.40000000e+003,20,1,1,1]]]]></Data>
+  <Data Format="Decorated">
+    <Array DataType="raM_UDT_iTRAK_Opr_MoverAnimation" Dimensions="21">
+      <Element Index="[0]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="449.71347" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="3339.996" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="3339.996" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="0" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[1]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="474.12024" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="3279.996" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="3279.996" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[2]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="498.527" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="3219.996" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="3219.996" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="2" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[3]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="522.9322" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="3160.0" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="3160.0" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="3" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[4]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="547.3406" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="3099.996" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="3099.996" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="4" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[5]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="571.7458" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="3040.0" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="3040.0" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="5" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[6]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="596.1542" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="2979.996" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="2979.996" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="6" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[7]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="620.5593" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="2920.0" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="2920.0" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="7" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[8]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="644.9677" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="2859.996" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="2859.996" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="8" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[9]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="669.37445" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="2799.996" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="2799.996" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="9" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[10]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="693.77966" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="2740.0" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="2740.0" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="10" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[11]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="718.18646" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="2680.0" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="2680.0" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="11" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[12]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="742.5948" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="2619.996" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="2619.996" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="12" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[13]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="767.0" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="2560.0" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="2560.0" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="13" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[14]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="789.75305" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="139.21066" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="197.42049" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="2499.996" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="2499.996" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="14" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[15]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="303.2712" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="100.0" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="15" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[16]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="327.67798" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="40.0" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="40.0" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="16" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[17]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="352.08475" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="3580.0" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="3580.0" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="17" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[18]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="376.49155" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="3520.0" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="3520.0" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="18" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[19]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="400.8999" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="3459.996" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="3459.996" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="19" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+      <Element Index="[20]">
+        <Structure DataType="raM_UDT_iTRAK_Opr_MoverAnimation">
+          <DataValueMember Name="X" DataType="REAL" Radix="Float" Value="425.30508" />
+          <DataValueMember Name="Y" DataType="REAL" Radix="Float" Value="136.0" />
+          <DataValueMember Name="Angle" DataType="REAL" Radix="Float" Value="180.0" />
+          <DataValueMember Name="ActualPosition" DataType="REAL" Radix="Float" Value="3400.0" />
+          <DataValueMember Name="ActualPositionOffset" DataType="REAL" Radix="Float" Value="3400.0" />
+          <DataValueMember Name="Number" DataType="DINT" Radix="Decimal" Value="20" />
+          <DataValueMember Name="ColorBody" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="ColorText" DataType="DINT" Radix="Decimal" Value="1" />
+          <DataValueMember Name="Visibility" DataType="BOOL" Value="1" />
+        </Structure>
+      </Element>
+    </Array>
+  </Data>
+</Tag>

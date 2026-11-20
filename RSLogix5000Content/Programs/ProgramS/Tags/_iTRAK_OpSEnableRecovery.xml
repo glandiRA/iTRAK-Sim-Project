@@ -14,9 +14,9 @@
       </Data>
     </Provider>
   </CustomProperties>
-  <Data Format="L5K"><![CDATA[[224,1003,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
-		],[127,28,1,1013,0,1003,[22,'raM_Opr_ObjectRegisteric_ST$00$00$00$00$00'],0,1013,7,1,24,40,50,3,24],0,[95,28
-		,1,1003,15,0,0,0,0,[19,'raM_Opr_EventCreateneric_ST$00$00$00$00$00'],0,0,3,0,40,8,82,28],15,[28,'raM_iTRAK_Opr_EnableRecovery$00$00$00$00$00$00$00$00$00$00$00$00'
+  <Data Format="L5K"><![CDATA[[64,1003,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],[127,28,1,1013,0,1003,[22,'raM_Opr_ObjectRegisteric_ST$00$00$00$00$00'],0,1013,7,1,24,40,50,3,24],0,[0,0,1
+		,1003,15,0,0,0,0,[19,'raM_Opr_EventCreateneric_ST$00$00$00$00$00'],0,0,0,0,40,8,82,28],15,[28,'raM_iTRAK_Opr_EnableRecovery$00$00$00$00$00$00$00$00$00$00$00$00'
 		]]]]></Data>
   <Data Format="Decorated">
     <Structure DataType="raM_iTRAK_Opr_EnableRecovery">
@@ -27,7 +27,7 @@
       <DataValueMember Name="Sts_EN" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_ER" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_ERR" DataType="DINT" Radix="Decimal" Value="0" />
-      <DataValueMember Name="Sts_DN" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_DN" DataType="BOOL" Value="0" />
     </Structure>
   </Data>
 </Tag>

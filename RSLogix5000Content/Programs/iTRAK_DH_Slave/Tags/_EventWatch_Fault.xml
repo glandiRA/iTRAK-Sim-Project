@@ -14,11 +14,11 @@
       </Data>
     </Provider>
   </CustomProperties>
-  <Data Format="L5K"><![CDATA[[1747,0,3,-1,-1,-1,-1,0,0,-1,[18,'raM_Opr_EventWatcheneric_ST$00$00$00$00$00'],0,0,3,0,6,8,6,5,5,6,1]]]></Data>
+  <Data Format="L5K"><![CDATA[[1024,0,3,-1,-1,-1,-1,0,0,-1,[18,'raM_Opr_EventWatcheneric_ST$00$00$00$00$00'],0,0,0,0,6,8,6,5,5,6,1]]]></Data>
   <Data Format="Decorated">
     <Structure DataType="raM_Opr_EventWatch">
-      <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
-      <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+      <DataValueMember Name="EnableIn" DataType="BOOL" Value="0" />
+      <DataValueMember Name="EnableOut" DataType="BOOL" Value="0" />
       <DataValueMember Name="Cfg_DetectMultipleEvent" DataType="BOOL" Value="0" />
       <DataValueMember Name="Cfg_ReArm" DataType="DINT" Radix="Decimal" Value="0" />
       <DataValueMember Name="Cfg_Type" DataType="DINT" Radix="Decimal" Value="3" />
@@ -27,15 +27,15 @@
       <DataValueMember Name="Cfg_Action" DataType="DINT" Radix="Decimal" Value="-1" />
       <DataValueMember Name="Cfg_Value" DataType="DINT" Radix="Decimal" Value="-1" />
       <DataValueMember Name="Cmd_ReArm" DataType="BOOL" Value="0" />
-      <DataValueMember Name="Sts_EO" DataType="BOOL" Value="1" />
-      <DataValueMember Name="Sts_EN" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_EO" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_EN" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_ER" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_ERR" DataType="DINT" Radix="Decimal" Value="0" />
       <DataValueMember Name="Sts_EXERR" DataType="DINT" Radix="Decimal" Value="0" />
       <DataValueMember Name="Out_SourceLocation" DataType="DINT" Radix="Decimal" Value="-1" />
-      <DataValueMember Name="Sts_IP" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_IP" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_PC" DataType="BOOL" Value="0" />
-      <DataValueMember Name="raM_Opr_EventWatch" DataType="BOOL" Value="1" />
+      <DataValueMember Name="raM_Opr_EventWatch" DataType="BOOL" Value="0" />
     </Structure>
   </Data>
 </Tag>

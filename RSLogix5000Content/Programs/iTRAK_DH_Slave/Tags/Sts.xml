@@ -58,7 +58,7 @@
       <LocalizedComment Lang="en-US"><![CDATA[Alarm string]]></LocalizedComment>
     </Comment>
   </Comments>
-  <Data Format="L5K"><![CDATA[[-123,-100,-97,4,0,0,[0,'All axes in motion group do not have the same Test Mode Configuration$00$00$00$00$00$00$00$00$00$00$00$00$00'
+  <Data Format="L5K"><![CDATA[[-123,-119,7,0,0,0,[0,'All axes in motion group do not have the same Test Mode Configuration$00$00$00$00$00$00$00$00$00$00$00$00$00'
 		],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
 		],0,[0,0,0,0,0,0,0],0],[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
 		],0,[0,0,0,0,0,0,0],0],[[[1,1005,16,0,0,[25,'raM_iTRAK_Opr_RecoverZone$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
@@ -88,25 +88,25 @@
       <DataValueMember Name="Disconnecting" DataType="BOOL" Value="0" />
       <DataValueMember Name="Connecting" DataType="BOOL" Value="0" />
       <DataValueMember Name="Connected" DataType="BOOL" Value="1" />
-      <DataValueMember Name="Idle" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Idle" DataType="BOOL" Value="1" />
       <DataValueMember Name="Configuring" DataType="BOOL" Value="0" />
-      <DataValueMember Name="Available" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Available" DataType="BOOL" Value="0" />
       <DataValueMember Name="DCBus" DataType="BOOL" Value="1" />
-      <DataValueMember Name="Energized" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Energized" DataType="BOOL" Value="0" />
       <DataValueMember Name="Faulted" DataType="BOOL" Value="0" />
       <DataValueMember Name="Warning" DataType="BOOL" Value="0" />
       <DataValueMember Name="HardwareAvailable" DataType="BOOL" Value="1" />
       <DataValueMember Name="AllMoversAvailable" DataType="BOOL" Value="1" />
       <DataValueMember Name="AllSectionsAvailable" DataType="BOOL" Value="1" />
       <DataValueMember Name="AllPowerSuppliesAvailable" DataType="BOOL" Value="1" />
-      <DataValueMember Name="AllSectionsEnergized" DataType="BOOL" Value="1" />
-      <DataValueMember Name="AllMoversEnergized" DataType="BOOL" Value="1" />
+      <DataValueMember Name="AllSectionsEnergized" DataType="BOOL" Value="0" />
+      <DataValueMember Name="AllMoversEnergized" DataType="BOOL" Value="0" />
       <DataValueMember Name="AllSectionsDeEnergized" DataType="BOOL" Value="0" />
       <DataValueMember Name="AllMoversDeEnergized" DataType="BOOL" Value="0" />
-      <DataValueMember Name="RecoveryModeEnabled" DataType="BOOL" Value="1" />
+      <DataValueMember Name="RecoveryModeEnabled" DataType="BOOL" Value="0" />
       <DataValueMember Name="RecoveryRequired" DataType="BOOL" Value="0" />
       <DataValueMember Name="RecoveryInProgress" DataType="BOOL" Value="0" />
-      <DataValueMember Name="RecoveryComplete" DataType="BOOL" Value="1" />
+      <DataValueMember Name="RecoveryComplete" DataType="BOOL" Value="0" />
       <DataValueMember Name="MtdRegistryFull" DataType="BOOL" Value="0" />
       <DataValueMember Name="ERR" DataType="DINT" Radix="Decimal" Value="0" />
       <DataValueMember Name="EXERR" DataType="DINT" Radix="Decimal" Value="0" />

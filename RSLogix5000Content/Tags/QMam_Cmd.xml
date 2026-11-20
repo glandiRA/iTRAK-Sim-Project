@@ -27,7 +27,7 @@
 Mover 0 
 Command]]></LocalizedDescription>
   </Description>
-  <Data Format="L5K"><![CDATA[[2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#0,2#1,2#1,2#0,2#0,2#0,2#0,2#0,2#0
+  <Data Format="L5K"><![CDATA[[2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#1,2#0,2#1,2#1,2#1,2#1,2#1,2#0,2#0,2#0,2#0,2#0,2#0
 		,2#0,2#1,2#1,2#0,2#0]]]></Data>
   <Data Format="Decorated">
     <Array DataType="BOOL" Dimensions="32" Radix="Decimal">
@@ -46,10 +46,10 @@ Command]]></LocalizedDescription>
       <Element Index="[12]" Value="1" />
       <Element Index="[13]" Value="1" />
       <Element Index="[14]" Value="1" />
-      <Element Index="[15]" Value="1" />
+      <Element Index="[15]" Value="0" />
       <Element Index="[16]" Value="1" />
       <Element Index="[17]" Value="1" />
-      <Element Index="[18]" Value="0" />
+      <Element Index="[18]" Value="1" />
       <Element Index="[19]" Value="1" />
       <Element Index="[20]" Value="1" />
       <Element Index="[21]" Value="0" />

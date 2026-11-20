@@ -14,7 +14,7 @@
       </Data>
     </Provider>
   </CustomProperties>
-  <Data Format="L5K"><![CDATA[[359,0,0,-1,[22,'raM_Opr_EventListSqntlic_ST$00$00$00$00$00'],0,0,3,0,6,8,8,8,5,5,1,6,-1,1,-1,7,[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+  <Data Format="L5K"><![CDATA[[327,0,0,-1,[22,'raM_Opr_EventListSqntlic_ST$00$00$00$00$00'],0,0,3,0,6,8,8,8,5,5,0,0,0,1,-1,7,[0,0,0,0,0,[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
 		],0,[0,0,0,0,0,0,0],0]]]]></Data>
   <Data Format="Decorated">
     <Structure DataType="raM_Opr_EventListSqntl">
@@ -29,7 +29,7 @@
       <DataValueMember Name="Cfg_Type" DataType="DINT" Radix="Decimal" Value="-1" />
       <DataValueMember Name="Cmd_Clear" DataType="BOOL" Value="0" />
       <DataValueMember Name="Sts_IP" DataType="BOOL" Value="0" />
-      <DataValueMember Name="Sts_PC" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_PC" DataType="BOOL" Value="0" />
     </Structure>
   </Data>
 </Tag>

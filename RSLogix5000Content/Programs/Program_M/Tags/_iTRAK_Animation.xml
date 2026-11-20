@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="_iTRAK_Animation" TagType="Base" DataType="raM_iTRAK5730_Tec_HMI_Animation" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+  <CustomProperties>
+    <Provider ID="ACM" Ext="Origin_0">
+      <OriginHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="1" Min="0" OExt="-1" UExt="1" />
+    </Provider>
+    <Provider ID="ACM" Ext="Origin_1">
+      <Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Maj="3" Min="0" OExt="-1">
+        <Val><![CDATA[<Origin xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Owners>
+    <OwnedBy InstName="iTRAK_Animation" LGuid="57943C2D-6350-4DEC-B3AF-3947540218ED" />
+  </Owners>
+</Origin>]]></Val>
+      </Data>
+    </Provider>
+  </CustomProperties>
+  <Data Format="L5K"><![CDATA[[4787,9,0,355,228,140,155,122,77,22,44,15,1013,0,1,1,0,1,9.00000000e+001,12,767,1.66000000e+003,2.84000000e+003
+		,767,136,136,287,180,276,9,3.14159274e+000,211,206,0,1.97352127e+002,2.49996094e+002,7.25795135e+001
+		,5.90836563e+001,1.88300247e+002,0,[95,31,1,1013,17,0,0,0,0,[19,'raM_Opr_EventCreateneric_ST$00$00$00$00$00'
+		],0,0,3,0,40,8,82,31],17,[34,'Cfg_FlipTrack: Value of out bounds$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+		],21,[127,31,1,1013,0,1013,[22,'raM_Opr_ObjectRegisteric_ST$00$00$00$00$00'],0,1013,7,1,24,40,50,13,24],843
+		,206,843,206,767,136,136,287,211,206,287,276,[0.00000000e+000,1.04000000e+003,1.35000000e+003,1.66000000e+003
+		,2.84000000e+003,3.15000000e+003,3.46000000e+003,0.00000000e+000,0.00000000e+000],4.00000000e+002
+		,2.50000000e+003,21,5.69333344e+001,3.00000000e+002,1.40000000e+002,9.00000000e+002,3,[31,'raM_iTRAK5730_Tec_HMI_Animation$00$00$00$00$00$00$00$00$00'
+		]]]]></Data>
+  <Data Format="Decorated">
+    <Structure DataType="raM_iTRAK5730_Tec_HMI_Animation">
+      <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+      <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Inp_CommandPosition" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Cfg_Linear" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Cfg_OffsetSectionZero" DataType="SINT" Radix="Decimal" Value="9" />
+      <DataValueMember Name="Cfg_FlipTrack" DataType="SINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Cfg_LeftMotor_X" DataType="INT" Radix="Decimal" Value="355" />
+      <DataValueMember Name="Cfg_LeftMotor_Y" DataType="INT" Radix="Decimal" Value="228" />
+      <DataValueMember Name="Cfg_CurveMotorWidth" DataType="INT" Radix="Decimal" Value="140" />
+      <DataValueMember Name="Cfg_CurveMotorHeight" DataType="INT" Radix="Decimal" Value="155" />
+      <DataValueMember Name="Cfg_StraightMotorWidth" DataType="INT" Radix="Decimal" Value="122" />
+      <DataValueMember Name="Cfg_StraightMotorHeight" DataType="INT" Radix="Decimal" Value="77" />
+      <DataValueMember Name="Cfg_MoverWidth" DataType="INT" Radix="Decimal" Value="22" />
+      <DataValueMember Name="Cfg_MoverHeight" DataType="INT" Radix="Decimal" Value="44" />
+      <DataValueMember Name="Cfg_MoverOffsetPixel" DataType="DINT" Radix="Decimal" Value="15" />
+      <DataValueMember Name="Sts_MtdID" DataType="DINT" Radix="Decimal" Value="1013" />
+      <DataValueMember Name="Sts_EO" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_EN" DataType="BOOL" Value="1" />
+      <DataValueMember Name="Sts_ER" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Sts_ERR" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="Sts_IP" DataType="BOOL" Value="1" />
+    </Structure>
+  </Data>
+</Tag>

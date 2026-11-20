@@ -14,12 +14,12 @@
       </Data>
     </Provider>
   </CustomProperties>
-  <Data Format="L5K"><![CDATA[[19,3600000,0.00000000e+000,0,0,0,0,1,2,0.00000000e+000,3.60000000e+007,36000000,[-1476395008,0,0
-		,17,0,0,0,0,0],1.00000000e+004,0,6]]]></Data>
+  <Data Format="L5K"><![CDATA[[16,3600000,0.00000000e+000,0,0,0,0,1,2,0.00000000e+000,3.60000000e+007,36000000,[33554432,0,0,0,0,0
+		,0,0,0],1.00000000e+004,0,6]]]></Data>
   <Data Format="Decorated">
     <Structure DataType="_raM_Dvc_ConfigureAxis">
-      <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
-      <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+      <DataValueMember Name="EnableIn" DataType="BOOL" Value="0" />
+      <DataValueMember Name="EnableOut" DataType="BOOL" Value="0" />
       <DataValueMember Name="LinearTrack" DataType="BOOL" Value="0" />
       <DataValueMember Name="MotionPolarity" DataType="BOOL" Value="0" />
       <DataValueMember Name="AxisUnwind" DataType="DINT" Radix="Decimal" Value="3600000" />

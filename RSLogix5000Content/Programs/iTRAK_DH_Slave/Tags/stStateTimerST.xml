@@ -14,14 +14,14 @@
       </Data>
     </Provider>
   </CustomProperties>
-  <Data Format="L5K"><![CDATA[[5,1,20000,0,0,4,1119851,5632,998445679,0,0,1]]]></Data>
+  <Data Format="L5K"><![CDATA[[4,0,20000,0,0,4,1119851,5632,998445679,2,0,0]]]></Data>
   <Data Format="Decorated">
     <Structure DataType="FBD_TIMER">
-      <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+      <DataValueMember Name="EnableIn" DataType="BOOL" Value="0" />
       <DataValueMember Name="TimerEnable" DataType="BOOL" Value="0" />
       <DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="20000" />
       <DataValueMember Name="Reset" DataType="BOOL" Value="1" />
-      <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+      <DataValueMember Name="EnableOut" DataType="BOOL" Value="0" />
       <DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0" />
       <DataValueMember Name="EN" DataType="BOOL" Value="0" />
       <DataValueMember Name="TT" DataType="BOOL" Value="0" />

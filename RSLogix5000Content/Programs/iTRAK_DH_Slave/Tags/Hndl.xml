@@ -14,7 +14,7 @@
       </Data>
     </Provider>
   </CustomProperties>
-  <Data Format="L5K"><![CDATA[[[7,0,-128,1],[1,7,0,0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
+  <Data Format="L5K"><![CDATA[[[5,0,64,1],[1,5,0,0,0],[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
 		],1,11,50,[[[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0
 		,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
 		],[0,'$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'],0,0],[[19,'raM_iTRAK_Opr_Clear$00$00$00$00$00'
@@ -122,12 +122,11 @@
 		],1794563486647679,[2026,11,13,9,51,26,647679],0],[1,1005,16,0,0,[25,'raM_iTRAK_Opr_RecoverZone$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
 		],1794563486695695,[2026,11,13,9,51,26,695695],0],[1,1002,4,0,0,[23,'raM_iTRAK_Opr_Configure$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
 		],883613233732167,[1998,1,1,0,7,13,732169],0],[1,1003,15,0,0,[28,'raM_iTRAK_Opr_EnableRecovery$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
-		],883613236468220,[1998,1,1,0,7,16,468223],0]],6],[3],16,0,-100,-1,12,-1,0,21,21,1,1,12,1073741824,4000,300000,3600000
-		,0]]]></Data>
+		],883613236468220,[1998,1,1,0,7,16,468223],0]],6],[3],16,0,-16,-1,8,-1,0,21,0,1,1,12,0,4000,300000,3600000,0]]]></Data>
   <Data Format="Decorated">
     <Structure DataType="raM_UDT_iTRAK_Dvc_DataHndl">
       <StructureMember Name="stStateMachine" DataType="raM_UDT_Dvc_xADH_StateMachine">
-        <DataValueMember Name="State" DataType="SINT" Radix="Decimal" Value="7" />
+        <DataValueMember Name="State" DataType="SINT" Radix="Decimal" Value="5" />
         <DataValueMember Name="bInitialized" DataType="BOOL" Value="0" />
         <DataValueMember Name="bConnect" DataType="BOOL" Value="0" />
         <DataValueMember Name="bConnected" DataType="BOOL" Value="0" />
@@ -142,13 +141,13 @@
         <DataValueMember Name="stsConnecting" DataType="BOOL" Value="0" />
         <DataValueMember Name="stsDisconnecting" DataType="BOOL" Value="0" />
         <DataValueMember Name="stsConfiguring" DataType="BOOL" Value="0" />
-        <DataValueMember Name="stsIdle" DataType="BOOL" Value="0" />
-        <DataValueMember Name="stsAvailable" DataType="BOOL" Value="1" />
+        <DataValueMember Name="stsIdle" DataType="BOOL" Value="1" />
+        <DataValueMember Name="stsAvailable" DataType="BOOL" Value="0" />
         <DataValueMember Name="stsConnected" DataType="BOOL" Value="1" />
       </StructureMember>
       <StructureMember Name="infHandler" DataType="raM_UDT_Dvc_xxDH_InfHandlerv3">
         <DataValueMember Name="eMode" DataType="DINT" Radix="Decimal" Value="1" />
-        <DataValueMember Name="eState" DataType="DINT" Radix="Decimal" Value="7" />
+        <DataValueMember Name="eState" DataType="DINT" Radix="Decimal" Value="5" />
         <DataValueMember Name="bMode" DataType="DINT" Radix="Decimal" Value="0" />
         <DataValueMember Name="bState" DataType="DINT" Radix="Decimal" Value="0" />
       </StructureMember>
@@ -1426,11 +1425,11 @@
       <DataValueMember Name="bAlarm" DataType="BOOL" Value="0" />
       <DataValueMember Name="bEnergize" DataType="BOOL" Value="0" />
       <DataValueMember Name="bDeEnergize" DataType="BOOL" Value="0" />
-      <DataValueMember Name="bEnergized" DataType="BOOL" Value="1" />
-      <DataValueMember Name="bAllSectionsEnergized" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bEnergized" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bAllSectionsEnergized" DataType="BOOL" Value="0" />
       <DataValueMember Name="bAllMoversEnergized" DataType="BOOL" Value="1" />
-      <DataValueMember Name="bAllSectionsDeEnergized" DataType="BOOL" Value="0" />
-      <DataValueMember Name="bAllMoversDeEnergized" DataType="BOOL" Value="0" />
+      <DataValueMember Name="bAllSectionsDeEnergized" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bAllMoversDeEnergized" DataType="BOOL" Value="1" />
       <DataValueMember Name="bAllSectionsConnected" DataType="BOOL" Value="1" />
       <DataValueMember Name="bAllMoversConnected" DataType="BOOL" Value="1" />
       <DataValueMember Name="bAllPowerSupplyConnected" DataType="BOOL" Value="1" />
@@ -1442,16 +1441,16 @@
       <DataValueMember Name="bPowerSupplyReady" DataType="BOOL" Value="1" />
       <DataValueMember Name="bLinearTrack" DataType="BOOL" Value="0" />
       <DataValueMember Name="bTestModeFault" DataType="BOOL" Value="0" />
-      <DataValueMember Name="bDeviceObjectsConfigured" DataType="BOOL" Value="1" />
+      <DataValueMember Name="bDeviceObjectsConfigured" DataType="BOOL" Value="0" />
       <DataValueMember Name="bHardwareAvailable" DataType="BOOL" Value="1" />
       <DataValueMember Name="nTargetType" DataType="SINT" Radix="Decimal" Value="-1" />
       <DataValueMember Name="nTargetIndex" DataType="SINT" Radix="Decimal" Value="0" />
       <DataValueMember Name="nMaxNumberOfMovers" DataType="INT" Radix="Decimal" Value="21" />
-      <DataValueMember Name="nActiveMovers" DataType="INT" Radix="Decimal" Value="21" />
+      <DataValueMember Name="nActiveMovers" DataType="INT" Radix="Decimal" Value="0" />
       <DataValueMember Name="nMaxNumberOfConverter" DataType="SINT" Radix="Decimal" Value="1" />
       <DataValueMember Name="nMaxNumberOfiPS" DataType="SINT" Radix="Decimal" Value="1" />
       <DataValueMember Name="nMaxNumberOfSections" DataType="SINT" Radix="Decimal" Value="12" />
-      <DataValueMember Name="ctrlIO" DataType="DINT" Radix="Decimal" Value="1073741824" />
+      <DataValueMember Name="ctrlIO" DataType="DINT" Radix="Decimal" Value="0" />
       <DataValueMember Name="nCoarseUpdatePeriod" DataType="DINT" Radix="Decimal" Value="4000" />
       <DataValueMember Name="nSectionLength" DataType="DINT" Radix="Decimal" Value="300000" />
       <DataValueMember Name="nTrackLength" DataType="DINT" Radix="Decimal" Value="3600000" />
